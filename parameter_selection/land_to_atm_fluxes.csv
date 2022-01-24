@@ -1,0 +1,21 @@
+﻿Index_in_tech_note,Field,Variable name,Direct output or calculated?,Output available in offline PPE?,Include in analysis,Category,units,Notes
+1,Latent heat flux,EFLX_LH_TOT,Direct,Yes,Yes,Turbulent fluxes,W m-2,
+2,Sensible heat flux,FSH,Direct,Yes,Yes,Turbulent fluxes,W m-2,
+3,Water vapor flux,"QVEGE, QVEGT, QSOIL",Calculated,Yes,Yes,Water,mm s-1,
+4,Zonal momentum flux,TAUX,Direct,Yes,Yes,Aerodynamic resistance / momentum,kg m-1 s-2,Note TAUX and TAUY are identical. Including both for completeness
+5,Meridional momentum flux,TAUY,Direct,Yes,Yes,Aerodynamic resistance / momentum,kg m-1 s-2,Note TAUX and TAUY are identical. Including both for completeness
+6,Emitted longwave radiation,FIRE,Direct,Yes,Yes,Temperature,W m-2,
+7,Direct beam visible albedo,"FSDSVD, FSRVD (direct vis incident solar radiation, direct vis reflected solar radiation)",Calculated,Yes,Yes,Albedo,,
+8,Direct beam near-infrared albedo,"FSDSND, FSRND (direct nir incident solar radiation, direct nir reflected solar radiation)",Calculated,Yes,Yes,Albedo,,
+9,Diffuse visible albedo,"FSDSVI, FSRVI (diffuse vis incident solar radiation, diffuse vis reflected solar radiation)",Calculated,Yes,Yes,Albedo,,
+10,Diffuse near-infrared albedo,"FSDSNI, FSRNI (diffuse nir incident solar radiation, diffuse nir reflected solar radiation)",Calculated,Yes,Yes,Albedo,,
+11,Absorbed solar radiation,FSA,Direct,Yes,Yes,Albedo,W m-2,
+12,Radiative temperature,TSKIN?,Direct,Yes,Yes,Temperature,K,
+13,Temperature at 2 meter height,TSA,Direct,Yes,Yes,Temperature,K,
+14,Specific humidity at 2 meter height,Q2M,Direct,Yes,Yes,Water,kg kg-1,
+15,Wind speed at 10 meter height,U10,Direct,Yes,Yes,Aerodynamic resistance / momentum,m s-1,
+16,Snow water equivalent,,,?,Maybe,Water,m,
+17,Aerodynamic resistance,RAM1,,No,Maybe,Aerodynamic resistance / momentum,s m-1,
+18,Friction velocity,FV,,No,Maybe,Aerodynamic resistance / momentum,m s-1,
+19,Dust flux,,,?,No,Dust,kg m-2 s-1,
+20,Net ecosystem exchange,NEE,Direct,Yes,No,Carbon,kgCO2 m-2 s-1,
