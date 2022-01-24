@@ -1,49 +1,194 @@
-﻿Parameter,Description,Category,
-accum_factor,Accumulation constant for fractional snow covered area,Snow processes,
-br_mr,Base rate for maintenance respiration,Plant respiration,
-bsw_sf,Scalar adjustment factor for bsw,Hydrology,
-cv,Turbulent transfer coefficient between canopy surface and canopy air,"Sensible, latent heat, and momentum fluxes",
-d_max,Dry surface layer (DSL) parameter,"Sensible, latent heat, and momentum fluxes",
-fbw,Fraction of biomass that is water,Biomass heat storage,
-fff,Decay factor for fractional saturated area,Hydrology,
-frac_sat_soil_dsl_init,Fraction of saturated soil for moisture value at which DSL initiates,"Sensible, latent heat, and momentum fluxes",
-FUN_fracfixers,fraction of carbon available for N fixation,Fixation and uptake of nitrogen,
-hksat_sf,Scalar adjustment factor for hksat,Hydrology,
-jmaxb0,the baseline proportion of nitrogen allocated for electron transport (J),Photosynthetic capacity,
-jmaxb1,determines response of electron transport rate to light availability,Photosynthetic capacity,
-jmaxse_sf,Scale factor for jmaxse equation,Temperature acclimation,
-kmax,Plant segment max conductance,Plant hydraulics,
-krmax,Root segment max conductance,Plant hydraulics,
-liq_canopy_storage_scalar,Maximum storage of liquid water on leaf surface,Hydrology,
-lmrhd,deactivation energy for lmr,Temperature acclimation,
-lmrse,entropy term for lmr,Stomatal resistance and photosynthesis,
-maximum_leaf_wetted_fraction,Maximum fraction of leaf that may be wet prior to drip occuring,Hydrology,
-medlynintercept,Medlyn intercept of conductance-photosynthesis relationship,Stomatal resistance and photosynthesis,
-medlynslope,Medlyn slope of conductance-photosynthesis relationship,Stomatal resistance and photosynthesis,
-nstem,Stem number; number of individuals per meter squared (similar to stocking number) [#/m2],Biomass heat storage,
-om_frac_sf,Scalar adjustment factor for om_frac,Hydrology,
-rholnir,Leaf reflectance: near-IR,Radiation parameters,
-rholvis,Leaf reflectance: visible,Radiation parameters,
-rhosnir,Stem reflectance: near-IR,Radiation parameters,
-rhosvis,Stem reflectance: visible,Radiation parameters,
-rstem,Resistance of stems to heat transfer per dbh [s/m/m],Biomass heat storage,
-slopebeta,Exponent for microtopography pdf sigma,Hydrology,
-snw_rds_refrz,effective radius of re-frozen snow [microns],Snow processes,
-stem_leaf,stem:leaf ratio,Carbon and nitrogen allocation,
-sucsat_sf,Scalar adjustment factor for sucsat,Hydrology,
-taulnir,Leaf transmittance: near-IR,Radiation parameters,
-taulvis,Leaf transmittance: visible,Radiation parameters,
-tausnir,Stem transmittance: near-IR,Radiation parameters,
-tpuha,activation energy for tpu,Temperature acclimation,
-upplim_destruct_metamorph,Upper lim. for snow densification through desctructive metamorphism,Snow processes,
-vcmaxha,activation energy for vcmax,Temperature acclimation,
-vcmaxse_sf,Scale factor for vcmaxse equation,Temperature acclimation,
-watsat_sf,Scalar adjustment factor for watsat,Hydrology,
-wc2wjb0,the baseline ratio of rubisco limited rate vs light limited photosynthetic rate (Wc:Wj),Photosynthetic capacity,
-wind_min,Lower limit on wind speed at the forcing height,"Sensible, latent heat, and momentum fluxes",
-wind_snowcompact_fact,Reference wind above which frsh snow density is (substantially) increased.,Snow processes,
-xl,Leaf/stem orientation index,Radiation parameters,
-z0mr,Ratio of momentum roughness length to canopy top height,"Sensible, latent heat, and momentum fluxes",
-zetamaxstable,"Max value zeta (""height"" used in Monin-Obukhov theory) can go to under stable conditions. Setting this value prevents the surface from becoming too stable at night, which suppresses mixing and contributes to cold nighttime temperature bias.","Sensible, latent heat, and momentum fluxes",
-zlnd,"Momentum roughness length for soils, glacier, wetland","Sensible, latent heat, and momentum fluxes",
-zsno,Momentum roughness length for snow,"Sensible, latent heat, and momentum fluxes",
+﻿param,Description,Category
+a_coef,Drag coefficient under less dense canopy,"Sensible, latent heat, and momentum fluxes"
+a_exp,Drag exponent under less dense canopy,"Sensible, latent heat, and momentum fluxes"
+accum_factor,Accumulation constant for fractional snow covered area,Snow processes
+akc_active,Constant relating root C to arbuscular mycorrhizal root active uptake cost.,Fixation and uptake of nitrogen
+akn_active,Constant relating soil layer Nitrogen content to arbuscular mycorrhizal root active uptake cost.,Fixation and uptake of nitrogen
+aq_sp_yield_min,Minimum specific yield,Hydrology
+baseflow_scalar,Scalar multiplier for base flow rate,Hydrology
+boreal_peatfire_c,c parameter for boreal peatland fire in Li et. al. (2013) (/hr),Fire
+br_mr,Base rate for maintenance respiration,Plant respiration
+br_root,base rate for maintenance respiration for roots,Plant respiration
+bsw_sf,Scalar adjustment factor for bsw,Hydrology
+C2_liq_Brun89,"Constant for liquid water grain growth [m3 s-1],from Brun89: corrected for LWC in units of percent",Snow processes
+cc_dstem,Combustion completeness factor for dead stem,Fire
+cc_leaf,Combustion completeness factor for leaf,Fire
+cc_lstem,Combustion completeness factor for live stem,Fire
+cc_other,Combustion completeness factor for other plant,Fire
+ceta,overburden compaction constant,Snow processes
+ck,Weibull curve shape parameter. Determines slope of vulnerability curve (conductivity vs. water potential).,Plant hydraulics
+cmb_cmplt_fact_cwd,"combustion completion factor (unitless), coarse woody debris",Fire
+cmb_cmplt_fact_litter,"combustion completion factor (unitless), litter",Fire
+cn_s3_bgc,C:N for SOM pool 3,Decomposition
+cp25_yr2000,CO2 compensation point at 25°C,Stomatal resistance and photosynthesis
+cpha,activation energy for cp,Temperature acclimation
+croot_stem,Allocation parameter: new coarse root C per new stem C,Carbon and nitrogen allocation
+cropfire_a1,a1 parameter for cropland fire,Fire
+cryoturb_diffusion_k,cryoturb_diffusion_k,Decomposition
+csoilc,Drag coefficient for soil under dense canopy,"Sensible, latent heat, and momentum fluxes"
+csol_clay,Heat capacity of clay,Soil and snow thermal
+csol_om,Heat capacity of organic matter,Soil and snow thermal
+csol_sand,Heat capacity of sand,Soil and snow thermal
+cv,Turbulent transfer coefficient between canopy surface and canopy air,"Sensible, latent heat, and momentum fluxes"
+CWD,,
+d_max,Dry surface layer (DSL) parameter,"Sensible, latent heat, and momentum fluxes"
+decomp_depth_efolding,depth control on decomposition rates,Decomposition
+denitrif_nitrateconc_coefficient,coefficient for max denitrification rate based on nitrate concentration,External nitrogen cycle
+denitrif_nitrateconc_exponent,exponent for max denitrification rate based on nitrate concentration,External nitrogen cycle
+denitrif_respiration_coefficient,coefficient for max denitrification rate based on respiration,External nitrogen cycle
+denitrif_respiration_exponent,exponent for max denitrification rate based on respiration,External nitrogen cycle
+displar,Ratio of displacement height to canopy top height,"Sensible, latent heat, and momentum fluxes"
+dleaf,Characteristic dimension of leaves in the direction of wind flow,"Sensible, latent heat, and momentum fluxes"
+drift_gs,wind drift compaction / grain size (fixed value for now),Snow processes
+e_ice,ice impedance factor,Hydrology
+ekc_active,Constant relating root C to ectomycorrhizal root active uptake cost.,Fixation and uptake of nitrogen
+ekn_active,Constant relating soil layer Nitrogen content to ectomycorrhizal root active uptake cost.,Fixation and uptake of nitrogen
+enzyme_turnover_daily,the daily turnover rate for photosynthetic enzyme at 25oC in view of ~7 days of half-life time for Rubisco (Suzuki et al. 2001),Photosynthetic capacity
+eta0_vionnet,Snow viscosity coefficient (kg-s/m2),Snow processes
+fbw,Fraction of biomass that is water,Biomass heat storage
+fd_pft,Fire duration (hr),Fire
+fff,Decay factor for fractional saturated area,Hydrology
+flivewd,Allocation parameter: fraction of new wood that is live (phloem and ray parenchyma),Carbon and nitrogen allocation
+fm_droot,Fire-related mortality factor for dead roots,Fire
+fm_leaf,Fire-related mortality factor for leaf,Fire
+fm_lroot,Fire-related mortality factor for live roots,Fire
+fm_lstem,Fire-related mortality factor for live stem,Fire
+fm_other,Fire-related mortality factor for other plant,Fire
+fm_root,Fire-related mortality factor for fine roots,Fire
+fnps,"fraction of light absorbed by non-photosynthetic pigments, Miscellaneous parameters, from Bonan et al (2011) JGR",Stomatal resistance and photosynthesis
+FR,,
+frac_sat_soil_dsl_init,Fraction of saturated soil for moisture value at which DSL initiates,"Sensible, latent heat, and momentum fluxes"
+freelivfix_intercept,intercept of line of free living fixation with annual ET,External nitrogen cycle
+freelivfix_slope_wet,slope of line of free living fixation with annual ET,External nitrogen cycle
+froot_leaf,Allocation parameter: new fine root C per new leaf C,Carbon and nitrogen allocation
+frootcn,Fine root C:N,Carbon and nitrogen allocation
+fsr_pft,Fire spread rate (m/s),Fire
+fun_cn_flex_a,Parameter 'a' of FUN-flexcn code linking leafCN content and N cost to FUN C expenditure,Fixation and uptake of nitrogen
+fun_cn_flex_b,Parameter 'b' of FUN-flexcn linking leafCN content and N cost to FUN C expenditure,Fixation and uptake of nitrogen
+fun_cn_flex_c,dominant parameter of the flexible CN ratios,Fixation and uptake of nitrogen
+FUN_fracfixers,fraction of carbon available for N fixation,Fixation and uptake of nitrogen
+grperc,growth respiration,Plant respiration
+hksat_sf,Scalar adjustment factor for hksat,Hydrology
+ignition_efficiency,Ignition efficiency,Fire
+interception_fraction,Fraction of intercepted precipitation,Hydrology
+jmax25top_sf,Scale factor for jmax25top_sf,Temperature acclimation
+jmaxb0,the baseline proportion of nitrogen allocated for electron transport (J),Photosynthetic capacity
+jmaxb1,determines response of electron transport rate to light availability,Photosynthetic capacity
+jmaxha,activation energy for jmax,Temperature acclimation
+jmaxhd,deactivation energy for jmax,Temperature acclimation
+jmaxse_sf,Scale factor for jmaxse equation,Temperature acclimation
+k_nitr_max_perday,Maximum nitrification rate constant,External nitrogen cycle
+kc_nonmyc,Constant relating root C to non-mycorrhizal root active uptake cost.,Fixation and uptake of nitrogen
+kc25_coef,Michaelis-Menten constant at 25°C for CO2,Stomatal resistance and photosynthesis
+kcha,activation energy for kc,Temperature acclimation
+KCN,,
+kmax,Plant segment max conductance,Plant hydraulics
+kn_nonmyc,Constant relating soil layer Nitrogen content to non-mycorrhizal root active uptake cost.,Fixation and uptake of nitrogen
+ko25_coef,Michaelis-Menten constant at 25°C for O2,Stomatal resistance and photosynthesis
+koha,activation energy for ko,Temperature acclimation
+kp25ratio,canopy top initial slope of CO2 response curve,Stomatal resistance and photosynthesis
+krmax,Root segment max conductance,Plant hydraulics
+lai_dl,Plant litter area index,"Sensible, latent heat, and momentum fluxes"
+leaf_long,Leaf longevity,Vegetation phenology and turnover
+leafcn,Leaf C:N,Carbon and nitrogen allocation
+LF,,
+lfuel,lower threshold of fuel mass (gC/m2) for ignition,Fire
+liq_canopy_storage_scalar,Maximum storage of liquid water on leaf surface,Hydrology
+lmr_intercept_atkin,canopy leaf maintenance respiration base rate,Stomatal resistance and photosynthesis
+lmrha,activation energy for lmr,Temperature acclimation
+lmrhd,deactivation energy for lmr,Temperature acclimation
+lmrse,entropy term for lmr,Stomatal resistance and photosynthesis
+luna_theta_cj,! interpolation coefficient (in LUNA) !,Photosynthetic capacity
+lwtop_ann,Live wood turnover proportion,Vegetation phenology and turnover
+max_altdepth_cryoturbation,Maximum active layer thickness for cryoturbation to occur,Decomposition
+max_altmultiplier_cryoturb,Ratio of the maximum extent of cryoturbation to the active layer thickness,Decomposition
+maximum_leaf_wetted_fraction,Maximum fraction of leaf that may be wet prior to drip occuring,Hydrology
+maxpsi_hr,Maximum soil water potential for heterotrophic resp,Decomposition
+medlynintercept,Medlyn intercept of conductance-photosynthesis relationship,Stomatal resistance and photosynthesis
+medlynslope,Medlyn slope of conductance-photosynthesis relationship,Stomatal resistance and photosynthesis
+minpsi_hr,minimum soil water potential for heterotrophic resp,Decomposition
+minrelh,! minimum relative humdity for nitrogen optimization,Photosynthetic capacity
+mu,Threshold probability for surface water,Hydrology
+n_baseflow,drainage power exponent,Hydrology
+n_melt_coef,Parameter controlling shape of snow covered area,Snow processes
+ndays_off,Number of days to complete leaf offset,Vegetation phenology and turnover
+ndays_on,Number of days to complete leaf offset,Vegetation phenology and turnover
+non_boreal_peatfire_c,c parameter for non-boreal peatland fire in Li et. al. (2013) (/hr),Fire
+nstem,Stem number; number of individuals per meter squared (similar to stocking number) [#/m2],Biomass heat storage
+occur_hi_gdp_tree,fire occurance for high GDP areas that are tree dominated (fraction),Fire
+om_frac_sf,Scalar adjustment factor for om_frac,Hydrology
+pc,Connectivity exponent for surface water,Hydrology
+pd,Particle density of soil,Soil and snow thermal
+pot_hmn_ign_counts_alpha,Potential human ignition counts (alpha in Li et. al. 2012),Fire
+prh30,factor related to dependence of fuel combustibility on 30-day running mean of relative humidity,Fire
+psi50,Water potential at 50% loss of conductance,Plant hydraulics
+Q10,,
+q10_mr,Q10 for maintenance respiration,Decomposition
+r_mort,background mortality,Mortality
+relhExp,! electron transport parameters related to relative humidity,Photosynthetic capacity
+rf_l1s1_bgc,Respiration fraction for litter 1 -> SOM 1,Decomposition
+rf_l2s1_bgc,respiration fraction litter 2 to SOM 1,Decomposition
+rf_l3s2_bgc,respiration fraction from litter 3 to SOM 2,Decomposition
+rf_s2s1_bgc,respiration fraction SOM 2 to SOM 1,Decomposition
+rf_s2s3_bgc,Respiration fraction for SOM 2 -> SOM 3,Decomposition
+rf_s3s1_bgc,respiration fraction SOM 3 to SOM 1,Decomposition
+rh_hgh,Relative humidty high (%),Fire
+rh_low,Relative humidty low (%),Fire
+rho_max,wind drift compaction / maximum density,Snow processes
+rholnir,Leaf reflectance: near-IR,Radiation parameters
+rholvis,Leaf reflectance: visible,Radiation parameters
+rhosnir,Stem reflectance: near-IR,Radiation parameters
+rhosvis,Stem reflectance: visible,Radiation parameters
+rootprof_beta,"Rooting beta parameter, for C and N vertical discretization",Plant hydraulics
+rstem,Resistance of stems to heat transfer per dbh [s/m/m],Biomass heat storage
+scvng_fct_mlt_sf,"scaling factor modifying scavenging factors for BC, OC, and dust species inclusion in meltwater",Snow processes
+slatop,specific leaf area at the canopy top,Photosynthetic capacity
+slopebeta,Exponent for microtopography pdf sigma,Hydrology
+slopemax,Max topographic slope for microtopography pdf sigma,Hydrology
+snow_canopy_storage_scalar,Maximum storage of snow on leaf surface,Hydrology
+snowcan_unload_temp_fact,temp. canopy snow unload scaling,Snow processes
+snowcan_unload_wind_fact,wind canopy snow unload scaling,Snow processes
+snw_rds_refrz,effective radius of re-frozen snow [microns],Snow processes
+som_diffus,Vertical soil organic matter diffusion coefficient for flat adv/diff profile,Decomposition
+ssi,Irreducible water saturation of snow,Snow processes
+stem_leaf,stem:leaf ratio,Carbon and nitrogen allocation
+sucsat_sf,Scalar adjustment factor for sucsat,Hydrology
+tau_cwd,Corrected fragmentation rate constant CWD,Decomposition
+tau_l1,1/Turnover time of litter 1,Decomposition
+tau_l2_l3,1/Turnover time of litter 2 and litter 3,Decomposition
+tau_ref,wind drift compaction / reference time,Snow processes
+tau_s1,1/Turnover time of soil organic matter (SOM) 1,Decomposition
+tau_s2,1/Turnover time of soil organic matter (SOM) 2,Decomposition
+tau_s3,1/Turnover time of soil organic matter (SOM) 3,Decomposition
+taulnir,Leaf transmittance: near-IR,Radiation parameters
+taulvis,Leaf transmittance: visible,Radiation parameters
+tausnir,Stem transmittance: near-IR,Radiation parameters
+tausvis,Stem transmittance: visible,Radiation parameters
+theta_cj,"empirical curvature parameter for ac, aj photosynthesis co-limitation",Stomatal resistance and photosynthesis
+theta_ip,empirical curvature parameter for ap photosynthesis co-limitation,Stomatal resistance and photosynthesis
+theta_psii,empirical curvature parameter for electron transport rate,Stomatal resistance and photosynthesis
+tkd_clay,Thermal conductivity of clay,Soil and snow thermal
+tkd_om,Thermal conducitvity of dry organic matter,Soil and snow thermal
+tkd_sand,Thermal conductivity of sand,Soil and snow thermal
+tkm_om,Thermal conductivity of organic matter,Soil and snow thermal
+tpu25ratio,triose phosphate utilization at 25C,Stomatal resistance and photosynthesis
+tpuha,activation energy for tpu,Temperature acclimation
+tpuhd,deactivation energy for tpu,Temperature acclimation
+tpuse_sf,Scale factor for tpuse equation,Temperature acclimation
+ufuel,upper threshold of fuel mass(gC/m2) for ignition,Fire
+upplim_destruct_metamorph,Upper lim. for snow densification through desctructive metamorphism,Snow processes
+vcmaxha,activation energy for vcmax,Temperature acclimation
+vcmaxhd,deactivation energy for vcmax,Temperature acclimation
+vcmaxse_sf,Scale factor for vcmaxse equation,Temperature acclimation
+watsat_sf,Scalar adjustment factor for watsat,Hydrology
+wc2wjb0,the baseline ratio of rubisco limited rate vs light limited photosynthetic rate (Wc:Wj),Photosynthetic capacity
+wimp,Water impremeable if porosity less than wimp,Snow processes
+wind_min,Lower limit on wind speed at the forcing height,"Sensible, latent heat, and momentum fluxes"
+wind_snowcompact_fact,Reference wind above which frsh snow density is (substantially) increased.,Snow processes
+wood_density,Wood density [kg/m3],Biomass heat storage
+xl,Leaf/stem orientation index,Radiation parameters
+z_dl,Litter layer thickness,"Sensible, latent heat, and momentum fluxes"
+z0mr,Ratio of momentum roughness length to canopy top height,"Sensible, latent heat, and momentum fluxes"
+zetamaxstable,"Max value zeta (""height"" used in Monin-Obukhov theory) can go to under stable conditions. Setting this value prevents the surface from becoming too stable at night, which suppresses mixing and contributes to cold nighttime temperature bias.","Sensible, latent heat, and momentum fluxes"
+zlnd,"Momentum roughness length for soils, glacier, wetland","Sensible, latent heat, and momentum fluxes"
+zsno,Momentum roughness length for snow,"Sensible, latent heat, and momentum fluxes"
