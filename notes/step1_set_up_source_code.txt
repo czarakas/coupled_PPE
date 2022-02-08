@@ -12,6 +12,7 @@
 ######################################################
 >> cd ~/cesm_source/cesm_coupled_PPE/components/clm
 >> git checkout branch_tags/PPE.n08_ctsm5.1.dev030
+>> ./manage_externals/checkout_externals
 
 ######################################################
 #### MAKE TEST CASE ########### ######################
@@ -27,5 +28,6 @@
 >> ./xmlchange JOB_WALLCLOCK_TIME=0:30:00 --subgroup case.run
 >> ./xmlchange DOCN_SOM_FILENAME="pop_frc.b.e15.B1850G.f09_g16.pi_control.28.160204.nc"
 >> echo "hist_nhtfrq(1) = -24" >> user_nl_clm
+>> echo 'paramfile = "/glade/p/cgd/tss/people/oleson/modify_param/ctsm51_params.c210217_kwo.c210222.nc"' >> user_nl_clm
 >> qcmd -- ./case.build
-
+>> ./case.submit  
