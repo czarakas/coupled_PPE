@@ -6,7 +6,7 @@
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Define directories and user settings
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-export CESM_CASE_NAME=spinup_test003 #coupled_BGC_defParams_SpinUp
+export CESM_CASE_NAME=spinup_test005 #coupled_BGC_defParams_SpinUp
 export CESM_CASE_RES=f19_g17
 export CESM_COMPSET=2010_CAM60_CLM50%BGC_CICE_DOCN%SOM_SROF_SGLC_SWAV
 export PROJECT_NUM=UWAS0044
@@ -42,14 +42,20 @@ cd ${CESM_CASE_DIR}/${CESM_CASE_NAME}
 ./case.setup
 
 # Change run settings
-#./xmlchange CCSM_CO2_PPMV=284.7
+#./xmlchange CCSM_CO2_PPMV=388.72    # from Meinshausen et al. 2017
 ./xmlchange CLM_CO2_TYPE="constant"
+# CH4
+# N2O
+# CFC-12-eq
+# HFC-134a-eq
+# CFC-11-eq
+# CFC-12
 
 # Modify namelists
 cat >> user_nl_clm << EOF
 ! ---------------------------------INITIAL CONDITIONS------------------------------
 finidat ="/glade/p/cgd/tss/people/oleson/CLM5_restarts/clm51_PPEn02ctsm51d021_2deg_GSWP3V1_leafbiomassesai_PPE3_1850pAD.clm2.r.2041-01-01-00000.nc"
-use_init_interp = .false.
+use_init_interp = .true.
 
 ! Default parameter file used in PPE
 paramfile = "/glade/p/cgd/tss/people/oleson/modify_param/ctsm51_params.c210217_kwo.c210222.nc"
@@ -73,9 +79,15 @@ hist_mfilt=120,120
 
 EOF
 
+cat >> user_nl_cam << EOF
+fincl2 = 'Q','QREFHT','QFLX','H2O','H2O_SRF',    'T','TSMN','TSMX','TREFHT','TS',      'LHFLX','SHFLX','FLNS','FSNS','FSDSC','FLNSC','FSNSC',       'FLNT','FSNTOA','FSNT','FLNTC','FSNTOAC','FSNTC','FLNTCLR','FLUTC',            'CLOUD','CLOUDFRAC_CLUBB','LWCF','SWCF','CLDTOT','CLOUDCOVER_CLUBB'
+nhtfrq(2)=-24
+
+EOF
 
 # Build the case
 cd ${CESM_CASE_DIR}/${CESM_CASE_NAME}
 qcmd -A ${PROJECT_NUM} -- ./case.build
 
 # Submit the case
+./case.submit
