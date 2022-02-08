@@ -43,13 +43,7 @@ cd ${CESM_CASE_DIR}/${CESM_CASE_NAME}
 
 # Change run settings
 #./xmlchange CCSM_CO2_PPMV=388.72    # from Meinshausen et al. 2017
-./xmlchange CLM_CO2_TYPE="constant"
-# CH4
-# N2O
-# CFC-12-eq
-# HFC-134a-eq
-# CFC-11-eq
-# CFC-12
+#./xmlchange CLM_CO2_TYPE="constant"
 
 # Modify namelists
 cat >> user_nl_clm << EOF
