@@ -1,0 +1,31 @@
+######################################################
+#### GET CESM CODE ###################################
+######################################################
+
+>> git clone -b cesm2.2.0 https://github.com/ESCOMP/cesm.git ~/cesm_source/cesm_coupled_PPE
+>> cd ~/cesm_source/cesm_coupled_PPE
+>> git checkout cesm2.2.0
+>> ./manage_externals/checkout_externals
+
+######################################################
+#### GET CTSM CODE USED FOR PPE ######################
+######################################################
+>> cd ~/cesm_source/cesm_coupled_PPE/components/clm
+>> git checkout branch_tags/PPE.n08_ctsm5.1.dev030
+
+######################################################
+#### MAKE TEST CASE ########### ######################
+######################################################
+
+>> cd ~/cesm_source/cesm_coupled_PPE/cime/scripts
+>> ./create_newcase --case ~/cesm_cases/testcase001 --compset 2010_CAM60_CLM50%BGC_CICE_DOCN%SOM_SROF_SGLC_SWAV --res f19_g16 --project UWAS0044 --run-unsupported
+>> cd ~/cesm_cases/testcase001
+>> ./case.setup
+>> ./xmlchange STOP_OPTION="ndays"
+>> ./xmlchange STOP_N=2
+>> ./xmlchange RESUBMIT=0
+>> ./xmlchange JOB_WALLCLOCK_TIME=0:30:00 --subgroup case.run
+>> ./xmlchange DOCN_SOM_FILENAME="pop_frc.b.e15.B1850G.f09_g16.pi_control.28.160204.nc"
+>> echo "hist_nhtfrq(1) = -24" >> user_nl_clm
+>> qcmd -- ./case.build
+
