@@ -6,7 +6,7 @@
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Define directories and user settings
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-export CESM_CASE_NAME=spinup_test006 #coupled_BGC_defParams_SpinUp
+export CESM_CASE_NAME=coupled_BGC_defParams_SpinUp_001
 export CESM_CASE_RES=f19_g17
 export CESM_COMPSET=2010_CAM60_CLM50%BGC_CICE_DOCN%SOM_SROF_SGLC_SWAV
 export PROJECT_NUM=UWAS0044
@@ -28,11 +28,11 @@ cd ${CESM_SRC_DIR}/cime/scripts
 cd ${CESM_CASE_DIR}/${CESM_CASE_NAME}
 
 #+++ Modify xml files
-./xmlchange STOP_OPTION="ndays"
+./xmlchange STOP_OPTION="nyears" #"ndays"
 ./xmlchange STOP_N=3
 ./xmlchange RESUBMIT=0
 ./xmlchange DOCN_SOM_FILENAME="pop_frc.b.e21.BW1850.f09_g17.CMIP6-piControl.001.190514.nc"
-./xmlchange JOB_WALLCLOCK_TIME=00:30:00 --subgroup case.run
+./xmlchange JOB_WALLCLOCK_TIME=12:00:00 --subgroup case.run
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # set up and compile case
@@ -67,15 +67,16 @@ hist_fincl2 += 'RAIN_FROM_ATM','TBOT','QBOT','THBOT','TSA','TSKIN','TV','WIND','
 hist_fincl2 += 'FSNO','DSTFLXT','DSTDEP','BTRAN2','QRUNOFF_TO_COUPLER','TWS'
 
 
-hist_nhtfrq = -24, -24        !use this for short test case
-!hist_nhtfrq = 0,0              !use this for actual spin up
+!hist_nhtfrq = -24, -24        !use this for short test case
+hist_nhtfrq = 0,0              !use this for actual spin up
 hist_mfilt=120,120
 
 EOF
 
 cat >> user_nl_cam << EOF
 fincl2 = 'Q','QREFHT','QFLX','H2O','H2O_SRF',    'T','TSMN','TSMX','TREFHT','TS',      'LHFLX','SHFLX','FLNS','FSNS','FSDSC','FLNSC','FSNSC',       'FLNT','FSNTOA','FSNT','FLNTC','FSNTOAC','FSNTC','FLNTCLR','FLUTC',            'CLOUD','CLOUDFRAC_CLUBB','LWCF','SWCF','CLDTOT','CLOUDCOVER_CLUBB'
-nhtfrq(2)=-24
+!nhtfrq(2)=-24 !use this for the short test case
+nhtfrq(2)=0   !use this for actual spin up
 
 EOF
 
