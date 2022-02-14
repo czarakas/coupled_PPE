@@ -14,7 +14,7 @@ module load ncl
 set caselist = (coupled_BGC_defParams_SpinUp_001)  
 
 # List the variables which you want to make time series of here (for now, I'm just doing a handfull).
-set atm_vars_monthly = ( TS TREFHT)
+set atm_vars_monthly = ( co2vmr) #TS TREFHT)
 #set atm_vars_daily = ( TSMN TSMX PRECT TS )
 
 set lnd_vars_monthly = (TLAI)
@@ -25,7 +25,7 @@ set lnd_vars_daily2 = (GSSHALN GSSUNLN ANSHA_LN ANSUN_LN VPD_CAN_LN GBMOL_LN QVE
 
 set do_monthly = 1
 set do_daily = 0
-set do_land = 1
+set do_land = 0
 set do_atm = 1
 #------------------------------------------------------------------------
 
@@ -96,7 +96,7 @@ foreach casename ($caselist)
         #-------------------------------------------------------
         #             Time series of land variables
         #-------------------------------------------------------
-        set ts_dir = $workdir/lnd/proc/timeseries
+        set ts_dir = $workdir/lnd/proc/tseries
         
         if (! -d $workdir/lnd/proc) then
             mkdir $workdir/lnd/proc
