@@ -14,18 +14,18 @@ module load ncl
 set caselist = (coupled_BGC_defParams_SpinUp_001)  
 
 # List the variables which you want to make time series of here (for now, I'm just doing a handfull).
-set atm_vars_monthly = ( co2vmr) #TS TREFHT)
+set atm_vars_monthly = (co2vmr TS TREFHT  FLNT FSNT ICEFRAC)
 #set atm_vars_daily = ( TSMN TSMX PRECT TS )
 
-set lnd_vars_monthly = (TLAI)
+set lnd_vars_monthly = ( PCO2 PBOT TLAI TSAI TBOT TSA TSKIN GPP NPP NEE ER AR HTOP TWS TOTVEGC TOTVEGN TOTECOSYSC TOTECOSYSN FSNO)
 #set lnd_vars_monthly = (FSA ALTMAX ANSHA_LN ANSUN_LN AR ATM_TOPO BTRAN2 BTRANMN C13_GPP COL_FIRE_CLOSS EFLX_LH_TOT FAREA_BURNED FCEV FCTR FGEV FIRE FLDS FPSN FSDS FSH FSH_TO_COUPLER GPP GSSHA GSSHALN GSSUN GSSUNLN HR IWUELN LAISHA LAISUN NEE NPP Q2M QDRAI QHR QOVER QRUNOFF QSOIL QVEGE QVEGT RAIN_FROM_ATM RH2M SMP SOILWATER_10CM TLAI TSA TSOI_10CM TV TWS VEGWP VEGWPLN VPD2M VPD_CAN VPD_CAN_LN TBOT THBOT PBOT TSKIN TS QBOT SOILLIQ)
-set lnd_vars_monthly2 = ( )#TLAI TSAI )# HBOT HTOP )
+set lnd_vars_monthly2 = ( )
 set lnd_vars_daily = ( GPP LAISUN LAISHA GSSHA GSSUN PCO2 PBOT THBOT QSOIL QVEGE QVEGT QRUNOFF RH2M BTRAN2 FLDS FSDS FSR FIRE FSH EFLX_LH_TOT TSKIN TSA VPD_CAN FPSN PSNSHA PSNSUN GBMOL ) #SMP, VEGWP
 set lnd_vars_daily2 = (GSSHALN GSSUNLN ANSHA_LN ANSUN_LN VPD_CAN_LN GBMOL_LN QVEGT_LN)
 
 set do_monthly = 1
 set do_daily = 0
-set do_land = 0
+set do_land = 1
 set do_atm = 1
 #------------------------------------------------------------------------
 
