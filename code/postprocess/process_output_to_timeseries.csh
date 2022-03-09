@@ -11,7 +11,7 @@ module load ncl
 
 #------------------------------------------------------------------------
 # This is the name of the cases we'll make means/time series of
-set caselist = (coupled_BGC_defParams_SpinUp_001)  
+set caselist = (COUP0000_1850spinup_SOM_v02)  
 
 # List the variables which you want to make time series of here (for now, I'm just doing a handfull).
 set atm_vars_monthly = (co2vmr TS TREFHT  FLNT FSNT ICEFRAC)
@@ -23,10 +23,14 @@ set lnd_vars_monthly2 = ( )
 set lnd_vars_daily = ( GPP LAISUN LAISHA GSSHA GSSUN PCO2 PBOT THBOT QSOIL QVEGE QVEGT QRUNOFF RH2M BTRAN2 FLDS FSDS FSR FIRE FSH EFLX_LH_TOT TSKIN TSA VPD_CAN FPSN PSNSHA PSNSUN GBMOL ) #SMP, VEGWP
 set lnd_vars_daily2 = (GSSHALN GSSUNLN ANSHA_LN ANSUN_LN VPD_CAN_LN GBMOL_LN QVEGT_LN)
 
+
+set ocn_vars=(SST)
+
 set do_monthly = 1
 set do_daily = 0
 set do_land = 1
 set do_atm = 1
+set do_ocn=0
 #------------------------------------------------------------------------
 
 # Loop over each case:
@@ -89,6 +93,37 @@ foreach casename ($caselist)
         endif
         
         echo "done atm timeseries"
+    endif
+    
+    if ($do_ocn == 1) then
+    
+        #-------------------------------------------------------
+        #             Time series of ocean variables
+        #-------------------------------------------------------
+        set ts_dir = $workdir/ocn/proc/tseries
+
+        if (! -d $workdir/ocn/proc) then
+            mkdir $workdir/ocn/proc
+            echo "creating " $workdir/ocn/proc
+        endif
+
+        if (! -d $ts_dir) then 
+            mkdir $ts_dir
+            echo "creating " $ts_dir
+        endif
+            
+        # Daily ocean variables
+        foreach var ($ocn_vars)
+            setenv VAR $var
+            setenv FIL $ts_dir/$casename.pop.h.nday1.timeseries.$var.nc
+
+            echo "making time series for atm var " $var
+            # Make time series of entire run
+            ncrcat -O -v $var $workdir/ocn/hist/$casename.pop.h.nday1.*.nc $FIL
+
+        end #foreach
+        
+        echo "done ocn timeseries"
     endif
 
     if ($do_land == 1) then

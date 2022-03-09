@@ -1,0 +1,5 @@
+Ideas
+* Weights for categories -- document this so not just me doing something random
+    (1) based on the number of times the category is in the top 50 list
+    (2) of all the parameters that exist, what % of parameters are in X category
+    

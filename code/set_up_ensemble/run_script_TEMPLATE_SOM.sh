@@ -7,16 +7,17 @@
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 export CESM_CASE_NAME=TEMPLATE_CASENAME
 export CESM_CASE_RES=f19_g17
-export CESM_COMPSET=2010_CAM60_CLM50%BGC_CICE_DOCN%SOM_SROF_SGLC_SWAV
+export CESM_COMPSET=1850_CAM60_CLM50%BGC_CICE_DOCN%SOM_SROF_CISM2%NOEVOLVE_SWAV
 export PROJECT_NUM=UWAS0044
+export BASECASE_NAME=COUP0000_1850_SOM
 
 export CESM_SRC_DIR=TEMPLATE_SOURCECODE   #codebase to use to run CESM
 export CESM_CASE_DIR=TEMPLATE_CASEDIR     #where to save case
 export ARCHIVE_DIR=TEMPLATE_ARCHDIR       #where to save output
-export RUN_DIR=TEMPLATE_RUNDIR  
-export RESTART_DIR=/glade/scratch/czarakas/archive/coupled_BGC_defParams_SpinUp_001/rest/0028-01-01-00000 #where the restart files to use are
+export RUN_DIR=TEMPLATE_RUNDIR
+export FILENAME=TEMPLATE_FILENAME
+export RESTART_DIR=/glade/scratch/czarakas/archive/COUP0000_1850spinup_SOM_v02/rest/0041-01-01-00000 #where the restart files to use are
 
-export TEST_RUN=false #flag to determine how long to run simulation (just a couple days for test, longer for real thing)
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Make case
@@ -28,31 +29,31 @@ export TEST_RUN=false #flag to determine how long to run simulation (just a coup
 cd ${CESM_SRC_DIR}/cime/scripts
 
 # Create new case
-./create_newcase --case ${CESM_CASE_DIR}/${CESM_CASE_NAME} --res ${CESM_CASE_RES} --compset ${CESM_COMPSET} --project ${PROJECT_NUM} --run-unsupported
+./create_clone --case ${CESM_CASE_DIR}/${CESM_CASE_NAME} --clone ${CESM_CASE_DIR}/${BASECASE_NAME}
+#./create_newcase --case ${CESM_CASE_DIR}/${CESM_CASE_NAME} --res ${CESM_CASE_RES} --compset ${CESM_COMPSET} --project ${PROJECT_NUM} --run-unsupported
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Configure case
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 cd ${CESM_CASE_DIR}/${CESM_CASE_NAME}
 
-#+++ Set run to branch from spin up with default parameters
+# Identify simulation to branch from
 ./xmlchange RUN_TYPE=branch
-./xmlchange RUN_REFCASE=coupled_BGC_defParams_SpinUp_001
-./xmlchange RUN_REFDATE=0028-01-01
+./xmlchange RUN_REFCASE=COUP0000_1850spinup_SOM_v02
+./xmlchange RUN_REFDATE=0041-01-01
 
 #+++ Modify xml files related to run time
-if $TEST_RUN
-then
-    ./xmlchange STOP_OPTION="ndays"
-    ./xmlchange STOP_N=4
-    ./xmlchange RESUBMIT=0
-    ./xmlchange JOB_WALLCLOCK_TIME=00:30:00 --subgroup case.run
-else
-    ./xmlchange STOP_OPTION="nyears"
-    ./xmlchange STOP_N=4
-    ./xmlchange RESUBMIT=0
-    ./xmlchange JOB_WALLCLOCK_TIME=10:30:00 --subgroup case.run
-fi
+#do these settings if this is a test run
+#./xmlchange STOP_OPTION="ndays"
+#./xmlchange STOP_N=4
+#./xmlchange RESUBMIT=0
+#./xmlchange JOB_WALLCLOCK_TIME=00:30:00 --subgroup case.run
+
+# do these settings if running the whole thing
+./xmlchange STOP_OPTION="nyears"
+./xmlchange STOP_N=1
+./xmlchange RESUBMIT=0
+./xmlchange JOB_WALLCLOCK_TIME=10:30:00 --subgroup case.run
 
 ./xmlchange DOCN_SOM_FILENAME="pop_frc.b.e21.BW1850.f09_g17.CMIP6-piControl.001.190514.nc"
 
@@ -60,6 +61,9 @@ fi
 # Set up case
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ./case.setup
+./xmlchange BUILD_COMPLETE=TRUE
+./xmlchange EXEROOT=$RUN_DIR/$BASECASE_NAME"/bld"
+#./xmlchange DOUT_S=FALSE
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Modify namelists
@@ -70,15 +74,17 @@ cp TEMPLATE_NAMELIST user_nl_clm
 cat >> user_nl_clm << EOF
 ! ---------------------------------INITIAL CONDITIONS------------------------------
 ! no finidat because branching from spin up (will use those initial conditions)
+use_init_interp = .true.
 
-! Default parameter file used in PPE
+!----------------------------------------------------------------------------------
+! ---------------------------------PARAMETER FILE----------------------------------
 paramfile = TEMPLATE_PARAMFILE
 
 !----------------------------------------------------------------------------------
 !------------------------------HISTORY FILES--------------------------------------
 !----History files (h0): monthly output at grid level
 ! (all the default output variables, except for the soil variables with vertically resolved soil levels)
-hist_fincl -= 'CWDC_vr', 'CWDN_vr', 'LITR1C_vr', 'LITR1N_vr', 'LITR2C_vr', 'LITR2N_vr', 'LITR3C_vr', 'LITR3N_vr', 'SMIN_NH4_vr', 'SMIN_NO3_vr', 'SMINN_vr', 'SOIL1C_vr', 'SOIL1N_vr', 'SOIL2C_vr', 'SOIL2N_vr', 'SOIL3C_vr', 'SOIL3N_vr', 'SOILC_vr', 'SOILN_vr'
+hist_fexcl1 = 'CWDC_vr', 'CWDN_vr', 'LITR1C_vr', 'LITR1N_vr', 'LITR2C_vr', 'LITR2N_vr', 'LITR3C_vr', 'LITR3N_vr', 'SMIN_NH4_vr', 'SMIN_NO3_vr', 'SMINN_vr', 'SOIL1C_vr', 'SOIL1N_vr', 'SOIL2C_vr', 'SOIL2N_vr', 'SOIL3C_vr', 'SOIL3N_vr', 'SOILC_vr', 'SOILN_vr'
 hist_nhtfrq(1)=0
 hist_mfilt(1)=120
 
@@ -158,17 +164,19 @@ EOF
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Build case and copy in resubmit files
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Copy this run script into the run directory
+cp $FILENAME .
+
+# Copy resubmit files (from case we're branching from) into this case's run folder on glade
+cd ${RUN_DIR}/${CESM_CASE_NAME}/run
+cp $RESTART_DIR/* .
 
 # Build the case
 cd ${CESM_CASE_DIR}/${CESM_CASE_NAME}
 qcmd -A ${PROJECT_NUM} -- ./case.build
 
-# Copy resubmit files in
-cd ${RUN_DIR}/${CESM_CASE_NAME}/run
-cp $RESTART_DIR/* .
-
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Submit case
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-#cd ${CESM_CASE_DIR}/${CESM_CASE_NAME}
-#./case.submit
+cd ${CESM_CASE_DIR}/${CESM_CASE_NAME}
+./case.submit
