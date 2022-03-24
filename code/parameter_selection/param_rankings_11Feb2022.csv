@@ -1,0 +1,1781 @@
+,param_name,biome,criteria,rank,variable,measure
+0,zetamaxstable,Ice sheet,EFLX_LH_TOT_mean_Ice sheet,1,EFLX_LH_TOT,mean
+1,zsno,Ice sheet,EFLX_LH_TOT_mean_Ice sheet,2,EFLX_LH_TOT,mean
+2,snw_rds_refrz,Ice sheet,EFLX_LH_TOT_mean_Ice sheet,3,EFLX_LH_TOT,mean
+3,upplim_destruct_metamorph,Ice sheet,EFLX_LH_TOT_mean_Ice sheet,4,EFLX_LH_TOT,mean
+4,xdrdt,Ice sheet,EFLX_LH_TOT_mean_Ice sheet,5,EFLX_LH_TOT,mean
+5,zsno,Ice sheet,EFLX_LH_TOT_iav_Ice sheet,1,EFLX_LH_TOT,iav
+6,zetamaxstable,Ice sheet,EFLX_LH_TOT_iav_Ice sheet,2,EFLX_LH_TOT,iav
+7,snw_rds_refrz,Ice sheet,EFLX_LH_TOT_iav_Ice sheet,3,EFLX_LH_TOT,iav
+8,upplim_destruct_metamorph,Ice sheet,EFLX_LH_TOT_iav_Ice sheet,4,EFLX_LH_TOT,iav
+9,xdrdt,Ice sheet,EFLX_LH_TOT_iav_Ice sheet,5,EFLX_LH_TOT,iav
+10,kmax,Tropical rain forest,EFLX_LH_TOT_mean_Tropical rain forest,1,EFLX_LH_TOT,mean
+11,liq_canopy_storage_scalar,Tropical rain forest,EFLX_LH_TOT_mean_Tropical rain forest,2,EFLX_LH_TOT,mean
+12,maximum_leaf_wetted_fraction,Tropical rain forest,EFLX_LH_TOT_mean_Tropical rain forest,3,EFLX_LH_TOT,mean
+13,psi50,Tropical rain forest,EFLX_LH_TOT_mean_Tropical rain forest,4,EFLX_LH_TOT,mean
+14,medlynintercept,Tropical rain forest,EFLX_LH_TOT_mean_Tropical rain forest,5,EFLX_LH_TOT,mean
+15,maximum_leaf_wetted_fraction,Tropical rain forest,EFLX_LH_TOT_iav_Tropical rain forest,1,EFLX_LH_TOT,iav
+16,cv,Tropical rain forest,EFLX_LH_TOT_iav_Tropical rain forest,2,EFLX_LH_TOT,iav
+17,kmax,Tropical rain forest,EFLX_LH_TOT_iav_Tropical rain forest,3,EFLX_LH_TOT,iav
+18,fff,Tropical rain forest,EFLX_LH_TOT_iav_Tropical rain forest,4,EFLX_LH_TOT,iav
+19,dleaf,Tropical rain forest,EFLX_LH_TOT_iav_Tropical rain forest,5,EFLX_LH_TOT,iav
+20,kmax,Tropical seasonal forest/savanna,EFLX_LH_TOT_mean_Tropical seasonal forest/savanna,1,EFLX_LH_TOT,mean
+21,fff,Tropical seasonal forest/savanna,EFLX_LH_TOT_mean_Tropical seasonal forest/savanna,2,EFLX_LH_TOT,mean
+22,medlynintercept,Tropical seasonal forest/savanna,EFLX_LH_TOT_mean_Tropical seasonal forest/savanna,3,EFLX_LH_TOT,mean
+23,medlynslope,Tropical seasonal forest/savanna,EFLX_LH_TOT_mean_Tropical seasonal forest/savanna,4,EFLX_LH_TOT,mean
+24,liq_canopy_storage_scalar,Tropical seasonal forest/savanna,EFLX_LH_TOT_mean_Tropical seasonal forest/savanna,5,EFLX_LH_TOT,mean
+25,frac_sat_soil_dsl_init,Tropical seasonal forest/savanna,EFLX_LH_TOT_iav_Tropical seasonal forest/savanna,1,EFLX_LH_TOT,iav
+26,sand_pf,Tropical seasonal forest/savanna,EFLX_LH_TOT_iav_Tropical seasonal forest/savanna,2,EFLX_LH_TOT,iav
+27,maximum_leaf_wetted_fraction,Tropical seasonal forest/savanna,EFLX_LH_TOT_iav_Tropical seasonal forest/savanna,3,EFLX_LH_TOT,iav
+28,baseflow_scalar,Tropical seasonal forest/savanna,EFLX_LH_TOT_iav_Tropical seasonal forest/savanna,4,EFLX_LH_TOT,iav
+29,d_max,Tropical seasonal forest/savanna,EFLX_LH_TOT_iav_Tropical seasonal forest/savanna,5,EFLX_LH_TOT,iav
+30,fff,Subtropical desert,EFLX_LH_TOT_mean_Subtropical desert,1,EFLX_LH_TOT,mean
+31,krmax,Subtropical desert,EFLX_LH_TOT_mean_Subtropical desert,2,EFLX_LH_TOT,mean
+32,sand_pf,Subtropical desert,EFLX_LH_TOT_mean_Subtropical desert,3,EFLX_LH_TOT,mean
+33,kmax,Subtropical desert,EFLX_LH_TOT_mean_Subtropical desert,4,EFLX_LH_TOT,mean
+34,medlynslope,Subtropical desert,EFLX_LH_TOT_mean_Subtropical desert,5,EFLX_LH_TOT,mean
+35,fff,Subtropical desert,EFLX_LH_TOT_iav_Subtropical desert,1,EFLX_LH_TOT,iav
+36,vcmaxhd,Subtropical desert,EFLX_LH_TOT_iav_Subtropical desert,2,EFLX_LH_TOT,iav
+37,medlynslope,Subtropical desert,EFLX_LH_TOT_iav_Subtropical desert,3,EFLX_LH_TOT,iav
+38,krmax,Subtropical desert,EFLX_LH_TOT_iav_Subtropical desert,4,EFLX_LH_TOT,iav
+39,leafcn,Subtropical desert,EFLX_LH_TOT_iav_Subtropical desert,5,EFLX_LH_TOT,iav
+40,maximum_leaf_wetted_fraction,Temperate rain forest,EFLX_LH_TOT_mean_Temperate rain forest,1,EFLX_LH_TOT,mean
+41,tpu25ratio,Temperate rain forest,EFLX_LH_TOT_mean_Temperate rain forest,2,EFLX_LH_TOT,mean
+42,jmaxb1,Temperate rain forest,EFLX_LH_TOT_mean_Temperate rain forest,3,EFLX_LH_TOT,mean
+43,jmaxb0,Temperate rain forest,EFLX_LH_TOT_mean_Temperate rain forest,4,EFLX_LH_TOT,mean
+44,medlynintercept,Temperate rain forest,EFLX_LH_TOT_mean_Temperate rain forest,5,EFLX_LH_TOT,mean
+45,maximum_leaf_wetted_fraction,Temperate rain forest,EFLX_LH_TOT_iav_Temperate rain forest,1,EFLX_LH_TOT,iav
+46,dleaf,Temperate rain forest,EFLX_LH_TOT_iav_Temperate rain forest,2,EFLX_LH_TOT,iav
+47,jmaxb0,Temperate rain forest,EFLX_LH_TOT_iav_Temperate rain forest,3,EFLX_LH_TOT,iav
+48,cv,Temperate rain forest,EFLX_LH_TOT_iav_Temperate rain forest,4,EFLX_LH_TOT,iav
+49,tpu25ratio,Temperate rain forest,EFLX_LH_TOT_iav_Temperate rain forest,5,EFLX_LH_TOT,iav
+50,medlynslope,Temperate seasonal forest,EFLX_LH_TOT_mean_Temperate seasonal forest,1,EFLX_LH_TOT,mean
+51,medlynintercept,Temperate seasonal forest,EFLX_LH_TOT_mean_Temperate seasonal forest,2,EFLX_LH_TOT,mean
+52,kmax,Temperate seasonal forest,EFLX_LH_TOT_mean_Temperate seasonal forest,3,EFLX_LH_TOT,mean
+53,liq_canopy_storage_scalar,Temperate seasonal forest,EFLX_LH_TOT_mean_Temperate seasonal forest,4,EFLX_LH_TOT,mean
+54,jmaxb1,Temperate seasonal forest,EFLX_LH_TOT_mean_Temperate seasonal forest,5,EFLX_LH_TOT,mean
+55,medlynintercept,Temperate seasonal forest,EFLX_LH_TOT_iav_Temperate seasonal forest,1,EFLX_LH_TOT,iav
+56,kmax,Temperate seasonal forest,EFLX_LH_TOT_iav_Temperate seasonal forest,2,EFLX_LH_TOT,iav
+57,liq_canopy_storage_scalar,Temperate seasonal forest,EFLX_LH_TOT_iav_Temperate seasonal forest,3,EFLX_LH_TOT,iav
+58,medlynslope,Temperate seasonal forest,EFLX_LH_TOT_iav_Temperate seasonal forest,4,EFLX_LH_TOT,iav
+59,FUN_fracfixers,Temperate seasonal forest,EFLX_LH_TOT_iav_Temperate seasonal forest,5,EFLX_LH_TOT,iav
+60,fff,Woodland/shrubland,EFLX_LH_TOT_mean_Woodland/shrubland,1,EFLX_LH_TOT,mean
+61,jmaxb1,Woodland/shrubland,EFLX_LH_TOT_mean_Woodland/shrubland,2,EFLX_LH_TOT,mean
+62,kmax,Woodland/shrubland,EFLX_LH_TOT_mean_Woodland/shrubland,3,EFLX_LH_TOT,mean
+63,tpu25ratio,Woodland/shrubland,EFLX_LH_TOT_mean_Woodland/shrubland,4,EFLX_LH_TOT,mean
+64,medlynslope,Woodland/shrubland,EFLX_LH_TOT_mean_Woodland/shrubland,5,EFLX_LH_TOT,mean
+65,kmax,Woodland/shrubland,EFLX_LH_TOT_iav_Woodland/shrubland,1,EFLX_LH_TOT,iav
+66,medlynslope,Woodland/shrubland,EFLX_LH_TOT_iav_Woodland/shrubland,2,EFLX_LH_TOT,iav
+67,jmaxb1,Woodland/shrubland,EFLX_LH_TOT_iav_Woodland/shrubland,3,EFLX_LH_TOT,iav
+68,jmaxb0,Woodland/shrubland,EFLX_LH_TOT_iav_Woodland/shrubland,4,EFLX_LH_TOT,iav
+69,theta_cj,Woodland/shrubland,EFLX_LH_TOT_iav_Woodland/shrubland,5,EFLX_LH_TOT,iav
+70,fff,Temperate grassland/desert,EFLX_LH_TOT_mean_Temperate grassland/desert,1,EFLX_LH_TOT,mean
+71,krmax,Temperate grassland/desert,EFLX_LH_TOT_mean_Temperate grassland/desert,2,EFLX_LH_TOT,mean
+72,d_max,Temperate grassland/desert,EFLX_LH_TOT_mean_Temperate grassland/desert,3,EFLX_LH_TOT,mean
+73,kmax,Temperate grassland/desert,EFLX_LH_TOT_mean_Temperate grassland/desert,4,EFLX_LH_TOT,mean
+74,sand_pf,Temperate grassland/desert,EFLX_LH_TOT_mean_Temperate grassland/desert,5,EFLX_LH_TOT,mean
+75,medlynslope,Temperate grassland/desert,EFLX_LH_TOT_iav_Temperate grassland/desert,1,EFLX_LH_TOT,iav
+76,jmaxb0,Temperate grassland/desert,EFLX_LH_TOT_iav_Temperate grassland/desert,2,EFLX_LH_TOT,iav
+77,leafcn,Temperate grassland/desert,EFLX_LH_TOT_iav_Temperate grassland/desert,3,EFLX_LH_TOT,iav
+78,wc2wjb0,Temperate grassland/desert,EFLX_LH_TOT_iav_Temperate grassland/desert,4,EFLX_LH_TOT,iav
+79,FUN_fracfixers,Temperate grassland/desert,EFLX_LH_TOT_iav_Temperate grassland/desert,5,EFLX_LH_TOT,iav
+80,medlynslope,Boreal forest,EFLX_LH_TOT_mean_Boreal forest,1,EFLX_LH_TOT,mean
+81,medlynintercept,Boreal forest,EFLX_LH_TOT_mean_Boreal forest,2,EFLX_LH_TOT,mean
+82,liq_canopy_storage_scalar,Boreal forest,EFLX_LH_TOT_mean_Boreal forest,3,EFLX_LH_TOT,mean
+83,kmax,Boreal forest,EFLX_LH_TOT_mean_Boreal forest,4,EFLX_LH_TOT,mean
+84,jmaxb0,Boreal forest,EFLX_LH_TOT_mean_Boreal forest,5,EFLX_LH_TOT,mean
+85,kmax,Boreal forest,EFLX_LH_TOT_iav_Boreal forest,1,EFLX_LH_TOT,iav
+86,medlynslope,Boreal forest,EFLX_LH_TOT_iav_Boreal forest,2,EFLX_LH_TOT,iav
+87,medlynintercept,Boreal forest,EFLX_LH_TOT_iav_Boreal forest,3,EFLX_LH_TOT,iav
+88,jmaxb0,Boreal forest,EFLX_LH_TOT_iav_Boreal forest,4,EFLX_LH_TOT,iav
+89,liq_canopy_storage_scalar,Boreal forest,EFLX_LH_TOT_iav_Boreal forest,5,EFLX_LH_TOT,iav
+90,medlynslope,Tundra,EFLX_LH_TOT_mean_Tundra,1,EFLX_LH_TOT,mean
+91,fff,Tundra,EFLX_LH_TOT_mean_Tundra,2,EFLX_LH_TOT,mean
+92,jmaxb0,Tundra,EFLX_LH_TOT_mean_Tundra,3,EFLX_LH_TOT,mean
+93,kmax,Tundra,EFLX_LH_TOT_mean_Tundra,4,EFLX_LH_TOT,mean
+94,slopebeta,Tundra,EFLX_LH_TOT_mean_Tundra,5,EFLX_LH_TOT,mean
+95,fff,Tundra,EFLX_LH_TOT_iav_Tundra,1,EFLX_LH_TOT,iav
+96,jmaxb0,Tundra,EFLX_LH_TOT_iav_Tundra,2,EFLX_LH_TOT,iav
+97,tpu25ratio,Tundra,EFLX_LH_TOT_iav_Tundra,3,EFLX_LH_TOT,iav
+98,minpsi_hr,Tundra,EFLX_LH_TOT_iav_Tundra,4,EFLX_LH_TOT,iav
+99,slopemax,Tundra,EFLX_LH_TOT_iav_Tundra,5,EFLX_LH_TOT,iav
+100,zetamaxstable,Ice sheet,FSH_mean_Ice sheet,1,FSH,mean
+101,zsno,Ice sheet,FSH_mean_Ice sheet,2,FSH,mean
+102,xdrdt,Ice sheet,FSH_mean_Ice sheet,3,FSH,mean
+103,snw_rds_refrz,Ice sheet,FSH_mean_Ice sheet,4,FSH,mean
+104,upplim_destruct_metamorph,Ice sheet,FSH_mean_Ice sheet,5,FSH,mean
+105,zetamaxstable,Ice sheet,FSH_iav_Ice sheet,1,FSH,iav
+106,zsno,Ice sheet,FSH_iav_Ice sheet,2,FSH,iav
+107,snw_rds_refrz,Ice sheet,FSH_iav_Ice sheet,3,FSH,iav
+108,xdrdt,Ice sheet,FSH_iav_Ice sheet,4,FSH,iav
+109,upplim_destruct_metamorph,Ice sheet,FSH_iav_Ice sheet,5,FSH,iav
+110,kmax,Tropical rain forest,FSH_mean_Tropical rain forest,1,FSH,mean
+111,liq_canopy_storage_scalar,Tropical rain forest,FSH_mean_Tropical rain forest,2,FSH,mean
+112,maximum_leaf_wetted_fraction,Tropical rain forest,FSH_mean_Tropical rain forest,3,FSH,mean
+113,psi50,Tropical rain forest,FSH_mean_Tropical rain forest,4,FSH,mean
+114,medlynintercept,Tropical rain forest,FSH_mean_Tropical rain forest,5,FSH,mean
+115,maximum_leaf_wetted_fraction,Tropical rain forest,FSH_iav_Tropical rain forest,1,FSH,iav
+116,cv,Tropical rain forest,FSH_iav_Tropical rain forest,2,FSH,iav
+117,dleaf,Tropical rain forest,FSH_iav_Tropical rain forest,3,FSH,iav
+118,medlynintercept,Tropical rain forest,FSH_iav_Tropical rain forest,4,FSH,iav
+119,fff,Tropical rain forest,FSH_iav_Tropical rain forest,5,FSH,iav
+120,kmax,Tropical seasonal forest/savanna,FSH_mean_Tropical seasonal forest/savanna,1,FSH,mean
+121,medlynslope,Tropical seasonal forest/savanna,FSH_mean_Tropical seasonal forest/savanna,2,FSH,mean
+122,medlynintercept,Tropical seasonal forest/savanna,FSH_mean_Tropical seasonal forest/savanna,3,FSH,mean
+123,liq_canopy_storage_scalar,Tropical seasonal forest/savanna,FSH_mean_Tropical seasonal forest/savanna,4,FSH,mean
+124,maximum_leaf_wetted_fraction,Tropical seasonal forest/savanna,FSH_mean_Tropical seasonal forest/savanna,5,FSH,mean
+125,frac_sat_soil_dsl_init,Tropical seasonal forest/savanna,FSH_iav_Tropical seasonal forest/savanna,1,FSH,iav
+126,maximum_leaf_wetted_fraction,Tropical seasonal forest/savanna,FSH_iav_Tropical seasonal forest/savanna,2,FSH,iav
+127,krmax,Tropical seasonal forest/savanna,FSH_iav_Tropical seasonal forest/savanna,3,FSH,iav
+128,medlynintercept,Tropical seasonal forest/savanna,FSH_iav_Tropical seasonal forest/savanna,4,FSH,iav
+129,d_max,Tropical seasonal forest/savanna,FSH_iav_Tropical seasonal forest/savanna,5,FSH,iav
+130,fff,Subtropical desert,FSH_mean_Subtropical desert,1,FSH,mean
+131,zlnd,Subtropical desert,FSH_mean_Subtropical desert,2,FSH,mean
+132,d_max,Subtropical desert,FSH_mean_Subtropical desert,3,FSH,mean
+133,rhosnir,Subtropical desert,FSH_mean_Subtropical desert,4,FSH,mean
+134,zetamaxstable,Subtropical desert,FSH_mean_Subtropical desert,5,FSH,mean
+135,vcmaxse_sf,Subtropical desert,FSH_iav_Subtropical desert,1,FSH,iav
+136,vcmaxhd,Subtropical desert,FSH_iav_Subtropical desert,2,FSH,iav
+137,kcha,Subtropical desert,FSH_iav_Subtropical desert,3,FSH,iav
+138,vcmaxha,Subtropical desert,FSH_iav_Subtropical desert,4,FSH,iav
+139,wc2wjb0,Subtropical desert,FSH_iav_Subtropical desert,5,FSH,iav
+140,maximum_leaf_wetted_fraction,Temperate rain forest,FSH_mean_Temperate rain forest,1,FSH,mean
+141,tpu25ratio,Temperate rain forest,FSH_mean_Temperate rain forest,2,FSH,mean
+142,jmaxb1,Temperate rain forest,FSH_mean_Temperate rain forest,3,FSH,mean
+143,jmaxb0,Temperate rain forest,FSH_mean_Temperate rain forest,4,FSH,mean
+144,wc2wjb0,Temperate rain forest,FSH_mean_Temperate rain forest,5,FSH,mean
+145,maximum_leaf_wetted_fraction,Temperate rain forest,FSH_iav_Temperate rain forest,1,FSH,iav
+146,tpu25ratio,Temperate rain forest,FSH_iav_Temperate rain forest,2,FSH,iav
+147,tpuha,Temperate rain forest,FSH_iav_Temperate rain forest,3,FSH,iav
+148,jmaxb0,Temperate rain forest,FSH_iav_Temperate rain forest,4,FSH,iav
+149,dleaf,Temperate rain forest,FSH_iav_Temperate rain forest,5,FSH,iav
+150,medlynslope,Temperate seasonal forest,FSH_mean_Temperate seasonal forest,1,FSH,mean
+151,medlynintercept,Temperate seasonal forest,FSH_mean_Temperate seasonal forest,2,FSH,mean
+152,liq_canopy_storage_scalar,Temperate seasonal forest,FSH_mean_Temperate seasonal forest,3,FSH,mean
+153,kmax,Temperate seasonal forest,FSH_mean_Temperate seasonal forest,4,FSH,mean
+154,jmaxb1,Temperate seasonal forest,FSH_mean_Temperate seasonal forest,5,FSH,mean
+155,medlynintercept,Temperate seasonal forest,FSH_iav_Temperate seasonal forest,1,FSH,iav
+156,kmax,Temperate seasonal forest,FSH_iav_Temperate seasonal forest,2,FSH,iav
+157,medlynslope,Temperate seasonal forest,FSH_iav_Temperate seasonal forest,3,FSH,iav
+158,maximum_leaf_wetted_fraction,Temperate seasonal forest,FSH_iav_Temperate seasonal forest,4,FSH,iav
+159,z0mr,Temperate seasonal forest,FSH_iav_Temperate seasonal forest,5,FSH,iav
+160,fff,Woodland/shrubland,FSH_mean_Woodland/shrubland,1,FSH,mean
+161,medlynslope,Woodland/shrubland,FSH_mean_Woodland/shrubland,2,FSH,mean
+162,kmax,Woodland/shrubland,FSH_mean_Woodland/shrubland,3,FSH,mean
+163,taulnir,Woodland/shrubland,FSH_mean_Woodland/shrubland,4,FSH,mean
+164,jmaxb1,Woodland/shrubland,FSH_mean_Woodland/shrubland,5,FSH,mean
+165,medlynslope,Woodland/shrubland,FSH_iav_Woodland/shrubland,1,FSH,iav
+166,FUN_fracfixers,Woodland/shrubland,FSH_iav_Woodland/shrubland,2,FSH,iav
+167,frac_sat_soil_dsl_init,Woodland/shrubland,FSH_iav_Woodland/shrubland,3,FSH,iav
+168,jmaxb1,Woodland/shrubland,FSH_iav_Woodland/shrubland,4,FSH,iav
+169,wc2wjb0,Woodland/shrubland,FSH_iav_Woodland/shrubland,5,FSH,iav
+170,zsno,Temperate grassland/desert,FSH_mean_Temperate grassland/desert,1,FSH,mean
+171,fff,Temperate grassland/desert,FSH_mean_Temperate grassland/desert,2,FSH,mean
+172,d_max,Temperate grassland/desert,FSH_mean_Temperate grassland/desert,3,FSH,mean
+173,rhosnir,Temperate grassland/desert,FSH_mean_Temperate grassland/desert,4,FSH,mean
+174,zlnd,Temperate grassland/desert,FSH_mean_Temperate grassland/desert,5,FSH,mean
+175,sand_pf,Temperate grassland/desert,FSH_iav_Temperate grassland/desert,1,FSH,iav
+176,medlynintercept,Temperate grassland/desert,FSH_iav_Temperate grassland/desert,2,FSH,iav
+177,wc2wjb0,Temperate grassland/desert,FSH_iav_Temperate grassland/desert,3,FSH,iav
+178,jmaxb0,Temperate grassland/desert,FSH_iav_Temperate grassland/desert,4,FSH,iav
+179,frac_sat_soil_dsl_init,Temperate grassland/desert,FSH_iav_Temperate grassland/desert,5,FSH,iav
+180,medlynslope,Boreal forest,FSH_mean_Boreal forest,1,FSH,mean
+181,medlynintercept,Boreal forest,FSH_mean_Boreal forest,2,FSH,mean
+182,liq_canopy_storage_scalar,Boreal forest,FSH_mean_Boreal forest,3,FSH,mean
+183,kmax,Boreal forest,FSH_mean_Boreal forest,4,FSH,mean
+184,jmaxb0,Boreal forest,FSH_mean_Boreal forest,5,FSH,mean
+185,fff,Boreal forest,FSH_iav_Boreal forest,1,FSH,iav
+186,upplim_destruct_metamorph,Boreal forest,FSH_iav_Boreal forest,2,FSH,iav
+187,jmaxb1,Boreal forest,FSH_iav_Boreal forest,3,FSH,iav
+188,zsno,Boreal forest,FSH_iav_Boreal forest,4,FSH,iav
+189,maximum_leaf_wetted_fraction,Boreal forest,FSH_iav_Boreal forest,5,FSH,iav
+190,fff,Tundra,FSH_mean_Tundra,1,FSH,mean
+191,zetamaxstable,Tundra,FSH_mean_Tundra,2,FSH,mean
+192,slopebeta,Tundra,FSH_mean_Tundra,3,FSH,mean
+193,medlynslope,Tundra,FSH_mean_Tundra,4,FSH,mean
+194,kmax,Tundra,FSH_mean_Tundra,5,FSH,mean
+195,zetamaxstable,Tundra,FSH_iav_Tundra,1,FSH,iav
+196,zsno,Tundra,FSH_iav_Tundra,2,FSH,iav
+197,medlynintercept,Tundra,FSH_iav_Tundra,3,FSH,iav
+198,accum_factor,Tundra,FSH_iav_Tundra,4,FSH,iav
+199,kmax,Tundra,FSH_iav_Tundra,5,FSH,iav
+200,zetamaxstable,Ice sheet,ET_mean_Ice sheet,1,ET,mean
+201,zsno,Ice sheet,ET_mean_Ice sheet,2,ET,mean
+202,snw_rds_refrz,Ice sheet,ET_mean_Ice sheet,3,ET,mean
+203,upplim_destruct_metamorph,Ice sheet,ET_mean_Ice sheet,4,ET,mean
+204,xdrdt,Ice sheet,ET_mean_Ice sheet,5,ET,mean
+205,zsno,Ice sheet,ET_iav_Ice sheet,1,ET,iav
+206,zetamaxstable,Ice sheet,ET_iav_Ice sheet,2,ET,iav
+207,snw_rds_refrz,Ice sheet,ET_iav_Ice sheet,3,ET,iav
+208,upplim_destruct_metamorph,Ice sheet,ET_iav_Ice sheet,4,ET,iav
+209,xdrdt,Ice sheet,ET_iav_Ice sheet,5,ET,iav
+210,kmax,Tropical rain forest,ET_mean_Tropical rain forest,1,ET,mean
+211,liq_canopy_storage_scalar,Tropical rain forest,ET_mean_Tropical rain forest,2,ET,mean
+212,maximum_leaf_wetted_fraction,Tropical rain forest,ET_mean_Tropical rain forest,3,ET,mean
+213,psi50,Tropical rain forest,ET_mean_Tropical rain forest,4,ET,mean
+214,medlynintercept,Tropical rain forest,ET_mean_Tropical rain forest,5,ET,mean
+215,maximum_leaf_wetted_fraction,Tropical rain forest,ET_iav_Tropical rain forest,1,ET,iav
+216,cv,Tropical rain forest,ET_iav_Tropical rain forest,2,ET,iav
+217,kmax,Tropical rain forest,ET_iav_Tropical rain forest,3,ET,iav
+218,fff,Tropical rain forest,ET_iav_Tropical rain forest,4,ET,iav
+219,dleaf,Tropical rain forest,ET_iav_Tropical rain forest,5,ET,iav
+220,kmax,Tropical seasonal forest/savanna,ET_mean_Tropical seasonal forest/savanna,1,ET,mean
+221,fff,Tropical seasonal forest/savanna,ET_mean_Tropical seasonal forest/savanna,2,ET,mean
+222,medlynintercept,Tropical seasonal forest/savanna,ET_mean_Tropical seasonal forest/savanna,3,ET,mean
+223,medlynslope,Tropical seasonal forest/savanna,ET_mean_Tropical seasonal forest/savanna,4,ET,mean
+224,liq_canopy_storage_scalar,Tropical seasonal forest/savanna,ET_mean_Tropical seasonal forest/savanna,5,ET,mean
+225,frac_sat_soil_dsl_init,Tropical seasonal forest/savanna,ET_iav_Tropical seasonal forest/savanna,1,ET,iav
+226,sand_pf,Tropical seasonal forest/savanna,ET_iav_Tropical seasonal forest/savanna,2,ET,iav
+227,maximum_leaf_wetted_fraction,Tropical seasonal forest/savanna,ET_iav_Tropical seasonal forest/savanna,3,ET,iav
+228,baseflow_scalar,Tropical seasonal forest/savanna,ET_iav_Tropical seasonal forest/savanna,4,ET,iav
+229,d_max,Tropical seasonal forest/savanna,ET_iav_Tropical seasonal forest/savanna,5,ET,iav
+230,fff,Subtropical desert,ET_mean_Subtropical desert,1,ET,mean
+231,krmax,Subtropical desert,ET_mean_Subtropical desert,2,ET,mean
+232,sand_pf,Subtropical desert,ET_mean_Subtropical desert,3,ET,mean
+233,kmax,Subtropical desert,ET_mean_Subtropical desert,4,ET,mean
+234,medlynslope,Subtropical desert,ET_mean_Subtropical desert,5,ET,mean
+235,fff,Subtropical desert,ET_iav_Subtropical desert,1,ET,iav
+236,vcmaxhd,Subtropical desert,ET_iav_Subtropical desert,2,ET,iav
+237,medlynslope,Subtropical desert,ET_iav_Subtropical desert,3,ET,iav
+238,krmax,Subtropical desert,ET_iav_Subtropical desert,4,ET,iav
+239,leafcn,Subtropical desert,ET_iav_Subtropical desert,5,ET,iav
+240,maximum_leaf_wetted_fraction,Temperate rain forest,ET_mean_Temperate rain forest,1,ET,mean
+241,tpu25ratio,Temperate rain forest,ET_mean_Temperate rain forest,2,ET,mean
+242,jmaxb1,Temperate rain forest,ET_mean_Temperate rain forest,3,ET,mean
+243,jmaxb0,Temperate rain forest,ET_mean_Temperate rain forest,4,ET,mean
+244,medlynintercept,Temperate rain forest,ET_mean_Temperate rain forest,5,ET,mean
+245,maximum_leaf_wetted_fraction,Temperate rain forest,ET_iav_Temperate rain forest,1,ET,iav
+246,dleaf,Temperate rain forest,ET_iav_Temperate rain forest,2,ET,iav
+247,jmaxb0,Temperate rain forest,ET_iav_Temperate rain forest,3,ET,iav
+248,cv,Temperate rain forest,ET_iav_Temperate rain forest,4,ET,iav
+249,tpu25ratio,Temperate rain forest,ET_iav_Temperate rain forest,5,ET,iav
+250,medlynslope,Temperate seasonal forest,ET_mean_Temperate seasonal forest,1,ET,mean
+251,medlynintercept,Temperate seasonal forest,ET_mean_Temperate seasonal forest,2,ET,mean
+252,kmax,Temperate seasonal forest,ET_mean_Temperate seasonal forest,3,ET,mean
+253,liq_canopy_storage_scalar,Temperate seasonal forest,ET_mean_Temperate seasonal forest,4,ET,mean
+254,jmaxb1,Temperate seasonal forest,ET_mean_Temperate seasonal forest,5,ET,mean
+255,medlynintercept,Temperate seasonal forest,ET_iav_Temperate seasonal forest,1,ET,iav
+256,kmax,Temperate seasonal forest,ET_iav_Temperate seasonal forest,2,ET,iav
+257,liq_canopy_storage_scalar,Temperate seasonal forest,ET_iav_Temperate seasonal forest,3,ET,iav
+258,medlynslope,Temperate seasonal forest,ET_iav_Temperate seasonal forest,4,ET,iav
+259,FUN_fracfixers,Temperate seasonal forest,ET_iav_Temperate seasonal forest,5,ET,iav
+260,fff,Woodland/shrubland,ET_mean_Woodland/shrubland,1,ET,mean
+261,jmaxb1,Woodland/shrubland,ET_mean_Woodland/shrubland,2,ET,mean
+262,kmax,Woodland/shrubland,ET_mean_Woodland/shrubland,3,ET,mean
+263,tpu25ratio,Woodland/shrubland,ET_mean_Woodland/shrubland,4,ET,mean
+264,medlynslope,Woodland/shrubland,ET_mean_Woodland/shrubland,5,ET,mean
+265,kmax,Woodland/shrubland,ET_iav_Woodland/shrubland,1,ET,iav
+266,medlynslope,Woodland/shrubland,ET_iav_Woodland/shrubland,2,ET,iav
+267,jmaxb1,Woodland/shrubland,ET_iav_Woodland/shrubland,3,ET,iav
+268,jmaxb0,Woodland/shrubland,ET_iav_Woodland/shrubland,4,ET,iav
+269,theta_cj,Woodland/shrubland,ET_iav_Woodland/shrubland,5,ET,iav
+270,fff,Temperate grassland/desert,ET_mean_Temperate grassland/desert,1,ET,mean
+271,krmax,Temperate grassland/desert,ET_mean_Temperate grassland/desert,2,ET,mean
+272,d_max,Temperate grassland/desert,ET_mean_Temperate grassland/desert,3,ET,mean
+273,kmax,Temperate grassland/desert,ET_mean_Temperate grassland/desert,4,ET,mean
+274,sand_pf,Temperate grassland/desert,ET_mean_Temperate grassland/desert,5,ET,mean
+275,medlynslope,Temperate grassland/desert,ET_iav_Temperate grassland/desert,1,ET,iav
+276,jmaxb0,Temperate grassland/desert,ET_iav_Temperate grassland/desert,2,ET,iav
+277,leafcn,Temperate grassland/desert,ET_iav_Temperate grassland/desert,3,ET,iav
+278,wc2wjb0,Temperate grassland/desert,ET_iav_Temperate grassland/desert,4,ET,iav
+279,FUN_fracfixers,Temperate grassland/desert,ET_iav_Temperate grassland/desert,5,ET,iav
+280,medlynslope,Boreal forest,ET_mean_Boreal forest,1,ET,mean
+281,medlynintercept,Boreal forest,ET_mean_Boreal forest,2,ET,mean
+282,liq_canopy_storage_scalar,Boreal forest,ET_mean_Boreal forest,3,ET,mean
+283,kmax,Boreal forest,ET_mean_Boreal forest,4,ET,mean
+284,jmaxb0,Boreal forest,ET_mean_Boreal forest,5,ET,mean
+285,kmax,Boreal forest,ET_iav_Boreal forest,1,ET,iav
+286,medlynslope,Boreal forest,ET_iav_Boreal forest,2,ET,iav
+287,medlynintercept,Boreal forest,ET_iav_Boreal forest,3,ET,iav
+288,jmaxb0,Boreal forest,ET_iav_Boreal forest,4,ET,iav
+289,liq_canopy_storage_scalar,Boreal forest,ET_iav_Boreal forest,5,ET,iav
+290,medlynslope,Tundra,ET_mean_Tundra,1,ET,mean
+291,fff,Tundra,ET_mean_Tundra,2,ET,mean
+292,jmaxb0,Tundra,ET_mean_Tundra,3,ET,mean
+293,kmax,Tundra,ET_mean_Tundra,4,ET,mean
+294,slopebeta,Tundra,ET_mean_Tundra,5,ET,mean
+295,fff,Tundra,ET_iav_Tundra,1,ET,iav
+296,jmaxb0,Tundra,ET_iav_Tundra,2,ET,iav
+297,tpu25ratio,Tundra,ET_iav_Tundra,3,ET,iav
+298,minpsi_hr,Tundra,ET_iav_Tundra,4,ET,iav
+299,slopemax,Tundra,ET_iav_Tundra,5,ET,iav
+300,zsno,Ice sheet,TAUX_mean_Ice sheet,1,TAUX,mean
+301,zetamaxstable,Ice sheet,TAUX_mean_Ice sheet,2,TAUX,mean
+302,zlnd,Ice sheet,TAUX_mean_Ice sheet,3,TAUX,mean
+303,snw_rds_refrz,Ice sheet,TAUX_mean_Ice sheet,4,TAUX,mean
+304,xdrdt,Ice sheet,TAUX_mean_Ice sheet,5,TAUX,mean
+305,zsno,Ice sheet,TAUX_iav_Ice sheet,1,TAUX,iav
+306,zetamaxstable,Ice sheet,TAUX_iav_Ice sheet,2,TAUX,iav
+307,zlnd,Ice sheet,TAUX_iav_Ice sheet,3,TAUX,iav
+308,snw_rds_refrz,Ice sheet,TAUX_iav_Ice sheet,4,TAUX,iav
+309,xdrdt,Ice sheet,TAUX_iav_Ice sheet,5,TAUX,iav
+310,z0mr,Tropical rain forest,TAUX_mean_Tropical rain forest,1,TAUX,mean
+311,nstem,Tropical rain forest,TAUX_mean_Tropical rain forest,2,TAUX,mean
+312,maximum_leaf_wetted_fraction,Tropical rain forest,TAUX_mean_Tropical rain forest,3,TAUX,mean
+313,medlynintercept,Tropical rain forest,TAUX_mean_Tropical rain forest,4,TAUX,mean
+314,liq_canopy_storage_scalar,Tropical rain forest,TAUX_mean_Tropical rain forest,5,TAUX,mean
+315,z0mr,Tropical rain forest,TAUX_iav_Tropical rain forest,1,TAUX,iav
+316,nstem,Tropical rain forest,TAUX_iav_Tropical rain forest,2,TAUX,iav
+317,kmax,Tropical rain forest,TAUX_iav_Tropical rain forest,3,TAUX,iav
+318,medlynintercept,Tropical rain forest,TAUX_iav_Tropical rain forest,4,TAUX,iav
+319,medlynslope,Tropical rain forest,TAUX_iav_Tropical rain forest,5,TAUX,iav
+320,z0mr,Tropical seasonal forest/savanna,TAUX_mean_Tropical seasonal forest/savanna,1,TAUX,mean
+321,nstem,Tropical seasonal forest/savanna,TAUX_mean_Tropical seasonal forest/savanna,2,TAUX,mean
+322,medlynintercept,Tropical seasonal forest/savanna,TAUX_mean_Tropical seasonal forest/savanna,3,TAUX,mean
+323,medlynslope,Tropical seasonal forest/savanna,TAUX_mean_Tropical seasonal forest/savanna,4,TAUX,mean
+324,liq_canopy_storage_scalar,Tropical seasonal forest/savanna,TAUX_mean_Tropical seasonal forest/savanna,5,TAUX,mean
+325,z0mr,Tropical seasonal forest/savanna,TAUX_iav_Tropical seasonal forest/savanna,1,TAUX,iav
+326,nstem,Tropical seasonal forest/savanna,TAUX_iav_Tropical seasonal forest/savanna,2,TAUX,iav
+327,medlynslope,Tropical seasonal forest/savanna,TAUX_iav_Tropical seasonal forest/savanna,3,TAUX,iav
+328,medlynintercept,Tropical seasonal forest/savanna,TAUX_iav_Tropical seasonal forest/savanna,4,TAUX,iav
+329,liq_canopy_storage_scalar,Tropical seasonal forest/savanna,TAUX_iav_Tropical seasonal forest/savanna,5,TAUX,iav
+330,zlnd,Subtropical desert,TAUX_mean_Subtropical desert,1,TAUX,mean
+331,z0mr,Subtropical desert,TAUX_mean_Subtropical desert,2,TAUX,mean
+332,d_max,Subtropical desert,TAUX_mean_Subtropical desert,3,TAUX,mean
+333,medlynintercept,Subtropical desert,TAUX_mean_Subtropical desert,4,TAUX,mean
+334,zetamaxstable,Subtropical desert,TAUX_mean_Subtropical desert,5,TAUX,mean
+335,z0mr,Subtropical desert,TAUX_iav_Subtropical desert,1,TAUX,iav
+336,zlnd,Subtropical desert,TAUX_iav_Subtropical desert,2,TAUX,iav
+337,medlynslope,Subtropical desert,TAUX_iav_Subtropical desert,3,TAUX,iav
+338,medlynintercept,Subtropical desert,TAUX_iav_Subtropical desert,4,TAUX,iav
+339,nstem,Subtropical desert,TAUX_iav_Subtropical desert,5,TAUX,iav
+340,tpu25ratio,Temperate rain forest,TAUX_mean_Temperate rain forest,1,TAUX,mean
+341,z0mr,Temperate rain forest,TAUX_mean_Temperate rain forest,2,TAUX,mean
+342,nstem,Temperate rain forest,TAUX_mean_Temperate rain forest,3,TAUX,mean
+343,jmaxb1,Temperate rain forest,TAUX_mean_Temperate rain forest,4,TAUX,mean
+344,tpuha,Temperate rain forest,TAUX_mean_Temperate rain forest,5,TAUX,mean
+345,tpu25ratio,Temperate rain forest,TAUX_iav_Temperate rain forest,1,TAUX,iav
+346,tpuha,Temperate rain forest,TAUX_iav_Temperate rain forest,2,TAUX,iav
+347,jmaxb1,Temperate rain forest,TAUX_iav_Temperate rain forest,3,TAUX,iav
+348,lmrha,Temperate rain forest,TAUX_iav_Temperate rain forest,4,TAUX,iav
+349,jmaxb0,Temperate rain forest,TAUX_iav_Temperate rain forest,5,TAUX,iav
+350,z0mr,Temperate seasonal forest,TAUX_mean_Temperate seasonal forest,1,TAUX,mean
+351,nstem,Temperate seasonal forest,TAUX_mean_Temperate seasonal forest,2,TAUX,mean
+352,tpu25ratio,Temperate seasonal forest,TAUX_mean_Temperate seasonal forest,3,TAUX,mean
+353,jmaxb1,Temperate seasonal forest,TAUX_mean_Temperate seasonal forest,4,TAUX,mean
+354,jmaxb0,Temperate seasonal forest,TAUX_mean_Temperate seasonal forest,5,TAUX,mean
+355,z0mr,Temperate seasonal forest,TAUX_iav_Temperate seasonal forest,1,TAUX,iav
+356,nstem,Temperate seasonal forest,TAUX_iav_Temperate seasonal forest,2,TAUX,iav
+357,medlynintercept,Temperate seasonal forest,TAUX_iav_Temperate seasonal forest,3,TAUX,iav
+358,jmaxb0,Temperate seasonal forest,TAUX_iav_Temperate seasonal forest,4,TAUX,iav
+359,leafcn,Temperate seasonal forest,TAUX_iav_Temperate seasonal forest,5,TAUX,iav
+360,z0mr,Woodland/shrubland,TAUX_mean_Woodland/shrubland,1,TAUX,mean
+361,nstem,Woodland/shrubland,TAUX_mean_Woodland/shrubland,2,TAUX,mean
+362,zsno,Woodland/shrubland,TAUX_mean_Woodland/shrubland,3,TAUX,mean
+363,medlynintercept,Woodland/shrubland,TAUX_mean_Woodland/shrubland,4,TAUX,mean
+364,medlynslope,Woodland/shrubland,TAUX_mean_Woodland/shrubland,5,TAUX,mean
+365,z0mr,Woodland/shrubland,TAUX_iav_Woodland/shrubland,1,TAUX,iav
+366,nstem,Woodland/shrubland,TAUX_iav_Woodland/shrubland,2,TAUX,iav
+367,FUN_fracfixers,Woodland/shrubland,TAUX_iav_Woodland/shrubland,3,TAUX,iav
+368,jmaxb1,Woodland/shrubland,TAUX_iav_Woodland/shrubland,4,TAUX,iav
+369,jmaxb0,Woodland/shrubland,TAUX_iav_Woodland/shrubland,5,TAUX,iav
+370,zsno,Temperate grassland/desert,TAUX_mean_Temperate grassland/desert,1,TAUX,mean
+371,zlnd,Temperate grassland/desert,TAUX_mean_Temperate grassland/desert,2,TAUX,mean
+372,z0mr,Temperate grassland/desert,TAUX_mean_Temperate grassland/desert,3,TAUX,mean
+373,nstem,Temperate grassland/desert,TAUX_mean_Temperate grassland/desert,4,TAUX,mean
+374,medlynintercept,Temperate grassland/desert,TAUX_mean_Temperate grassland/desert,5,TAUX,mean
+375,z0mr,Temperate grassland/desert,TAUX_iav_Temperate grassland/desert,1,TAUX,iav
+376,nstem,Temperate grassland/desert,TAUX_iav_Temperate grassland/desert,2,TAUX,iav
+377,fff,Temperate grassland/desert,TAUX_iav_Temperate grassland/desert,3,TAUX,iav
+378,zsno,Temperate grassland/desert,TAUX_iav_Temperate grassland/desert,4,TAUX,iav
+379,medlynintercept,Temperate grassland/desert,TAUX_iav_Temperate grassland/desert,5,TAUX,iav
+380,nstem,Boreal forest,TAUX_mean_Boreal forest,1,TAUX,mean
+381,z0mr,Boreal forest,TAUX_mean_Boreal forest,2,TAUX,mean
+382,tpu25ratio,Boreal forest,TAUX_mean_Boreal forest,3,TAUX,mean
+383,jmaxb1,Boreal forest,TAUX_mean_Boreal forest,4,TAUX,mean
+384,lmrha,Boreal forest,TAUX_mean_Boreal forest,5,TAUX,mean
+385,zsno,Boreal forest,TAUX_iav_Boreal forest,1,TAUX,iav
+386,z0mr,Boreal forest,TAUX_iav_Boreal forest,2,TAUX,iav
+387,nstem,Boreal forest,TAUX_iav_Boreal forest,3,TAUX,iav
+388,tpu25ratio,Boreal forest,TAUX_iav_Boreal forest,4,TAUX,iav
+389,jmaxb1,Boreal forest,TAUX_iav_Boreal forest,5,TAUX,iav
+390,zsno,Tundra,TAUX_mean_Tundra,1,TAUX,mean
+391,nstem,Tundra,TAUX_mean_Tundra,2,TAUX,mean
+392,z0mr,Tundra,TAUX_mean_Tundra,3,TAUX,mean
+393,tpu25ratio,Tundra,TAUX_mean_Tundra,4,TAUX,mean
+394,zetamaxstable,Tundra,TAUX_mean_Tundra,5,TAUX,mean
+395,zsno,Tundra,TAUX_iav_Tundra,1,TAUX,iav
+396,zetamaxstable,Tundra,TAUX_iav_Tundra,2,TAUX,iav
+397,nstem,Tundra,TAUX_iav_Tundra,3,TAUX,iav
+398,z0mr,Tundra,TAUX_iav_Tundra,4,TAUX,iav
+399,fff,Tundra,TAUX_iav_Tundra,5,TAUX,iav
+400,zsno,Ice sheet,TAUY_mean_Ice sheet,1,TAUY,mean
+401,zetamaxstable,Ice sheet,TAUY_mean_Ice sheet,2,TAUY,mean
+402,zlnd,Ice sheet,TAUY_mean_Ice sheet,3,TAUY,mean
+403,snw_rds_refrz,Ice sheet,TAUY_mean_Ice sheet,4,TAUY,mean
+404,xdrdt,Ice sheet,TAUY_mean_Ice sheet,5,TAUY,mean
+405,zsno,Ice sheet,TAUY_iav_Ice sheet,1,TAUY,iav
+406,zetamaxstable,Ice sheet,TAUY_iav_Ice sheet,2,TAUY,iav
+407,zlnd,Ice sheet,TAUY_iav_Ice sheet,3,TAUY,iav
+408,snw_rds_refrz,Ice sheet,TAUY_iav_Ice sheet,4,TAUY,iav
+409,xdrdt,Ice sheet,TAUY_iav_Ice sheet,5,TAUY,iav
+410,z0mr,Tropical rain forest,TAUY_mean_Tropical rain forest,1,TAUY,mean
+411,nstem,Tropical rain forest,TAUY_mean_Tropical rain forest,2,TAUY,mean
+412,maximum_leaf_wetted_fraction,Tropical rain forest,TAUY_mean_Tropical rain forest,3,TAUY,mean
+413,medlynintercept,Tropical rain forest,TAUY_mean_Tropical rain forest,4,TAUY,mean
+414,liq_canopy_storage_scalar,Tropical rain forest,TAUY_mean_Tropical rain forest,5,TAUY,mean
+415,z0mr,Tropical rain forest,TAUY_iav_Tropical rain forest,1,TAUY,iav
+416,nstem,Tropical rain forest,TAUY_iav_Tropical rain forest,2,TAUY,iav
+417,kmax,Tropical rain forest,TAUY_iav_Tropical rain forest,3,TAUY,iav
+418,medlynintercept,Tropical rain forest,TAUY_iav_Tropical rain forest,4,TAUY,iav
+419,medlynslope,Tropical rain forest,TAUY_iav_Tropical rain forest,5,TAUY,iav
+420,z0mr,Tropical seasonal forest/savanna,TAUY_mean_Tropical seasonal forest/savanna,1,TAUY,mean
+421,nstem,Tropical seasonal forest/savanna,TAUY_mean_Tropical seasonal forest/savanna,2,TAUY,mean
+422,medlynintercept,Tropical seasonal forest/savanna,TAUY_mean_Tropical seasonal forest/savanna,3,TAUY,mean
+423,medlynslope,Tropical seasonal forest/savanna,TAUY_mean_Tropical seasonal forest/savanna,4,TAUY,mean
+424,liq_canopy_storage_scalar,Tropical seasonal forest/savanna,TAUY_mean_Tropical seasonal forest/savanna,5,TAUY,mean
+425,z0mr,Tropical seasonal forest/savanna,TAUY_iav_Tropical seasonal forest/savanna,1,TAUY,iav
+426,nstem,Tropical seasonal forest/savanna,TAUY_iav_Tropical seasonal forest/savanna,2,TAUY,iav
+427,medlynslope,Tropical seasonal forest/savanna,TAUY_iav_Tropical seasonal forest/savanna,3,TAUY,iav
+428,medlynintercept,Tropical seasonal forest/savanna,TAUY_iav_Tropical seasonal forest/savanna,4,TAUY,iav
+429,liq_canopy_storage_scalar,Tropical seasonal forest/savanna,TAUY_iav_Tropical seasonal forest/savanna,5,TAUY,iav
+430,zlnd,Subtropical desert,TAUY_mean_Subtropical desert,1,TAUY,mean
+431,z0mr,Subtropical desert,TAUY_mean_Subtropical desert,2,TAUY,mean
+432,d_max,Subtropical desert,TAUY_mean_Subtropical desert,3,TAUY,mean
+433,medlynintercept,Subtropical desert,TAUY_mean_Subtropical desert,4,TAUY,mean
+434,zetamaxstable,Subtropical desert,TAUY_mean_Subtropical desert,5,TAUY,mean
+435,z0mr,Subtropical desert,TAUY_iav_Subtropical desert,1,TAUY,iav
+436,zlnd,Subtropical desert,TAUY_iav_Subtropical desert,2,TAUY,iav
+437,medlynslope,Subtropical desert,TAUY_iav_Subtropical desert,3,TAUY,iav
+438,medlynintercept,Subtropical desert,TAUY_iav_Subtropical desert,4,TAUY,iav
+439,nstem,Subtropical desert,TAUY_iav_Subtropical desert,5,TAUY,iav
+440,tpu25ratio,Temperate rain forest,TAUY_mean_Temperate rain forest,1,TAUY,mean
+441,z0mr,Temperate rain forest,TAUY_mean_Temperate rain forest,2,TAUY,mean
+442,nstem,Temperate rain forest,TAUY_mean_Temperate rain forest,3,TAUY,mean
+443,jmaxb1,Temperate rain forest,TAUY_mean_Temperate rain forest,4,TAUY,mean
+444,tpuha,Temperate rain forest,TAUY_mean_Temperate rain forest,5,TAUY,mean
+445,tpu25ratio,Temperate rain forest,TAUY_iav_Temperate rain forest,1,TAUY,iav
+446,tpuha,Temperate rain forest,TAUY_iav_Temperate rain forest,2,TAUY,iav
+447,jmaxb1,Temperate rain forest,TAUY_iav_Temperate rain forest,3,TAUY,iav
+448,lmrha,Temperate rain forest,TAUY_iav_Temperate rain forest,4,TAUY,iav
+449,jmaxb0,Temperate rain forest,TAUY_iav_Temperate rain forest,5,TAUY,iav
+450,z0mr,Temperate seasonal forest,TAUY_mean_Temperate seasonal forest,1,TAUY,mean
+451,nstem,Temperate seasonal forest,TAUY_mean_Temperate seasonal forest,2,TAUY,mean
+452,tpu25ratio,Temperate seasonal forest,TAUY_mean_Temperate seasonal forest,3,TAUY,mean
+453,jmaxb1,Temperate seasonal forest,TAUY_mean_Temperate seasonal forest,4,TAUY,mean
+454,jmaxb0,Temperate seasonal forest,TAUY_mean_Temperate seasonal forest,5,TAUY,mean
+455,z0mr,Temperate seasonal forest,TAUY_iav_Temperate seasonal forest,1,TAUY,iav
+456,nstem,Temperate seasonal forest,TAUY_iav_Temperate seasonal forest,2,TAUY,iav
+457,medlynintercept,Temperate seasonal forest,TAUY_iav_Temperate seasonal forest,3,TAUY,iav
+458,jmaxb0,Temperate seasonal forest,TAUY_iav_Temperate seasonal forest,4,TAUY,iav
+459,leafcn,Temperate seasonal forest,TAUY_iav_Temperate seasonal forest,5,TAUY,iav
+460,z0mr,Woodland/shrubland,TAUY_mean_Woodland/shrubland,1,TAUY,mean
+461,nstem,Woodland/shrubland,TAUY_mean_Woodland/shrubland,2,TAUY,mean
+462,zsno,Woodland/shrubland,TAUY_mean_Woodland/shrubland,3,TAUY,mean
+463,medlynintercept,Woodland/shrubland,TAUY_mean_Woodland/shrubland,4,TAUY,mean
+464,medlynslope,Woodland/shrubland,TAUY_mean_Woodland/shrubland,5,TAUY,mean
+465,z0mr,Woodland/shrubland,TAUY_iav_Woodland/shrubland,1,TAUY,iav
+466,nstem,Woodland/shrubland,TAUY_iav_Woodland/shrubland,2,TAUY,iav
+467,FUN_fracfixers,Woodland/shrubland,TAUY_iav_Woodland/shrubland,3,TAUY,iav
+468,jmaxb1,Woodland/shrubland,TAUY_iav_Woodland/shrubland,4,TAUY,iav
+469,jmaxb0,Woodland/shrubland,TAUY_iav_Woodland/shrubland,5,TAUY,iav
+470,zsno,Temperate grassland/desert,TAUY_mean_Temperate grassland/desert,1,TAUY,mean
+471,zlnd,Temperate grassland/desert,TAUY_mean_Temperate grassland/desert,2,TAUY,mean
+472,z0mr,Temperate grassland/desert,TAUY_mean_Temperate grassland/desert,3,TAUY,mean
+473,nstem,Temperate grassland/desert,TAUY_mean_Temperate grassland/desert,4,TAUY,mean
+474,medlynintercept,Temperate grassland/desert,TAUY_mean_Temperate grassland/desert,5,TAUY,mean
+475,z0mr,Temperate grassland/desert,TAUY_iav_Temperate grassland/desert,1,TAUY,iav
+476,nstem,Temperate grassland/desert,TAUY_iav_Temperate grassland/desert,2,TAUY,iav
+477,fff,Temperate grassland/desert,TAUY_iav_Temperate grassland/desert,3,TAUY,iav
+478,zsno,Temperate grassland/desert,TAUY_iav_Temperate grassland/desert,4,TAUY,iav
+479,medlynintercept,Temperate grassland/desert,TAUY_iav_Temperate grassland/desert,5,TAUY,iav
+480,nstem,Boreal forest,TAUY_mean_Boreal forest,1,TAUY,mean
+481,z0mr,Boreal forest,TAUY_mean_Boreal forest,2,TAUY,mean
+482,tpu25ratio,Boreal forest,TAUY_mean_Boreal forest,3,TAUY,mean
+483,jmaxb1,Boreal forest,TAUY_mean_Boreal forest,4,TAUY,mean
+484,lmrha,Boreal forest,TAUY_mean_Boreal forest,5,TAUY,mean
+485,zsno,Boreal forest,TAUY_iav_Boreal forest,1,TAUY,iav
+486,z0mr,Boreal forest,TAUY_iav_Boreal forest,2,TAUY,iav
+487,nstem,Boreal forest,TAUY_iav_Boreal forest,3,TAUY,iav
+488,tpu25ratio,Boreal forest,TAUY_iav_Boreal forest,4,TAUY,iav
+489,jmaxb1,Boreal forest,TAUY_iav_Boreal forest,5,TAUY,iav
+490,zsno,Tundra,TAUY_mean_Tundra,1,TAUY,mean
+491,nstem,Tundra,TAUY_mean_Tundra,2,TAUY,mean
+492,z0mr,Tundra,TAUY_mean_Tundra,3,TAUY,mean
+493,tpu25ratio,Tundra,TAUY_mean_Tundra,4,TAUY,mean
+494,zetamaxstable,Tundra,TAUY_mean_Tundra,5,TAUY,mean
+495,zsno,Tundra,TAUY_iav_Tundra,1,TAUY,iav
+496,zetamaxstable,Tundra,TAUY_iav_Tundra,2,TAUY,iav
+497,nstem,Tundra,TAUY_iav_Tundra,3,TAUY,iav
+498,z0mr,Tundra,TAUY_iav_Tundra,4,TAUY,iav
+499,fff,Tundra,TAUY_iav_Tundra,5,TAUY,iav
+500,zetamaxstable,Ice sheet,FIRE_mean_Ice sheet,1,FIRE,mean
+501,zsno,Ice sheet,FIRE_mean_Ice sheet,2,FIRE,mean
+502,xdrdt,Ice sheet,FIRE_mean_Ice sheet,3,FIRE,mean
+503,snw_rds_refrz,Ice sheet,FIRE_mean_Ice sheet,4,FIRE,mean
+504,upplim_destruct_metamorph,Ice sheet,FIRE_mean_Ice sheet,5,FIRE,mean
+505,zetamaxstable,Ice sheet,FIRE_iav_Ice sheet,1,FIRE,iav
+506,zsno,Ice sheet,FIRE_iav_Ice sheet,2,FIRE,iav
+507,upplim_destruct_metamorph,Ice sheet,FIRE_iav_Ice sheet,3,FIRE,iav
+508,snw_rds_refrz,Ice sheet,FIRE_iav_Ice sheet,4,FIRE,iav
+509,rho_max,Ice sheet,FIRE_iav_Ice sheet,5,FIRE,iav
+510,kmax,Tropical rain forest,FIRE_mean_Tropical rain forest,1,FIRE,mean
+511,maximum_leaf_wetted_fraction,Tropical rain forest,FIRE_mean_Tropical rain forest,2,FIRE,mean
+512,liq_canopy_storage_scalar,Tropical rain forest,FIRE_mean_Tropical rain forest,3,FIRE,mean
+513,cv,Tropical rain forest,FIRE_mean_Tropical rain forest,4,FIRE,mean
+514,psi50,Tropical rain forest,FIRE_mean_Tropical rain forest,5,FIRE,mean
+515,maximum_leaf_wetted_fraction,Tropical rain forest,FIRE_iav_Tropical rain forest,1,FIRE,iav
+516,kmax,Tropical rain forest,FIRE_iav_Tropical rain forest,2,FIRE,iav
+517,fff,Tropical rain forest,FIRE_iav_Tropical rain forest,3,FIRE,iav
+518,cv,Tropical rain forest,FIRE_iav_Tropical rain forest,4,FIRE,iav
+519,medlynslope,Tropical rain forest,FIRE_iav_Tropical rain forest,5,FIRE,iav
+520,fff,Tropical seasonal forest/savanna,FIRE_mean_Tropical seasonal forest/savanna,1,FIRE,mean
+521,kmax,Tropical seasonal forest/savanna,FIRE_mean_Tropical seasonal forest/savanna,2,FIRE,mean
+522,frac_sat_soil_dsl_init,Tropical seasonal forest/savanna,FIRE_mean_Tropical seasonal forest/savanna,3,FIRE,mean
+523,krmax,Tropical seasonal forest/savanna,FIRE_mean_Tropical seasonal forest/savanna,4,FIRE,mean
+524,maximum_leaf_wetted_fraction,Tropical seasonal forest/savanna,FIRE_mean_Tropical seasonal forest/savanna,5,FIRE,mean
+525,wc2wjb0,Tropical seasonal forest/savanna,FIRE_iav_Tropical seasonal forest/savanna,1,FIRE,iav
+526,jmaxb0,Tropical seasonal forest/savanna,FIRE_iav_Tropical seasonal forest/savanna,2,FIRE,iav
+527,FUN_fracfixers,Tropical seasonal forest/savanna,FIRE_iav_Tropical seasonal forest/savanna,3,FIRE,iav
+528,sand_pf,Tropical seasonal forest/savanna,FIRE_iav_Tropical seasonal forest/savanna,4,FIRE,iav
+529,jmaxb1,Tropical seasonal forest/savanna,FIRE_iav_Tropical seasonal forest/savanna,5,FIRE,iav
+530,zlnd,Subtropical desert,FIRE_mean_Subtropical desert,1,FIRE,mean
+531,sand_pf,Subtropical desert,FIRE_mean_Subtropical desert,2,FIRE,mean
+532,clay_pf,Subtropical desert,FIRE_mean_Subtropical desert,3,FIRE,mean
+533,zetamaxstable,Subtropical desert,FIRE_mean_Subtropical desert,4,FIRE,mean
+534,fff,Subtropical desert,FIRE_mean_Subtropical desert,5,FIRE,mean
+535,sand_pf,Subtropical desert,FIRE_iav_Subtropical desert,1,FIRE,iav
+536,d_max,Subtropical desert,FIRE_iav_Subtropical desert,2,FIRE,iav
+537,frac_sat_soil_dsl_init,Subtropical desert,FIRE_iav_Subtropical desert,3,FIRE,iav
+538,vcmaxse_sf,Subtropical desert,FIRE_iav_Subtropical desert,4,FIRE,iav
+539,wc2wjb0,Subtropical desert,FIRE_iav_Subtropical desert,5,FIRE,iav
+540,tpu25ratio,Temperate rain forest,FIRE_mean_Temperate rain forest,1,FIRE,mean
+541,maximum_leaf_wetted_fraction,Temperate rain forest,FIRE_mean_Temperate rain forest,2,FIRE,mean
+542,jmaxb1,Temperate rain forest,FIRE_mean_Temperate rain forest,3,FIRE,mean
+543,tpuha,Temperate rain forest,FIRE_mean_Temperate rain forest,4,FIRE,mean
+544,jmaxb0,Temperate rain forest,FIRE_mean_Temperate rain forest,5,FIRE,mean
+545,zetamaxstable,Temperate rain forest,FIRE_iav_Temperate rain forest,1,FIRE,iav
+546,zsno,Temperate rain forest,FIRE_iav_Temperate rain forest,2,FIRE,iav
+547,medlynintercept,Temperate rain forest,FIRE_iav_Temperate rain forest,3,FIRE,iav
+548,frac_sat_soil_dsl_init,Temperate rain forest,FIRE_iav_Temperate rain forest,4,FIRE,iav
+549,upplim_destruct_metamorph,Temperate rain forest,FIRE_iav_Temperate rain forest,5,FIRE,iav
+550,jmaxb1,Temperate seasonal forest,FIRE_mean_Temperate seasonal forest,1,FIRE,mean
+551,kmax,Temperate seasonal forest,FIRE_mean_Temperate seasonal forest,2,FIRE,mean
+552,jmaxb0,Temperate seasonal forest,FIRE_mean_Temperate seasonal forest,3,FIRE,mean
+553,tpu25ratio,Temperate seasonal forest,FIRE_mean_Temperate seasonal forest,4,FIRE,mean
+554,leafcn,Temperate seasonal forest,FIRE_mean_Temperate seasonal forest,5,FIRE,mean
+555,clay_pf,Temperate seasonal forest,FIRE_iav_Temperate seasonal forest,1,FIRE,iav
+556,medlynslope,Temperate seasonal forest,FIRE_iav_Temperate seasonal forest,2,FIRE,iav
+557,tpu25ratio,Temperate seasonal forest,FIRE_iav_Temperate seasonal forest,3,FIRE,iav
+558,medlynintercept,Temperate seasonal forest,FIRE_iav_Temperate seasonal forest,4,FIRE,iav
+559,fff,Temperate seasonal forest,FIRE_iav_Temperate seasonal forest,5,FIRE,iav
+560,fff,Woodland/shrubland,FIRE_mean_Woodland/shrubland,1,FIRE,mean
+561,jmaxb1,Woodland/shrubland,FIRE_mean_Woodland/shrubland,2,FIRE,mean
+562,FUN_fracfixers,Woodland/shrubland,FIRE_mean_Woodland/shrubland,3,FIRE,mean
+563,tpu25ratio,Woodland/shrubland,FIRE_mean_Woodland/shrubland,4,FIRE,mean
+564,lmrha,Woodland/shrubland,FIRE_mean_Woodland/shrubland,5,FIRE,mean
+565,jmaxb1,Woodland/shrubland,FIRE_iav_Woodland/shrubland,1,FIRE,iav
+566,kmax,Woodland/shrubland,FIRE_iav_Woodland/shrubland,2,FIRE,iav
+567,liq_canopy_storage_scalar,Woodland/shrubland,FIRE_iav_Woodland/shrubland,3,FIRE,iav
+568,krmax,Woodland/shrubland,FIRE_iav_Woodland/shrubland,4,FIRE,iav
+569,theta_cj,Woodland/shrubland,FIRE_iav_Woodland/shrubland,5,FIRE,iav
+570,zsno,Temperate grassland/desert,FIRE_mean_Temperate grassland/desert,1,FIRE,mean
+571,sand_pf,Temperate grassland/desert,FIRE_mean_Temperate grassland/desert,2,FIRE,mean
+572,clay_pf,Temperate grassland/desert,FIRE_mean_Temperate grassland/desert,3,FIRE,mean
+573,zlnd,Temperate grassland/desert,FIRE_mean_Temperate grassland/desert,4,FIRE,mean
+574,fff,Temperate grassland/desert,FIRE_mean_Temperate grassland/desert,5,FIRE,mean
+575,FUN_fracfixers,Temperate grassland/desert,FIRE_iav_Temperate grassland/desert,1,FIRE,iav
+576,leafcn,Temperate grassland/desert,FIRE_iav_Temperate grassland/desert,2,FIRE,iav
+577,tpu25ratio,Temperate grassland/desert,FIRE_iav_Temperate grassland/desert,3,FIRE,iav
+578,d_max,Temperate grassland/desert,FIRE_iav_Temperate grassland/desert,4,FIRE,iav
+579,lmr_intercept_atkin,Temperate grassland/desert,FIRE_iav_Temperate grassland/desert,5,FIRE,iav
+580,zetamaxstable,Boreal forest,FIRE_mean_Boreal forest,1,FIRE,mean
+581,jmaxb1,Boreal forest,FIRE_mean_Boreal forest,2,FIRE,mean
+582,jmaxb0,Boreal forest,FIRE_mean_Boreal forest,3,FIRE,mean
+583,tpu25ratio,Boreal forest,FIRE_mean_Boreal forest,4,FIRE,mean
+584,kmax,Boreal forest,FIRE_mean_Boreal forest,5,FIRE,mean
+585,medlynslope,Boreal forest,FIRE_iav_Boreal forest,1,FIRE,iav
+586,krmax,Boreal forest,FIRE_iav_Boreal forest,2,FIRE,iav
+587,kmax,Boreal forest,FIRE_iav_Boreal forest,3,FIRE,iav
+588,frac_sat_soil_dsl_init,Boreal forest,FIRE_iav_Boreal forest,4,FIRE,iav
+589,clay_pf,Boreal forest,FIRE_iav_Boreal forest,5,FIRE,iav
+590,zetamaxstable,Tundra,FIRE_mean_Tundra,1,FIRE,mean
+591,zsno,Tundra,FIRE_mean_Tundra,2,FIRE,mean
+592,nstem,Tundra,FIRE_mean_Tundra,3,FIRE,mean
+593,cv,Tundra,FIRE_mean_Tundra,4,FIRE,mean
+594,medlynslope,Tundra,FIRE_mean_Tundra,5,FIRE,mean
+595,zetamaxstable,Tundra,FIRE_iav_Tundra,1,FIRE,iav
+596,zsno,Tundra,FIRE_iav_Tundra,2,FIRE,iav
+597,jmaxb0,Tundra,FIRE_iav_Tundra,3,FIRE,iav
+598,accum_factor,Tundra,FIRE_iav_Tundra,4,FIRE,iav
+599,medlynslope,Tundra,FIRE_iav_Tundra,5,FIRE,iav
+600,snw_rds_refrz,Ice sheet,albedo_allSW_mean_Ice sheet,1,albedo_allSW,mean
+601,xdrdt,Ice sheet,albedo_allSW_mean_Ice sheet,2,albedo_allSW,mean
+602,zsno,Ice sheet,albedo_allSW_mean_Ice sheet,3,albedo_allSW,mean
+603,zetamaxstable,Ice sheet,albedo_allSW_mean_Ice sheet,4,albedo_allSW,mean
+604,upplim_destruct_metamorph,Ice sheet,albedo_allSW_mean_Ice sheet,5,albedo_allSW,mean
+605,snw_rds_refrz,Ice sheet,albedo_allSW_iav_Ice sheet,1,albedo_allSW,iav
+606,zsno,Ice sheet,albedo_allSW_iav_Ice sheet,2,albedo_allSW,iav
+607,xdrdt,Ice sheet,albedo_allSW_iav_Ice sheet,3,albedo_allSW,iav
+608,upplim_destruct_metamorph,Ice sheet,albedo_allSW_iav_Ice sheet,4,albedo_allSW,iav
+609,zetamaxstable,Ice sheet,albedo_allSW_iav_Ice sheet,5,albedo_allSW,iav
+610,taulnir,Tropical rain forest,albedo_allSW_mean_Tropical rain forest,1,albedo_allSW,mean
+611,rholnir,Tropical rain forest,albedo_allSW_mean_Tropical rain forest,2,albedo_allSW,mean
+612,rholvis,Tropical rain forest,albedo_allSW_mean_Tropical rain forest,3,albedo_allSW,mean
+613,xl,Tropical rain forest,albedo_allSW_mean_Tropical rain forest,4,albedo_allSW,mean
+614,kmax,Tropical rain forest,albedo_allSW_mean_Tropical rain forest,5,albedo_allSW,mean
+615,rhosnir,Tropical rain forest,albedo_allSW_iav_Tropical rain forest,1,albedo_allSW,iav
+616,liq_canopy_storage_scalar,Tropical rain forest,albedo_allSW_iav_Tropical rain forest,2,albedo_allSW,iav
+617,tausnir,Tropical rain forest,albedo_allSW_iav_Tropical rain forest,3,albedo_allSW,iav
+618,medlynintercept,Tropical rain forest,albedo_allSW_iav_Tropical rain forest,4,albedo_allSW,iav
+619,medlynslope,Tropical rain forest,albedo_allSW_iav_Tropical rain forest,5,albedo_allSW,iav
+620,taulnir,Tropical seasonal forest/savanna,albedo_allSW_mean_Tropical seasonal forest/savanna,1,albedo_allSW,mean
+621,rholnir,Tropical seasonal forest/savanna,albedo_allSW_mean_Tropical seasonal forest/savanna,2,albedo_allSW,mean
+622,rhosnir,Tropical seasonal forest/savanna,albedo_allSW_mean_Tropical seasonal forest/savanna,3,albedo_allSW,mean
+623,rholvis,Tropical seasonal forest/savanna,albedo_allSW_mean_Tropical seasonal forest/savanna,4,albedo_allSW,mean
+624,xl,Tropical seasonal forest/savanna,albedo_allSW_mean_Tropical seasonal forest/savanna,5,albedo_allSW,mean
+625,medlynslope,Tropical seasonal forest/savanna,albedo_allSW_iav_Tropical seasonal forest/savanna,1,albedo_allSW,iav
+626,d_max,Tropical seasonal forest/savanna,albedo_allSW_iav_Tropical seasonal forest/savanna,2,albedo_allSW,iav
+627,sand_pf,Tropical seasonal forest/savanna,albedo_allSW_iav_Tropical seasonal forest/savanna,3,albedo_allSW,iav
+628,rhosnir,Tropical seasonal forest/savanna,albedo_allSW_iav_Tropical seasonal forest/savanna,4,albedo_allSW,iav
+629,frac_sat_soil_dsl_init,Tropical seasonal forest/savanna,albedo_allSW_iav_Tropical seasonal forest/savanna,5,albedo_allSW,iav
+630,sand_pf,Subtropical desert,albedo_allSW_mean_Subtropical desert,1,albedo_allSW,mean
+631,clay_pf,Subtropical desert,albedo_allSW_mean_Subtropical desert,2,albedo_allSW,mean
+632,d_max,Subtropical desert,albedo_allSW_mean_Subtropical desert,3,albedo_allSW,mean
+633,rhosnir,Subtropical desert,albedo_allSW_mean_Subtropical desert,4,albedo_allSW,mean
+634,taulnir,Subtropical desert,albedo_allSW_mean_Subtropical desert,5,albedo_allSW,mean
+635,jmaxb0,Subtropical desert,albedo_allSW_iav_Subtropical desert,1,albedo_allSW,iav
+636,rholnir,Subtropical desert,albedo_allSW_iav_Subtropical desert,2,albedo_allSW,iav
+637,vcmaxhd,Subtropical desert,albedo_allSW_iav_Subtropical desert,3,albedo_allSW,iav
+638,wc2wjb0,Subtropical desert,albedo_allSW_iav_Subtropical desert,4,albedo_allSW,iav
+639,kcha,Subtropical desert,albedo_allSW_iav_Subtropical desert,5,albedo_allSW,iav
+640,taulnir,Temperate rain forest,albedo_allSW_mean_Temperate rain forest,1,albedo_allSW,mean
+641,rholnir,Temperate rain forest,albedo_allSW_mean_Temperate rain forest,2,albedo_allSW,mean
+642,tpu25ratio,Temperate rain forest,albedo_allSW_mean_Temperate rain forest,3,albedo_allSW,mean
+643,rholvis,Temperate rain forest,albedo_allSW_mean_Temperate rain forest,4,albedo_allSW,mean
+644,rhosnir,Temperate rain forest,albedo_allSW_mean_Temperate rain forest,5,albedo_allSW,mean
+645,jmaxb1,Temperate rain forest,albedo_allSW_iav_Temperate rain forest,1,albedo_allSW,iav
+646,jmaxb0,Temperate rain forest,albedo_allSW_iav_Temperate rain forest,2,albedo_allSW,iav
+647,vcmaxha,Temperate rain forest,albedo_allSW_iav_Temperate rain forest,3,albedo_allSW,iav
+648,jmaxha,Temperate rain forest,albedo_allSW_iav_Temperate rain forest,4,albedo_allSW,iav
+649,lmrhd,Temperate rain forest,albedo_allSW_iav_Temperate rain forest,5,albedo_allSW,iav
+650,taulnir,Temperate seasonal forest,albedo_allSW_mean_Temperate seasonal forest,1,albedo_allSW,mean
+651,rholnir,Temperate seasonal forest,albedo_allSW_mean_Temperate seasonal forest,2,albedo_allSW,mean
+652,rhosnir,Temperate seasonal forest,albedo_allSW_mean_Temperate seasonal forest,3,albedo_allSW,mean
+653,rholvis,Temperate seasonal forest,albedo_allSW_mean_Temperate seasonal forest,4,albedo_allSW,mean
+654,xl,Temperate seasonal forest,albedo_allSW_mean_Temperate seasonal forest,5,albedo_allSW,mean
+655,q10_mr,Temperate seasonal forest,albedo_allSW_iav_Temperate seasonal forest,1,albedo_allSW,iav
+656,rhosnir,Temperate seasonal forest,albedo_allSW_iav_Temperate seasonal forest,2,albedo_allSW,iav
+657,upplim_destruct_metamorph,Temperate seasonal forest,albedo_allSW_iav_Temperate seasonal forest,3,albedo_allSW,iav
+658,fff,Temperate seasonal forest,albedo_allSW_iav_Temperate seasonal forest,4,albedo_allSW,iav
+659,snw_rds_refrz,Temperate seasonal forest,albedo_allSW_iav_Temperate seasonal forest,5,albedo_allSW,iav
+660,taulnir,Woodland/shrubland,albedo_allSW_mean_Woodland/shrubland,1,albedo_allSW,mean
+661,rholnir,Woodland/shrubland,albedo_allSW_mean_Woodland/shrubland,2,albedo_allSW,mean
+662,rhosnir,Woodland/shrubland,albedo_allSW_mean_Woodland/shrubland,3,albedo_allSW,mean
+663,rholvis,Woodland/shrubland,albedo_allSW_mean_Woodland/shrubland,4,albedo_allSW,mean
+664,tausnir,Woodland/shrubland,albedo_allSW_mean_Woodland/shrubland,5,albedo_allSW,mean
+665,taulnir,Woodland/shrubland,albedo_allSW_iav_Woodland/shrubland,1,albedo_allSW,iav
+666,rholnir,Woodland/shrubland,albedo_allSW_iav_Woodland/shrubland,2,albedo_allSW,iav
+667,accum_factor,Woodland/shrubland,albedo_allSW_iav_Woodland/shrubland,3,albedo_allSW,iav
+668,slatop,Woodland/shrubland,albedo_allSW_iav_Woodland/shrubland,4,albedo_allSW,iav
+669,medlynintercept,Woodland/shrubland,albedo_allSW_iav_Woodland/shrubland,5,albedo_allSW,iav
+670,sand_pf,Temperate grassland/desert,albedo_allSW_mean_Temperate grassland/desert,1,albedo_allSW,mean
+671,d_max,Temperate grassland/desert,albedo_allSW_mean_Temperate grassland/desert,2,albedo_allSW,mean
+672,rhosnir,Temperate grassland/desert,albedo_allSW_mean_Temperate grassland/desert,3,albedo_allSW,mean
+673,clay_pf,Temperate grassland/desert,albedo_allSW_mean_Temperate grassland/desert,4,albedo_allSW,mean
+674,accum_factor,Temperate grassland/desert,albedo_allSW_mean_Temperate grassland/desert,5,albedo_allSW,mean
+675,accum_factor,Temperate grassland/desert,albedo_allSW_iav_Temperate grassland/desert,1,albedo_allSW,iav
+676,zsno,Temperate grassland/desert,albedo_allSW_iav_Temperate grassland/desert,2,albedo_allSW,iav
+677,jmaxb0,Temperate grassland/desert,albedo_allSW_iav_Temperate grassland/desert,3,albedo_allSW,iav
+678,xdrdt,Temperate grassland/desert,albedo_allSW_iav_Temperate grassland/desert,4,albedo_allSW,iav
+679,wc2wjb0,Temperate grassland/desert,albedo_allSW_iav_Temperate grassland/desert,5,albedo_allSW,iav
+680,rholnir,Boreal forest,albedo_allSW_mean_Boreal forest,1,albedo_allSW,mean
+681,taulnir,Boreal forest,albedo_allSW_mean_Boreal forest,2,albedo_allSW,mean
+682,rhosnir,Boreal forest,albedo_allSW_mean_Boreal forest,3,albedo_allSW,mean
+683,snow_canopy_storage_scalar,Boreal forest,albedo_allSW_mean_Boreal forest,4,albedo_allSW,mean
+684,rholvis,Boreal forest,albedo_allSW_mean_Boreal forest,5,albedo_allSW,mean
+685,rholnir,Boreal forest,albedo_allSW_iav_Boreal forest,1,albedo_allSW,iav
+686,accum_factor,Boreal forest,albedo_allSW_iav_Boreal forest,2,albedo_allSW,iav
+687,upplim_destruct_metamorph,Boreal forest,albedo_allSW_iav_Boreal forest,3,albedo_allSW,iav
+688,taulnir,Boreal forest,albedo_allSW_iav_Boreal forest,4,albedo_allSW,iav
+689,rhosnir,Boreal forest,albedo_allSW_iav_Boreal forest,5,albedo_allSW,iav
+690,nstem,Tundra,albedo_allSW_mean_Tundra,1,albedo_allSW,mean
+691,tpu25ratio,Tundra,albedo_allSW_mean_Tundra,2,albedo_allSW,mean
+692,jmaxb0,Tundra,albedo_allSW_mean_Tundra,3,albedo_allSW,mean
+693,rhosnir,Tundra,albedo_allSW_mean_Tundra,4,albedo_allSW,mean
+694,FUN_fracfixers,Tundra,albedo_allSW_mean_Tundra,5,albedo_allSW,mean
+695,zsno,Tundra,albedo_allSW_iav_Tundra,1,albedo_allSW,iav
+696,accum_factor,Tundra,albedo_allSW_iav_Tundra,2,albedo_allSW,iav
+697,upplim_destruct_metamorph,Tundra,albedo_allSW_iav_Tundra,3,albedo_allSW,iav
+698,fff,Tundra,albedo_allSW_iav_Tundra,4,albedo_allSW,iav
+699,nstem,Tundra,albedo_allSW_iav_Tundra,5,albedo_allSW,iav
+700,zsno,Ice sheet,alb_DirVis_mean_Ice sheet,1,alb_DirVis,mean
+701,zetamaxstable,Ice sheet,alb_DirVis_mean_Ice sheet,2,alb_DirVis,mean
+702,snw_rds_refrz,Ice sheet,alb_DirVis_mean_Ice sheet,3,alb_DirVis,mean
+703,xdrdt,Ice sheet,alb_DirVis_mean_Ice sheet,4,alb_DirVis,mean
+704,upplim_destruct_metamorph,Ice sheet,alb_DirVis_mean_Ice sheet,5,alb_DirVis,mean
+705,zsno,Ice sheet,alb_DirVis_iav_Ice sheet,1,alb_DirVis,iav
+706,snw_rds_refrz,Ice sheet,alb_DirVis_iav_Ice sheet,2,alb_DirVis,iav
+707,zetamaxstable,Ice sheet,alb_DirVis_iav_Ice sheet,3,alb_DirVis,iav
+708,slopebeta,Ice sheet,alb_DirVis_iav_Ice sheet,4,alb_DirVis,iav
+709,a_exp,Ice sheet,alb_DirVis_iav_Ice sheet,5,alb_DirVis,iav
+710,rholvis,Tropical rain forest,alb_DirVis_mean_Tropical rain forest,1,alb_DirVis,mean
+711,taulvis,Tropical rain forest,alb_DirVis_mean_Tropical rain forest,2,alb_DirVis,mean
+712,xl,Tropical rain forest,alb_DirVis_mean_Tropical rain forest,3,alb_DirVis,mean
+713,rhosvis,Tropical rain forest,alb_DirVis_mean_Tropical rain forest,4,alb_DirVis,mean
+714,medlynslope,Tropical rain forest,alb_DirVis_mean_Tropical rain forest,5,alb_DirVis,mean
+715,fff,Tropical rain forest,alb_DirVis_iav_Tropical rain forest,1,alb_DirVis,iav
+716,liq_canopy_storage_scalar,Tropical rain forest,alb_DirVis_iav_Tropical rain forest,2,alb_DirVis,iav
+717,medlynslope,Tropical rain forest,alb_DirVis_iav_Tropical rain forest,3,alb_DirVis,iav
+718,medlynintercept,Tropical rain forest,alb_DirVis_iav_Tropical rain forest,4,alb_DirVis,iav
+719,kmax,Tropical rain forest,alb_DirVis_iav_Tropical rain forest,5,alb_DirVis,iav
+720,rholvis,Tropical seasonal forest/savanna,alb_DirVis_mean_Tropical seasonal forest/savanna,1,alb_DirVis,mean
+721,rhosvis,Tropical seasonal forest/savanna,alb_DirVis_mean_Tropical seasonal forest/savanna,2,alb_DirVis,mean
+722,taulvis,Tropical seasonal forest/savanna,alb_DirVis_mean_Tropical seasonal forest/savanna,3,alb_DirVis,mean
+723,sand_pf,Tropical seasonal forest/savanna,alb_DirVis_mean_Tropical seasonal forest/savanna,4,alb_DirVis,mean
+724,fff,Tropical seasonal forest/savanna,alb_DirVis_mean_Tropical seasonal forest/savanna,5,alb_DirVis,mean
+725,kn_nonmyc,Tropical seasonal forest/savanna,alb_DirVis_iav_Tropical seasonal forest/savanna,1,alb_DirVis,iav
+726,d_max,Tropical seasonal forest/savanna,alb_DirVis_iav_Tropical seasonal forest/savanna,2,alb_DirVis,iav
+727,FUN_fracfixers,Tropical seasonal forest/savanna,alb_DirVis_iav_Tropical seasonal forest/savanna,3,alb_DirVis,iav
+728,KCN,Tropical seasonal forest/savanna,alb_DirVis_iav_Tropical seasonal forest/savanna,4,alb_DirVis,iav
+729,sand_pf,Tropical seasonal forest/savanna,alb_DirVis_iav_Tropical seasonal forest/savanna,5,alb_DirVis,iav
+730,sand_pf,Subtropical desert,alb_DirVis_mean_Subtropical desert,1,alb_DirVis,mean
+731,d_max,Subtropical desert,alb_DirVis_mean_Subtropical desert,2,alb_DirVis,mean
+732,clay_pf,Subtropical desert,alb_DirVis_mean_Subtropical desert,3,alb_DirVis,mean
+733,fff,Subtropical desert,alb_DirVis_mean_Subtropical desert,4,alb_DirVis,mean
+734,rhosvis,Subtropical desert,alb_DirVis_mean_Subtropical desert,5,alb_DirVis,mean
+735,fff,Subtropical desert,alb_DirVis_iav_Subtropical desert,1,alb_DirVis,iav
+736,krmax,Subtropical desert,alb_DirVis_iav_Subtropical desert,2,alb_DirVis,iav
+737,KCN,Subtropical desert,alb_DirVis_iav_Subtropical desert,3,alb_DirVis,iav
+738,rholvis,Subtropical desert,alb_DirVis_iav_Subtropical desert,4,alb_DirVis,iav
+739,rhosvis,Subtropical desert,alb_DirVis_iav_Subtropical desert,5,alb_DirVis,iav
+740,rholvis,Temperate rain forest,alb_DirVis_mean_Temperate rain forest,1,alb_DirVis,mean
+741,tpu25ratio,Temperate rain forest,alb_DirVis_mean_Temperate rain forest,2,alb_DirVis,mean
+742,taulvis,Temperate rain forest,alb_DirVis_mean_Temperate rain forest,3,alb_DirVis,mean
+743,snow_canopy_storage_scalar,Temperate rain forest,alb_DirVis_mean_Temperate rain forest,4,alb_DirVis,mean
+744,jmaxha,Temperate rain forest,alb_DirVis_mean_Temperate rain forest,5,alb_DirVis,mean
+745,vcmaxha,Temperate rain forest,alb_DirVis_iav_Temperate rain forest,1,alb_DirVis,iav
+746,lmrhd,Temperate rain forest,alb_DirVis_iav_Temperate rain forest,2,alb_DirVis,iav
+747,jmaxha,Temperate rain forest,alb_DirVis_iav_Temperate rain forest,3,alb_DirVis,iav
+748,kcha,Temperate rain forest,alb_DirVis_iav_Temperate rain forest,4,alb_DirVis,iav
+749,jmaxb0,Temperate rain forest,alb_DirVis_iav_Temperate rain forest,5,alb_DirVis,iav
+750,rholvis,Temperate seasonal forest,alb_DirVis_mean_Temperate seasonal forest,1,alb_DirVis,mean
+751,snow_canopy_storage_scalar,Temperate seasonal forest,alb_DirVis_mean_Temperate seasonal forest,2,alb_DirVis,mean
+752,jmaxb1,Temperate seasonal forest,alb_DirVis_mean_Temperate seasonal forest,3,alb_DirVis,mean
+753,snowcan_unload_wind_fact,Temperate seasonal forest,alb_DirVis_mean_Temperate seasonal forest,4,alb_DirVis,mean
+754,taulvis,Temperate seasonal forest,alb_DirVis_mean_Temperate seasonal forest,5,alb_DirVis,mean
+755,q10_mr,Temperate seasonal forest,alb_DirVis_iav_Temperate seasonal forest,1,alb_DirVis,iav
+756,upplim_destruct_metamorph,Temperate seasonal forest,alb_DirVis_iav_Temperate seasonal forest,2,alb_DirVis,iav
+757,fff,Temperate seasonal forest,alb_DirVis_iav_Temperate seasonal forest,3,alb_DirVis,iav
+758,maximum_leaf_wetted_fraction,Temperate seasonal forest,alb_DirVis_iav_Temperate seasonal forest,4,alb_DirVis,iav
+759,jmaxhd,Temperate seasonal forest,alb_DirVis_iav_Temperate seasonal forest,5,alb_DirVis,iav
+760,rholvis,Woodland/shrubland,alb_DirVis_mean_Woodland/shrubland,1,alb_DirVis,mean
+761,rhosvis,Woodland/shrubland,alb_DirVis_mean_Woodland/shrubland,2,alb_DirVis,mean
+762,medlynintercept,Woodland/shrubland,alb_DirVis_mean_Woodland/shrubland,3,alb_DirVis,mean
+763,frac_sat_soil_dsl_init,Woodland/shrubland,alb_DirVis_mean_Woodland/shrubland,4,alb_DirVis,mean
+764,medlynslope,Woodland/shrubland,alb_DirVis_mean_Woodland/shrubland,5,alb_DirVis,mean
+765,accum_factor,Woodland/shrubland,alb_DirVis_iav_Woodland/shrubland,1,alb_DirVis,iav
+766,vcmaxha,Woodland/shrubland,alb_DirVis_iav_Woodland/shrubland,2,alb_DirVis,iav
+767,slatop,Woodland/shrubland,alb_DirVis_iav_Woodland/shrubland,3,alb_DirVis,iav
+768,sand_pf,Woodland/shrubland,alb_DirVis_iav_Woodland/shrubland,4,alb_DirVis,iav
+769,krmax,Woodland/shrubland,alb_DirVis_iav_Woodland/shrubland,5,alb_DirVis,iav
+770,d_max,Temperate grassland/desert,alb_DirVis_mean_Temperate grassland/desert,1,alb_DirVis,mean
+771,accum_factor,Temperate grassland/desert,alb_DirVis_mean_Temperate grassland/desert,2,alb_DirVis,mean
+772,sand_pf,Temperate grassland/desert,alb_DirVis_mean_Temperate grassland/desert,3,alb_DirVis,mean
+773,clay_pf,Temperate grassland/desert,alb_DirVis_mean_Temperate grassland/desert,4,alb_DirVis,mean
+774,rhosvis,Temperate grassland/desert,alb_DirVis_mean_Temperate grassland/desert,5,alb_DirVis,mean
+775,zsno,Temperate grassland/desert,alb_DirVis_iav_Temperate grassland/desert,1,alb_DirVis,iav
+776,jmaxb0,Temperate grassland/desert,alb_DirVis_iav_Temperate grassland/desert,2,alb_DirVis,iav
+777,accum_factor,Temperate grassland/desert,alb_DirVis_iav_Temperate grassland/desert,3,alb_DirVis,iav
+778,wc2wjb0,Temperate grassland/desert,alb_DirVis_iav_Temperate grassland/desert,4,alb_DirVis,iav
+779,zetamaxstable,Temperate grassland/desert,alb_DirVis_iav_Temperate grassland/desert,5,alb_DirVis,iav
+780,snow_canopy_storage_scalar,Boreal forest,alb_DirVis_mean_Boreal forest,1,alb_DirVis,mean
+781,snowcan_unload_wind_fact,Boreal forest,alb_DirVis_mean_Boreal forest,2,alb_DirVis,mean
+782,maximum_leaf_wetted_fraction,Boreal forest,alb_DirVis_mean_Boreal forest,3,alb_DirVis,mean
+783,tpu25ratio,Boreal forest,alb_DirVis_mean_Boreal forest,4,alb_DirVis,mean
+784,jmaxb1,Boreal forest,alb_DirVis_mean_Boreal forest,5,alb_DirVis,mean
+785,upplim_destruct_metamorph,Boreal forest,alb_DirVis_iav_Boreal forest,1,alb_DirVis,iav
+786,snow_canopy_storage_scalar,Boreal forest,alb_DirVis_iav_Boreal forest,2,alb_DirVis,iav
+787,accum_factor,Boreal forest,alb_DirVis_iav_Boreal forest,3,alb_DirVis,iav
+788,e_ice,Boreal forest,alb_DirVis_iav_Boreal forest,4,alb_DirVis,iav
+789,om_frac_sf,Boreal forest,alb_DirVis_iav_Boreal forest,5,alb_DirVis,iav
+790,snow_canopy_storage_scalar,Tundra,alb_DirVis_mean_Tundra,1,alb_DirVis,mean
+791,snowcan_unload_wind_fact,Tundra,alb_DirVis_mean_Tundra,2,alb_DirVis,mean
+792,tpu25ratio,Tundra,alb_DirVis_mean_Tundra,3,alb_DirVis,mean
+793,jmaxb0,Tundra,alb_DirVis_mean_Tundra,4,alb_DirVis,mean
+794,nstem,Tundra,alb_DirVis_mean_Tundra,5,alb_DirVis,mean
+795,zsno,Tundra,alb_DirVis_iav_Tundra,1,alb_DirVis,iav
+796,fff,Tundra,alb_DirVis_iav_Tundra,2,alb_DirVis,iav
+797,accum_factor,Tundra,alb_DirVis_iav_Tundra,3,alb_DirVis,iav
+798,nstem,Tundra,alb_DirVis_iav_Tundra,4,alb_DirVis,iav
+799,upplim_destruct_metamorph,Tundra,alb_DirVis_iav_Tundra,5,alb_DirVis,iav
+800,zsno,Ice sheet,alb_DifVis_mean_Ice sheet,1,alb_DifVis,mean
+801,snw_rds_refrz,Ice sheet,alb_DifVis_mean_Ice sheet,2,alb_DifVis,mean
+802,zetamaxstable,Ice sheet,alb_DifVis_mean_Ice sheet,3,alb_DifVis,mean
+803,xdrdt,Ice sheet,alb_DifVis_mean_Ice sheet,4,alb_DifVis,mean
+804,upplim_destruct_metamorph,Ice sheet,alb_DifVis_mean_Ice sheet,5,alb_DifVis,mean
+805,zsno,Ice sheet,alb_DifVis_iav_Ice sheet,1,alb_DifVis,iav
+806,snw_rds_refrz,Ice sheet,alb_DifVis_iav_Ice sheet,2,alb_DifVis,iav
+807,zetamaxstable,Ice sheet,alb_DifVis_iav_Ice sheet,3,alb_DifVis,iav
+808,slopebeta,Ice sheet,alb_DifVis_iav_Ice sheet,4,alb_DifVis,iav
+809,xdrdt,Ice sheet,alb_DifVis_iav_Ice sheet,5,alb_DifVis,iav
+810,rholvis,Tropical rain forest,alb_DifVis_mean_Tropical rain forest,1,alb_DifVis,mean
+811,taulvis,Tropical rain forest,alb_DifVis_mean_Tropical rain forest,2,alb_DifVis,mean
+812,xl,Tropical rain forest,alb_DifVis_mean_Tropical rain forest,3,alb_DifVis,mean
+813,rhosvis,Tropical rain forest,alb_DifVis_mean_Tropical rain forest,4,alb_DifVis,mean
+814,medlynslope,Tropical rain forest,alb_DifVis_mean_Tropical rain forest,5,alb_DifVis,mean
+815,liq_canopy_storage_scalar,Tropical rain forest,alb_DifVis_iav_Tropical rain forest,1,alb_DifVis,iav
+816,fff,Tropical rain forest,alb_DifVis_iav_Tropical rain forest,2,alb_DifVis,iav
+817,medlynslope,Tropical rain forest,alb_DifVis_iav_Tropical rain forest,3,alb_DifVis,iav
+818,medlynintercept,Tropical rain forest,alb_DifVis_iav_Tropical rain forest,4,alb_DifVis,iav
+819,kmax,Tropical rain forest,alb_DifVis_iav_Tropical rain forest,5,alb_DifVis,iav
+820,rholvis,Tropical seasonal forest/savanna,alb_DifVis_mean_Tropical seasonal forest/savanna,1,alb_DifVis,mean
+821,rhosvis,Tropical seasonal forest/savanna,alb_DifVis_mean_Tropical seasonal forest/savanna,2,alb_DifVis,mean
+822,fff,Tropical seasonal forest/savanna,alb_DifVis_mean_Tropical seasonal forest/savanna,3,alb_DifVis,mean
+823,taulvis,Tropical seasonal forest/savanna,alb_DifVis_mean_Tropical seasonal forest/savanna,4,alb_DifVis,mean
+824,sand_pf,Tropical seasonal forest/savanna,alb_DifVis_mean_Tropical seasonal forest/savanna,5,alb_DifVis,mean
+825,sand_pf,Tropical seasonal forest/savanna,alb_DifVis_iav_Tropical seasonal forest/savanna,1,alb_DifVis,iav
+826,FUN_fracfixers,Tropical seasonal forest/savanna,alb_DifVis_iav_Tropical seasonal forest/savanna,2,alb_DifVis,iav
+827,kn_nonmyc,Tropical seasonal forest/savanna,alb_DifVis_iav_Tropical seasonal forest/savanna,3,alb_DifVis,iav
+828,KCN,Tropical seasonal forest/savanna,alb_DifVis_iav_Tropical seasonal forest/savanna,4,alb_DifVis,iav
+829,d_max,Tropical seasonal forest/savanna,alb_DifVis_iav_Tropical seasonal forest/savanna,5,alb_DifVis,iav
+830,sand_pf,Subtropical desert,alb_DifVis_mean_Subtropical desert,1,alb_DifVis,mean
+831,d_max,Subtropical desert,alb_DifVis_mean_Subtropical desert,2,alb_DifVis,mean
+832,clay_pf,Subtropical desert,alb_DifVis_mean_Subtropical desert,3,alb_DifVis,mean
+833,rhosvis,Subtropical desert,alb_DifVis_mean_Subtropical desert,4,alb_DifVis,mean
+834,fff,Subtropical desert,alb_DifVis_mean_Subtropical desert,5,alb_DifVis,mean
+835,rholvis,Subtropical desert,alb_DifVis_iav_Subtropical desert,1,alb_DifVis,iav
+836,fff,Subtropical desert,alb_DifVis_iav_Subtropical desert,2,alb_DifVis,iav
+837,krmax,Subtropical desert,alb_DifVis_iav_Subtropical desert,3,alb_DifVis,iav
+838,rhosvis,Subtropical desert,alb_DifVis_iav_Subtropical desert,4,alb_DifVis,iav
+839,medlynintercept,Subtropical desert,alb_DifVis_iav_Subtropical desert,5,alb_DifVis,iav
+840,rholvis,Temperate rain forest,alb_DifVis_mean_Temperate rain forest,1,alb_DifVis,mean
+841,tpu25ratio,Temperate rain forest,alb_DifVis_mean_Temperate rain forest,2,alb_DifVis,mean
+842,jmaxha,Temperate rain forest,alb_DifVis_mean_Temperate rain forest,3,alb_DifVis,mean
+843,vcmaxha,Temperate rain forest,alb_DifVis_mean_Temperate rain forest,4,alb_DifVis,mean
+844,jmaxb1,Temperate rain forest,alb_DifVis_mean_Temperate rain forest,5,alb_DifVis,mean
+845,vcmaxha,Temperate rain forest,alb_DifVis_iav_Temperate rain forest,1,alb_DifVis,iav
+846,lmrhd,Temperate rain forest,alb_DifVis_iav_Temperate rain forest,2,alb_DifVis,iav
+847,jmaxha,Temperate rain forest,alb_DifVis_iav_Temperate rain forest,3,alb_DifVis,iav
+848,kcha,Temperate rain forest,alb_DifVis_iav_Temperate rain forest,4,alb_DifVis,iav
+849,jmaxb0,Temperate rain forest,alb_DifVis_iav_Temperate rain forest,5,alb_DifVis,iav
+850,rholvis,Temperate seasonal forest,alb_DifVis_mean_Temperate seasonal forest,1,alb_DifVis,mean
+851,snow_canopy_storage_scalar,Temperate seasonal forest,alb_DifVis_mean_Temperate seasonal forest,2,alb_DifVis,mean
+852,jmaxb1,Temperate seasonal forest,alb_DifVis_mean_Temperate seasonal forest,3,alb_DifVis,mean
+853,jmaxb0,Temperate seasonal forest,alb_DifVis_mean_Temperate seasonal forest,4,alb_DifVis,mean
+854,snowcan_unload_wind_fact,Temperate seasonal forest,alb_DifVis_mean_Temperate seasonal forest,5,alb_DifVis,mean
+855,q10_mr,Temperate seasonal forest,alb_DifVis_iav_Temperate seasonal forest,1,alb_DifVis,iav
+856,upplim_destruct_metamorph,Temperate seasonal forest,alb_DifVis_iav_Temperate seasonal forest,2,alb_DifVis,iav
+857,maximum_leaf_wetted_fraction,Temperate seasonal forest,alb_DifVis_iav_Temperate seasonal forest,3,alb_DifVis,iav
+858,fff,Temperate seasonal forest,alb_DifVis_iav_Temperate seasonal forest,4,alb_DifVis,iav
+859,frac_sat_soil_dsl_init,Temperate seasonal forest,alb_DifVis_iav_Temperate seasonal forest,5,alb_DifVis,iav
+860,rholvis,Woodland/shrubland,alb_DifVis_mean_Woodland/shrubland,1,alb_DifVis,mean
+861,rhosvis,Woodland/shrubland,alb_DifVis_mean_Woodland/shrubland,2,alb_DifVis,mean
+862,medlynintercept,Woodland/shrubland,alb_DifVis_mean_Woodland/shrubland,3,alb_DifVis,mean
+863,medlynslope,Woodland/shrubland,alb_DifVis_mean_Woodland/shrubland,4,alb_DifVis,mean
+864,frac_sat_soil_dsl_init,Woodland/shrubland,alb_DifVis_mean_Woodland/shrubland,5,alb_DifVis,mean
+865,accum_factor,Woodland/shrubland,alb_DifVis_iav_Woodland/shrubland,1,alb_DifVis,iav
+866,vcmaxha,Woodland/shrubland,alb_DifVis_iav_Woodland/shrubland,2,alb_DifVis,iav
+867,sand_pf,Woodland/shrubland,alb_DifVis_iav_Woodland/shrubland,3,alb_DifVis,iav
+868,slatop,Woodland/shrubland,alb_DifVis_iav_Woodland/shrubland,4,alb_DifVis,iav
+869,rholvis,Woodland/shrubland,alb_DifVis_iav_Woodland/shrubland,5,alb_DifVis,iav
+870,d_max,Temperate grassland/desert,alb_DifVis_mean_Temperate grassland/desert,1,alb_DifVis,mean
+871,accum_factor,Temperate grassland/desert,alb_DifVis_mean_Temperate grassland/desert,2,alb_DifVis,mean
+872,rhosvis,Temperate grassland/desert,alb_DifVis_mean_Temperate grassland/desert,3,alb_DifVis,mean
+873,sand_pf,Temperate grassland/desert,alb_DifVis_mean_Temperate grassland/desert,4,alb_DifVis,mean
+874,clay_pf,Temperate grassland/desert,alb_DifVis_mean_Temperate grassland/desert,5,alb_DifVis,mean
+875,jmaxb0,Temperate grassland/desert,alb_DifVis_iav_Temperate grassland/desert,1,alb_DifVis,iav
+876,zsno,Temperate grassland/desert,alb_DifVis_iav_Temperate grassland/desert,2,alb_DifVis,iav
+877,accum_factor,Temperate grassland/desert,alb_DifVis_iav_Temperate grassland/desert,3,alb_DifVis,iav
+878,wc2wjb0,Temperate grassland/desert,alb_DifVis_iav_Temperate grassland/desert,4,alb_DifVis,iav
+879,xdrdt,Temperate grassland/desert,alb_DifVis_iav_Temperate grassland/desert,5,alb_DifVis,iav
+880,snow_canopy_storage_scalar,Boreal forest,alb_DifVis_mean_Boreal forest,1,alb_DifVis,mean
+881,tpu25ratio,Boreal forest,alb_DifVis_mean_Boreal forest,2,alb_DifVis,mean
+882,snowcan_unload_wind_fact,Boreal forest,alb_DifVis_mean_Boreal forest,3,alb_DifVis,mean
+883,jmaxb1,Boreal forest,alb_DifVis_mean_Boreal forest,4,alb_DifVis,mean
+884,rholvis,Boreal forest,alb_DifVis_mean_Boreal forest,5,alb_DifVis,mean
+885,upplim_destruct_metamorph,Boreal forest,alb_DifVis_iav_Boreal forest,1,alb_DifVis,iav
+886,e_ice,Boreal forest,alb_DifVis_iav_Boreal forest,2,alb_DifVis,iav
+887,snow_canopy_storage_scalar,Boreal forest,alb_DifVis_iav_Boreal forest,3,alb_DifVis,iav
+888,accum_factor,Boreal forest,alb_DifVis_iav_Boreal forest,4,alb_DifVis,iav
+889,wc2wjb0,Boreal forest,alb_DifVis_iav_Boreal forest,5,alb_DifVis,iav
+890,snow_canopy_storage_scalar,Tundra,alb_DifVis_mean_Tundra,1,alb_DifVis,mean
+891,tpu25ratio,Tundra,alb_DifVis_mean_Tundra,2,alb_DifVis,mean
+892,jmaxb0,Tundra,alb_DifVis_mean_Tundra,3,alb_DifVis,mean
+893,snowcan_unload_wind_fact,Tundra,alb_DifVis_mean_Tundra,4,alb_DifVis,mean
+894,FUN_fracfixers,Tundra,alb_DifVis_mean_Tundra,5,alb_DifVis,mean
+895,accum_factor,Tundra,alb_DifVis_iav_Tundra,1,alb_DifVis,iav
+896,zsno,Tundra,alb_DifVis_iav_Tundra,2,alb_DifVis,iav
+897,nstem,Tundra,alb_DifVis_iav_Tundra,3,alb_DifVis,iav
+898,fff,Tundra,alb_DifVis_iav_Tundra,4,alb_DifVis,iav
+899,upplim_destruct_metamorph,Tundra,alb_DifVis_iav_Tundra,5,alb_DifVis,iav
+900,snw_rds_refrz,Ice sheet,alb_DirNIR_mean_Ice sheet,1,alb_DirNIR,mean
+901,xdrdt,Ice sheet,alb_DirNIR_mean_Ice sheet,2,alb_DirNIR,mean
+902,upplim_destruct_metamorph,Ice sheet,alb_DirNIR_mean_Ice sheet,3,alb_DirNIR,mean
+903,zetamaxstable,Ice sheet,alb_DirNIR_mean_Ice sheet,4,alb_DirNIR,mean
+904,zsno,Ice sheet,alb_DirNIR_mean_Ice sheet,5,alb_DirNIR,mean
+905,snw_rds_refrz,Ice sheet,alb_DirNIR_iav_Ice sheet,1,alb_DirNIR,iav
+906,xdrdt,Ice sheet,alb_DirNIR_iav_Ice sheet,2,alb_DirNIR,iav
+907,upplim_destruct_metamorph,Ice sheet,alb_DirNIR_iav_Ice sheet,3,alb_DirNIR,iav
+908,zsno,Ice sheet,alb_DirNIR_iav_Ice sheet,4,alb_DirNIR,iav
+909,zetamaxstable,Ice sheet,alb_DirNIR_iav_Ice sheet,5,alb_DirNIR,iav
+910,taulnir,Tropical rain forest,alb_DirNIR_mean_Tropical rain forest,1,alb_DirNIR,mean
+911,rholnir,Tropical rain forest,alb_DirNIR_mean_Tropical rain forest,2,alb_DirNIR,mean
+912,xl,Tropical rain forest,alb_DirNIR_mean_Tropical rain forest,3,alb_DirNIR,mean
+913,kmax,Tropical rain forest,alb_DirNIR_mean_Tropical rain forest,4,alb_DirNIR,mean
+914,rhosnir,Tropical rain forest,alb_DirNIR_mean_Tropical rain forest,5,alb_DirNIR,mean
+915,taulnir,Tropical rain forest,alb_DirNIR_iav_Tropical rain forest,1,alb_DirNIR,iav
+916,rholnir,Tropical rain forest,alb_DirNIR_iav_Tropical rain forest,2,alb_DirNIR,iav
+917,rhosnir,Tropical rain forest,alb_DirNIR_iav_Tropical rain forest,3,alb_DirNIR,iav
+918,tausnir,Tropical rain forest,alb_DirNIR_iav_Tropical rain forest,4,alb_DirNIR,iav
+919,fff,Tropical rain forest,alb_DirNIR_iav_Tropical rain forest,5,alb_DirNIR,iav
+920,taulnir,Tropical seasonal forest/savanna,alb_DirNIR_mean_Tropical seasonal forest/savanna,1,alb_DirNIR,mean
+921,rholnir,Tropical seasonal forest/savanna,alb_DirNIR_mean_Tropical seasonal forest/savanna,2,alb_DirNIR,mean
+922,rhosnir,Tropical seasonal forest/savanna,alb_DirNIR_mean_Tropical seasonal forest/savanna,3,alb_DirNIR,mean
+923,xl,Tropical seasonal forest/savanna,alb_DirNIR_mean_Tropical seasonal forest/savanna,4,alb_DirNIR,mean
+924,tausnir,Tropical seasonal forest/savanna,alb_DirNIR_mean_Tropical seasonal forest/savanna,5,alb_DirNIR,mean
+925,rholnir,Tropical seasonal forest/savanna,alb_DirNIR_iav_Tropical seasonal forest/savanna,1,alb_DirNIR,iav
+926,taulnir,Tropical seasonal forest/savanna,alb_DirNIR_iav_Tropical seasonal forest/savanna,2,alb_DirNIR,iav
+927,nstem,Tropical seasonal forest/savanna,alb_DirNIR_iav_Tropical seasonal forest/savanna,3,alb_DirNIR,iav
+928,kmax,Tropical seasonal forest/savanna,alb_DirNIR_iav_Tropical seasonal forest/savanna,4,alb_DirNIR,iav
+929,tpuse_sf,Tropical seasonal forest/savanna,alb_DirNIR_iav_Tropical seasonal forest/savanna,5,alb_DirNIR,iav
+930,sand_pf,Subtropical desert,alb_DirNIR_mean_Subtropical desert,1,alb_DirNIR,mean
+931,rhosnir,Subtropical desert,alb_DirNIR_mean_Subtropical desert,2,alb_DirNIR,mean
+932,clay_pf,Subtropical desert,alb_DirNIR_mean_Subtropical desert,3,alb_DirNIR,mean
+933,taulnir,Subtropical desert,alb_DirNIR_mean_Subtropical desert,4,alb_DirNIR,mean
+934,rholnir,Subtropical desert,alb_DirNIR_mean_Subtropical desert,5,alb_DirNIR,mean
+935,jmaxb0,Subtropical desert,alb_DirNIR_iav_Subtropical desert,1,alb_DirNIR,iav
+936,vcmaxhd,Subtropical desert,alb_DirNIR_iav_Subtropical desert,2,alb_DirNIR,iav
+937,tpuse_sf,Subtropical desert,alb_DirNIR_iav_Subtropical desert,3,alb_DirNIR,iav
+938,kcha,Subtropical desert,alb_DirNIR_iav_Subtropical desert,4,alb_DirNIR,iav
+939,rhosnir,Subtropical desert,alb_DirNIR_iav_Subtropical desert,5,alb_DirNIR,iav
+940,taulnir,Temperate rain forest,alb_DirNIR_mean_Temperate rain forest,1,alb_DirNIR,mean
+941,rholnir,Temperate rain forest,alb_DirNIR_mean_Temperate rain forest,2,alb_DirNIR,mean
+942,tpu25ratio,Temperate rain forest,alb_DirNIR_mean_Temperate rain forest,3,alb_DirNIR,mean
+943,jmaxb1,Temperate rain forest,alb_DirNIR_mean_Temperate rain forest,4,alb_DirNIR,mean
+944,tpuha,Temperate rain forest,alb_DirNIR_mean_Temperate rain forest,5,alb_DirNIR,mean
+945,tpu25ratio,Temperate rain forest,alb_DirNIR_iav_Temperate rain forest,1,alb_DirNIR,iav
+946,jmaxb1,Temperate rain forest,alb_DirNIR_iav_Temperate rain forest,2,alb_DirNIR,iav
+947,tpuha,Temperate rain forest,alb_DirNIR_iav_Temperate rain forest,3,alb_DirNIR,iav
+948,jmaxb0,Temperate rain forest,alb_DirNIR_iav_Temperate rain forest,4,alb_DirNIR,iav
+949,lmrha,Temperate rain forest,alb_DirNIR_iav_Temperate rain forest,5,alb_DirNIR,iav
+950,taulnir,Temperate seasonal forest,alb_DirNIR_mean_Temperate seasonal forest,1,alb_DirNIR,mean
+951,rholnir,Temperate seasonal forest,alb_DirNIR_mean_Temperate seasonal forest,2,alb_DirNIR,mean
+952,rhosnir,Temperate seasonal forest,alb_DirNIR_mean_Temperate seasonal forest,3,alb_DirNIR,mean
+953,xl,Temperate seasonal forest,alb_DirNIR_mean_Temperate seasonal forest,4,alb_DirNIR,mean
+954,tpu25ratio,Temperate seasonal forest,alb_DirNIR_mean_Temperate seasonal forest,5,alb_DirNIR,mean
+955,rhosnir,Temperate seasonal forest,alb_DirNIR_iav_Temperate seasonal forest,1,alb_DirNIR,iav
+956,tausnir,Temperate seasonal forest,alb_DirNIR_iav_Temperate seasonal forest,2,alb_DirNIR,iav
+957,taulnir,Temperate seasonal forest,alb_DirNIR_iav_Temperate seasonal forest,3,alb_DirNIR,iav
+958,snw_rds_refrz,Temperate seasonal forest,alb_DirNIR_iav_Temperate seasonal forest,4,alb_DirNIR,iav
+959,accum_factor,Temperate seasonal forest,alb_DirNIR_iav_Temperate seasonal forest,5,alb_DirNIR,iav
+960,taulnir,Woodland/shrubland,alb_DirNIR_mean_Woodland/shrubland,1,alb_DirNIR,mean
+961,rholnir,Woodland/shrubland,alb_DirNIR_mean_Woodland/shrubland,2,alb_DirNIR,mean
+962,rhosnir,Woodland/shrubland,alb_DirNIR_mean_Woodland/shrubland,3,alb_DirNIR,mean
+963,tausnir,Woodland/shrubland,alb_DirNIR_mean_Woodland/shrubland,4,alb_DirNIR,mean
+964,xl,Woodland/shrubland,alb_DirNIR_mean_Woodland/shrubland,5,alb_DirNIR,mean
+965,frac_sat_soil_dsl_init,Woodland/shrubland,alb_DirNIR_iav_Woodland/shrubland,1,alb_DirNIR,iav
+966,rhosnir,Woodland/shrubland,alb_DirNIR_iav_Woodland/shrubland,2,alb_DirNIR,iav
+967,rholnir,Woodland/shrubland,alb_DirNIR_iav_Woodland/shrubland,3,alb_DirNIR,iav
+968,taulnir,Woodland/shrubland,alb_DirNIR_iav_Woodland/shrubland,4,alb_DirNIR,iav
+969,medlynslope,Woodland/shrubland,alb_DirNIR_iav_Woodland/shrubland,5,alb_DirNIR,iav
+970,rhosnir,Temperate grassland/desert,alb_DirNIR_mean_Temperate grassland/desert,1,alb_DirNIR,mean
+971,sand_pf,Temperate grassland/desert,alb_DirNIR_mean_Temperate grassland/desert,2,alb_DirNIR,mean
+972,clay_pf,Temperate grassland/desert,alb_DirNIR_mean_Temperate grassland/desert,3,alb_DirNIR,mean
+973,taulnir,Temperate grassland/desert,alb_DirNIR_mean_Temperate grassland/desert,4,alb_DirNIR,mean
+974,rholnir,Temperate grassland/desert,alb_DirNIR_mean_Temperate grassland/desert,5,alb_DirNIR,mean
+975,accum_factor,Temperate grassland/desert,alb_DirNIR_iav_Temperate grassland/desert,1,alb_DirNIR,iav
+976,rhosnir,Temperate grassland/desert,alb_DirNIR_iav_Temperate grassland/desert,2,alb_DirNIR,iav
+977,zsno,Temperate grassland/desert,alb_DirNIR_iav_Temperate grassland/desert,3,alb_DirNIR,iav
+978,d_max,Temperate grassland/desert,alb_DirNIR_iav_Temperate grassland/desert,4,alb_DirNIR,iav
+979,clay_pf,Temperate grassland/desert,alb_DirNIR_iav_Temperate grassland/desert,5,alb_DirNIR,iav
+980,rholnir,Boreal forest,alb_DirNIR_mean_Boreal forest,1,alb_DirNIR,mean
+981,taulnir,Boreal forest,alb_DirNIR_mean_Boreal forest,2,alb_DirNIR,mean
+982,rhosnir,Boreal forest,alb_DirNIR_mean_Boreal forest,3,alb_DirNIR,mean
+983,lmrha,Boreal forest,alb_DirNIR_mean_Boreal forest,4,alb_DirNIR,mean
+984,jmaxb1,Boreal forest,alb_DirNIR_mean_Boreal forest,5,alb_DirNIR,mean
+985,rholnir,Boreal forest,alb_DirNIR_iav_Boreal forest,1,alb_DirNIR,iav
+986,taulnir,Boreal forest,alb_DirNIR_iav_Boreal forest,2,alb_DirNIR,iav
+987,rhosnir,Boreal forest,alb_DirNIR_iav_Boreal forest,3,alb_DirNIR,iav
+988,fff,Boreal forest,alb_DirNIR_iav_Boreal forest,4,alb_DirNIR,iav
+989,upplim_destruct_metamorph,Boreal forest,alb_DirNIR_iav_Boreal forest,5,alb_DirNIR,iav
+990,rhosnir,Tundra,alb_DirNIR_mean_Tundra,1,alb_DirNIR,mean
+991,taulnir,Tundra,alb_DirNIR_mean_Tundra,2,alb_DirNIR,mean
+992,rholnir,Tundra,alb_DirNIR_mean_Tundra,3,alb_DirNIR,mean
+993,nstem,Tundra,alb_DirNIR_mean_Tundra,4,alb_DirNIR,mean
+994,xdrdt,Tundra,alb_DirNIR_mean_Tundra,5,alb_DirNIR,mean
+995,e_ice,Tundra,alb_DirNIR_iav_Tundra,1,alb_DirNIR,iav
+996,upplim_destruct_metamorph,Tundra,alb_DirNIR_iav_Tundra,2,alb_DirNIR,iav
+997,rhosnir,Tundra,alb_DirNIR_iav_Tundra,3,alb_DirNIR,iav
+998,accum_factor,Tundra,alb_DirNIR_iav_Tundra,4,alb_DirNIR,iav
+999,zsno,Tundra,alb_DirNIR_iav_Tundra,5,alb_DirNIR,iav
+1000,snw_rds_refrz,Ice sheet,alb_DifNIR_mean_Ice sheet,1,alb_DifNIR,mean
+1001,xdrdt,Ice sheet,alb_DifNIR_mean_Ice sheet,2,alb_DifNIR,mean
+1002,upplim_destruct_metamorph,Ice sheet,alb_DifNIR_mean_Ice sheet,3,alb_DifNIR,mean
+1003,zetamaxstable,Ice sheet,alb_DifNIR_mean_Ice sheet,4,alb_DifNIR,mean
+1004,zsno,Ice sheet,alb_DifNIR_mean_Ice sheet,5,alb_DifNIR,mean
+1005,snw_rds_refrz,Ice sheet,alb_DifNIR_iav_Ice sheet,1,alb_DifNIR,iav
+1006,xdrdt,Ice sheet,alb_DifNIR_iav_Ice sheet,2,alb_DifNIR,iav
+1007,upplim_destruct_metamorph,Ice sheet,alb_DifNIR_iav_Ice sheet,3,alb_DifNIR,iav
+1008,zsno,Ice sheet,alb_DifNIR_iav_Ice sheet,4,alb_DifNIR,iav
+1009,zetamaxstable,Ice sheet,alb_DifNIR_iav_Ice sheet,5,alb_DifNIR,iav
+1010,taulnir,Tropical rain forest,alb_DifNIR_mean_Tropical rain forest,1,alb_DifNIR,mean
+1011,rholnir,Tropical rain forest,alb_DifNIR_mean_Tropical rain forest,2,alb_DifNIR,mean
+1012,rhosnir,Tropical rain forest,alb_DifNIR_mean_Tropical rain forest,3,alb_DifNIR,mean
+1013,kmax,Tropical rain forest,alb_DifNIR_mean_Tropical rain forest,4,alb_DifNIR,mean
+1014,psi50,Tropical rain forest,alb_DifNIR_mean_Tropical rain forest,5,alb_DifNIR,mean
+1015,taulnir,Tropical rain forest,alb_DifNIR_iav_Tropical rain forest,1,alb_DifNIR,iav
+1016,rholnir,Tropical rain forest,alb_DifNIR_iav_Tropical rain forest,2,alb_DifNIR,iav
+1017,fff,Tropical rain forest,alb_DifNIR_iav_Tropical rain forest,3,alb_DifNIR,iav
+1018,rhosnir,Tropical rain forest,alb_DifNIR_iav_Tropical rain forest,4,alb_DifNIR,iav
+1019,tausnir,Tropical rain forest,alb_DifNIR_iav_Tropical rain forest,5,alb_DifNIR,iav
+1020,taulnir,Tropical seasonal forest/savanna,alb_DifNIR_mean_Tropical seasonal forest/savanna,1,alb_DifNIR,mean
+1021,rholnir,Tropical seasonal forest/savanna,alb_DifNIR_mean_Tropical seasonal forest/savanna,2,alb_DifNIR,mean
+1022,rhosnir,Tropical seasonal forest/savanna,alb_DifNIR_mean_Tropical seasonal forest/savanna,3,alb_DifNIR,mean
+1023,tausnir,Tropical seasonal forest/savanna,alb_DifNIR_mean_Tropical seasonal forest/savanna,4,alb_DifNIR,mean
+1024,xl,Tropical seasonal forest/savanna,alb_DifNIR_mean_Tropical seasonal forest/savanna,5,alb_DifNIR,mean
+1025,rholnir,Tropical seasonal forest/savanna,alb_DifNIR_iav_Tropical seasonal forest/savanna,1,alb_DifNIR,iav
+1026,taulnir,Tropical seasonal forest/savanna,alb_DifNIR_iav_Tropical seasonal forest/savanna,2,alb_DifNIR,iav
+1027,kmax,Tropical seasonal forest/savanna,alb_DifNIR_iav_Tropical seasonal forest/savanna,3,alb_DifNIR,iav
+1028,nstem,Tropical seasonal forest/savanna,alb_DifNIR_iav_Tropical seasonal forest/savanna,4,alb_DifNIR,iav
+1029,jmaxhd,Tropical seasonal forest/savanna,alb_DifNIR_iav_Tropical seasonal forest/savanna,5,alb_DifNIR,iav
+1030,rhosnir,Subtropical desert,alb_DifNIR_mean_Subtropical desert,1,alb_DifNIR,mean
+1031,sand_pf,Subtropical desert,alb_DifNIR_mean_Subtropical desert,2,alb_DifNIR,mean
+1032,clay_pf,Subtropical desert,alb_DifNIR_mean_Subtropical desert,3,alb_DifNIR,mean
+1033,rholnir,Subtropical desert,alb_DifNIR_mean_Subtropical desert,4,alb_DifNIR,mean
+1034,taulnir,Subtropical desert,alb_DifNIR_mean_Subtropical desert,5,alb_DifNIR,mean
+1035,rhosnir,Subtropical desert,alb_DifNIR_iav_Subtropical desert,1,alb_DifNIR,iav
+1036,jmaxb0,Subtropical desert,alb_DifNIR_iav_Subtropical desert,2,alb_DifNIR,iav
+1037,vcmaxhd,Subtropical desert,alb_DifNIR_iav_Subtropical desert,3,alb_DifNIR,iav
+1038,tpuse_sf,Subtropical desert,alb_DifNIR_iav_Subtropical desert,4,alb_DifNIR,iav
+1039,kcha,Subtropical desert,alb_DifNIR_iav_Subtropical desert,5,alb_DifNIR,iav
+1040,rholnir,Temperate rain forest,alb_DifNIR_mean_Temperate rain forest,1,alb_DifNIR,mean
+1041,taulnir,Temperate rain forest,alb_DifNIR_mean_Temperate rain forest,2,alb_DifNIR,mean
+1042,tpu25ratio,Temperate rain forest,alb_DifNIR_mean_Temperate rain forest,3,alb_DifNIR,mean
+1043,jmaxb1,Temperate rain forest,alb_DifNIR_mean_Temperate rain forest,4,alb_DifNIR,mean
+1044,rhosnir,Temperate rain forest,alb_DifNIR_mean_Temperate rain forest,5,alb_DifNIR,mean
+1045,jmaxb1,Temperate rain forest,alb_DifNIR_iav_Temperate rain forest,1,alb_DifNIR,iav
+1046,tpuha,Temperate rain forest,alb_DifNIR_iav_Temperate rain forest,2,alb_DifNIR,iav
+1047,tpu25ratio,Temperate rain forest,alb_DifNIR_iav_Temperate rain forest,3,alb_DifNIR,iav
+1048,jmaxb0,Temperate rain forest,alb_DifNIR_iav_Temperate rain forest,4,alb_DifNIR,iav
+1049,lmrha,Temperate rain forest,alb_DifNIR_iav_Temperate rain forest,5,alb_DifNIR,iav
+1050,rholnir,Temperate seasonal forest,alb_DifNIR_mean_Temperate seasonal forest,1,alb_DifNIR,mean
+1051,taulnir,Temperate seasonal forest,alb_DifNIR_mean_Temperate seasonal forest,2,alb_DifNIR,mean
+1052,rhosnir,Temperate seasonal forest,alb_DifNIR_mean_Temperate seasonal forest,3,alb_DifNIR,mean
+1053,tpu25ratio,Temperate seasonal forest,alb_DifNIR_mean_Temperate seasonal forest,4,alb_DifNIR,mean
+1054,snow_canopy_storage_scalar,Temperate seasonal forest,alb_DifNIR_mean_Temperate seasonal forest,5,alb_DifNIR,mean
+1055,rhosnir,Temperate seasonal forest,alb_DifNIR_iav_Temperate seasonal forest,1,alb_DifNIR,iav
+1056,tausnir,Temperate seasonal forest,alb_DifNIR_iav_Temperate seasonal forest,2,alb_DifNIR,iav
+1057,snw_rds_refrz,Temperate seasonal forest,alb_DifNIR_iav_Temperate seasonal forest,3,alb_DifNIR,iav
+1058,accum_factor,Temperate seasonal forest,alb_DifNIR_iav_Temperate seasonal forest,4,alb_DifNIR,iav
+1059,nstem,Temperate seasonal forest,alb_DifNIR_iav_Temperate seasonal forest,5,alb_DifNIR,iav
+1060,taulnir,Woodland/shrubland,alb_DifNIR_mean_Woodland/shrubland,1,alb_DifNIR,mean
+1061,rholnir,Woodland/shrubland,alb_DifNIR_mean_Woodland/shrubland,2,alb_DifNIR,mean
+1062,rhosnir,Woodland/shrubland,alb_DifNIR_mean_Woodland/shrubland,3,alb_DifNIR,mean
+1063,tausnir,Woodland/shrubland,alb_DifNIR_mean_Woodland/shrubland,4,alb_DifNIR,mean
+1064,maximum_leaf_wetted_fraction,Woodland/shrubland,alb_DifNIR_mean_Woodland/shrubland,5,alb_DifNIR,mean
+1065,frac_sat_soil_dsl_init,Woodland/shrubland,alb_DifNIR_iav_Woodland/shrubland,1,alb_DifNIR,iav
+1066,rholnir,Woodland/shrubland,alb_DifNIR_iav_Woodland/shrubland,2,alb_DifNIR,iav
+1067,rhosnir,Woodland/shrubland,alb_DifNIR_iav_Woodland/shrubland,3,alb_DifNIR,iav
+1068,taulnir,Woodland/shrubland,alb_DifNIR_iav_Woodland/shrubland,4,alb_DifNIR,iav
+1069,medlynslope,Woodland/shrubland,alb_DifNIR_iav_Woodland/shrubland,5,alb_DifNIR,iav
+1070,rhosnir,Temperate grassland/desert,alb_DifNIR_mean_Temperate grassland/desert,1,alb_DifNIR,mean
+1071,sand_pf,Temperate grassland/desert,alb_DifNIR_mean_Temperate grassland/desert,2,alb_DifNIR,mean
+1072,clay_pf,Temperate grassland/desert,alb_DifNIR_mean_Temperate grassland/desert,3,alb_DifNIR,mean
+1073,rholnir,Temperate grassland/desert,alb_DifNIR_mean_Temperate grassland/desert,4,alb_DifNIR,mean
+1074,taulnir,Temperate grassland/desert,alb_DifNIR_mean_Temperate grassland/desert,5,alb_DifNIR,mean
+1075,accum_factor,Temperate grassland/desert,alb_DifNIR_iav_Temperate grassland/desert,1,alb_DifNIR,iav
+1076,krmax,Temperate grassland/desert,alb_DifNIR_iav_Temperate grassland/desert,2,alb_DifNIR,iav
+1077,xdrdt,Temperate grassland/desert,alb_DifNIR_iav_Temperate grassland/desert,3,alb_DifNIR,iav
+1078,zsno,Temperate grassland/desert,alb_DifNIR_iav_Temperate grassland/desert,4,alb_DifNIR,iav
+1079,d_max,Temperate grassland/desert,alb_DifNIR_iav_Temperate grassland/desert,5,alb_DifNIR,iav
+1080,rholnir,Boreal forest,alb_DifNIR_mean_Boreal forest,1,alb_DifNIR,mean
+1081,taulnir,Boreal forest,alb_DifNIR_mean_Boreal forest,2,alb_DifNIR,mean
+1082,rhosnir,Boreal forest,alb_DifNIR_mean_Boreal forest,3,alb_DifNIR,mean
+1083,snow_canopy_storage_scalar,Boreal forest,alb_DifNIR_mean_Boreal forest,4,alb_DifNIR,mean
+1084,snowcan_unload_wind_fact,Boreal forest,alb_DifNIR_mean_Boreal forest,5,alb_DifNIR,mean
+1085,rholnir,Boreal forest,alb_DifNIR_iav_Boreal forest,1,alb_DifNIR,iav
+1086,taulnir,Boreal forest,alb_DifNIR_iav_Boreal forest,2,alb_DifNIR,iav
+1087,rhosnir,Boreal forest,alb_DifNIR_iav_Boreal forest,3,alb_DifNIR,iav
+1088,fff,Boreal forest,alb_DifNIR_iav_Boreal forest,4,alb_DifNIR,iav
+1089,accum_factor,Boreal forest,alb_DifNIR_iav_Boreal forest,5,alb_DifNIR,iav
+1090,rhosnir,Tundra,alb_DifNIR_mean_Tundra,1,alb_DifNIR,mean
+1091,rholnir,Tundra,alb_DifNIR_mean_Tundra,2,alb_DifNIR,mean
+1092,taulnir,Tundra,alb_DifNIR_mean_Tundra,3,alb_DifNIR,mean
+1093,xdrdt,Tundra,alb_DifNIR_mean_Tundra,4,alb_DifNIR,mean
+1094,nstem,Tundra,alb_DifNIR_mean_Tundra,5,alb_DifNIR,mean
+1095,upplim_destruct_metamorph,Tundra,alb_DifNIR_iav_Tundra,1,alb_DifNIR,iav
+1096,accum_factor,Tundra,alb_DifNIR_iav_Tundra,2,alb_DifNIR,iav
+1097,e_ice,Tundra,alb_DifNIR_iav_Tundra,3,alb_DifNIR,iav
+1098,zsno,Tundra,alb_DifNIR_iav_Tundra,4,alb_DifNIR,iav
+1099,rhosnir,Tundra,alb_DifNIR_iav_Tundra,5,alb_DifNIR,iav
+1100,snw_rds_refrz,Ice sheet,FSA_mean_Ice sheet,1,FSA,mean
+1101,xdrdt,Ice sheet,FSA_mean_Ice sheet,2,FSA,mean
+1102,upplim_destruct_metamorph,Ice sheet,FSA_mean_Ice sheet,3,FSA,mean
+1103,zetamaxstable,Ice sheet,FSA_mean_Ice sheet,4,FSA,mean
+1104,zsno,Ice sheet,FSA_mean_Ice sheet,5,FSA,mean
+1105,snw_rds_refrz,Ice sheet,FSA_iav_Ice sheet,1,FSA,iav
+1106,upplim_destruct_metamorph,Ice sheet,FSA_iav_Ice sheet,2,FSA,iav
+1107,xdrdt,Ice sheet,FSA_iav_Ice sheet,3,FSA,iav
+1108,zsno,Ice sheet,FSA_iav_Ice sheet,4,FSA,iav
+1109,zetamaxstable,Ice sheet,FSA_iav_Ice sheet,5,FSA,iav
+1110,taulnir,Tropical rain forest,FSA_mean_Tropical rain forest,1,FSA,mean
+1111,rholnir,Tropical rain forest,FSA_mean_Tropical rain forest,2,FSA,mean
+1112,rholvis,Tropical rain forest,FSA_mean_Tropical rain forest,3,FSA,mean
+1113,xl,Tropical rain forest,FSA_mean_Tropical rain forest,4,FSA,mean
+1114,kmax,Tropical rain forest,FSA_mean_Tropical rain forest,5,FSA,mean
+1115,taulnir,Tropical rain forest,FSA_iav_Tropical rain forest,1,FSA,iav
+1116,rholnir,Tropical rain forest,FSA_iav_Tropical rain forest,2,FSA,iav
+1117,rholvis,Tropical rain forest,FSA_iav_Tropical rain forest,3,FSA,iav
+1118,xl,Tropical rain forest,FSA_iav_Tropical rain forest,4,FSA,iav
+1119,rhosnir,Tropical rain forest,FSA_iav_Tropical rain forest,5,FSA,iav
+1120,taulnir,Tropical seasonal forest/savanna,FSA_mean_Tropical seasonal forest/savanna,1,FSA,mean
+1121,rholnir,Tropical seasonal forest/savanna,FSA_mean_Tropical seasonal forest/savanna,2,FSA,mean
+1122,rhosnir,Tropical seasonal forest/savanna,FSA_mean_Tropical seasonal forest/savanna,3,FSA,mean
+1123,rholvis,Tropical seasonal forest/savanna,FSA_mean_Tropical seasonal forest/savanna,4,FSA,mean
+1124,xl,Tropical seasonal forest/savanna,FSA_mean_Tropical seasonal forest/savanna,5,FSA,mean
+1125,rhosnir,Tropical seasonal forest/savanna,FSA_iav_Tropical seasonal forest/savanna,1,FSA,iav
+1126,d_max,Tropical seasonal forest/savanna,FSA_iav_Tropical seasonal forest/savanna,2,FSA,iav
+1127,kmax,Tropical seasonal forest/savanna,FSA_iav_Tropical seasonal forest/savanna,3,FSA,iav
+1128,frac_sat_soil_dsl_init,Tropical seasonal forest/savanna,FSA_iav_Tropical seasonal forest/savanna,4,FSA,iav
+1129,medlynintercept,Tropical seasonal forest/savanna,FSA_iav_Tropical seasonal forest/savanna,5,FSA,iav
+1130,sand_pf,Subtropical desert,FSA_mean_Subtropical desert,1,FSA,mean
+1131,clay_pf,Subtropical desert,FSA_mean_Subtropical desert,2,FSA,mean
+1132,d_max,Subtropical desert,FSA_mean_Subtropical desert,3,FSA,mean
+1133,rhosnir,Subtropical desert,FSA_mean_Subtropical desert,4,FSA,mean
+1134,taulnir,Subtropical desert,FSA_mean_Subtropical desert,5,FSA,mean
+1135,d_max,Subtropical desert,FSA_iav_Subtropical desert,1,FSA,iav
+1136,jmaxb0,Subtropical desert,FSA_iav_Subtropical desert,2,FSA,iav
+1137,medlynslope,Subtropical desert,FSA_iav_Subtropical desert,3,FSA,iav
+1138,kmax,Subtropical desert,FSA_iav_Subtropical desert,4,FSA,iav
+1139,krmax,Subtropical desert,FSA_iav_Subtropical desert,5,FSA,iav
+1140,taulnir,Temperate rain forest,FSA_mean_Temperate rain forest,1,FSA,mean
+1141,rholnir,Temperate rain forest,FSA_mean_Temperate rain forest,2,FSA,mean
+1142,tpu25ratio,Temperate rain forest,FSA_mean_Temperate rain forest,3,FSA,mean
+1143,rholvis,Temperate rain forest,FSA_mean_Temperate rain forest,4,FSA,mean
+1144,jmaxb1,Temperate rain forest,FSA_mean_Temperate rain forest,5,FSA,mean
+1145,clay_pf,Temperate rain forest,FSA_iav_Temperate rain forest,1,FSA,iav
+1146,fff,Temperate rain forest,FSA_iav_Temperate rain forest,2,FSA,iav
+1147,fbw,Temperate rain forest,FSA_iav_Temperate rain forest,3,FSA,iav
+1148,zbedrock_sf,Temperate rain forest,FSA_iav_Temperate rain forest,4,FSA,iav
+1149,kcha,Temperate rain forest,FSA_iav_Temperate rain forest,5,FSA,iav
+1150,taulnir,Temperate seasonal forest,FSA_mean_Temperate seasonal forest,1,FSA,mean
+1151,rholnir,Temperate seasonal forest,FSA_mean_Temperate seasonal forest,2,FSA,mean
+1152,rhosnir,Temperate seasonal forest,FSA_mean_Temperate seasonal forest,3,FSA,mean
+1153,rholvis,Temperate seasonal forest,FSA_mean_Temperate seasonal forest,4,FSA,mean
+1154,xl,Temperate seasonal forest,FSA_mean_Temperate seasonal forest,5,FSA,mean
+1155,medlynintercept,Temperate seasonal forest,FSA_iav_Temperate seasonal forest,1,FSA,iav
+1156,medlynslope,Temperate seasonal forest,FSA_iav_Temperate seasonal forest,2,FSA,iav
+1157,liq_canopy_storage_scalar,Temperate seasonal forest,FSA_iav_Temperate seasonal forest,3,FSA,iav
+1158,maximum_leaf_wetted_fraction,Temperate seasonal forest,FSA_iav_Temperate seasonal forest,4,FSA,iav
+1159,snw_rds_refrz,Temperate seasonal forest,FSA_iav_Temperate seasonal forest,5,FSA,iav
+1160,taulnir,Woodland/shrubland,FSA_mean_Woodland/shrubland,1,FSA,mean
+1161,rholnir,Woodland/shrubland,FSA_mean_Woodland/shrubland,2,FSA,mean
+1162,rhosnir,Woodland/shrubland,FSA_mean_Woodland/shrubland,3,FSA,mean
+1163,tausnir,Woodland/shrubland,FSA_mean_Woodland/shrubland,4,FSA,mean
+1164,rholvis,Woodland/shrubland,FSA_mean_Woodland/shrubland,5,FSA,mean
+1165,jmaxb1,Woodland/shrubland,FSA_iav_Woodland/shrubland,1,FSA,iav
+1166,kmax,Woodland/shrubland,FSA_iav_Woodland/shrubland,2,FSA,iav
+1167,rhosnir,Woodland/shrubland,FSA_iav_Woodland/shrubland,3,FSA,iav
+1168,kn_nonmyc,Woodland/shrubland,FSA_iav_Woodland/shrubland,4,FSA,iav
+1169,vcmaxha,Woodland/shrubland,FSA_iav_Woodland/shrubland,5,FSA,iav
+1170,sand_pf,Temperate grassland/desert,FSA_mean_Temperate grassland/desert,1,FSA,mean
+1171,d_max,Temperate grassland/desert,FSA_mean_Temperate grassland/desert,2,FSA,mean
+1172,clay_pf,Temperate grassland/desert,FSA_mean_Temperate grassland/desert,3,FSA,mean
+1173,rhosnir,Temperate grassland/desert,FSA_mean_Temperate grassland/desert,4,FSA,mean
+1174,taulnir,Temperate grassland/desert,FSA_mean_Temperate grassland/desert,5,FSA,mean
+1175,zsno,Temperate grassland/desert,FSA_iav_Temperate grassland/desert,1,FSA,iav
+1176,accum_factor,Temperate grassland/desert,FSA_iav_Temperate grassland/desert,2,FSA,iav
+1177,krmax,Temperate grassland/desert,FSA_iav_Temperate grassland/desert,3,FSA,iav
+1178,jmaxb0,Temperate grassland/desert,FSA_iav_Temperate grassland/desert,4,FSA,iav
+1179,leafcn,Temperate grassland/desert,FSA_iav_Temperate grassland/desert,5,FSA,iav
+1180,rholnir,Boreal forest,FSA_mean_Boreal forest,1,FSA,mean
+1181,taulnir,Boreal forest,FSA_mean_Boreal forest,2,FSA,mean
+1182,rhosnir,Boreal forest,FSA_mean_Boreal forest,3,FSA,mean
+1183,rholvis,Boreal forest,FSA_mean_Boreal forest,4,FSA,mean
+1184,snw_rds_refrz,Boreal forest,FSA_mean_Boreal forest,5,FSA,mean
+1185,cv,Boreal forest,FSA_iav_Boreal forest,1,FSA,iav
+1186,upplim_destruct_metamorph,Boreal forest,FSA_iav_Boreal forest,2,FSA,iav
+1187,leafcn,Boreal forest,FSA_iav_Boreal forest,3,FSA,iav
+1188,nstem,Boreal forest,FSA_iav_Boreal forest,4,FSA,iav
+1189,taulnir,Boreal forest,FSA_iav_Boreal forest,5,FSA,iav
+1190,taulnir,Tundra,FSA_mean_Tundra,1,FSA,mean
+1191,snw_rds_refrz,Tundra,FSA_mean_Tundra,2,FSA,mean
+1192,rhosnir,Tundra,FSA_mean_Tundra,3,FSA,mean
+1193,xdrdt,Tundra,FSA_mean_Tundra,4,FSA,mean
+1194,rholnir,Tundra,FSA_mean_Tundra,5,FSA,mean
+1195,zsno,Tundra,FSA_iav_Tundra,1,FSA,iav
+1196,medlynintercept,Tundra,FSA_iav_Tundra,2,FSA,iav
+1197,accum_factor,Tundra,FSA_iav_Tundra,3,FSA,iav
+1198,nstem,Tundra,FSA_iav_Tundra,4,FSA,iav
+1199,upplim_destruct_metamorph,Tundra,FSA_iav_Tundra,5,FSA,iav
+1200,zetamaxstable,Ice sheet,TSKIN_mean_Ice sheet,1,TSKIN,mean
+1201,zsno,Ice sheet,TSKIN_mean_Ice sheet,2,TSKIN,mean
+1202,xdrdt,Ice sheet,TSKIN_mean_Ice sheet,3,TSKIN,mean
+1203,snw_rds_refrz,Ice sheet,TSKIN_mean_Ice sheet,4,TSKIN,mean
+1204,upplim_destruct_metamorph,Ice sheet,TSKIN_mean_Ice sheet,5,TSKIN,mean
+1205,zetamaxstable,Ice sheet,TSKIN_iav_Ice sheet,1,TSKIN,iav
+1206,zsno,Ice sheet,TSKIN_iav_Ice sheet,2,TSKIN,iav
+1207,upplim_destruct_metamorph,Ice sheet,TSKIN_iav_Ice sheet,3,TSKIN,iav
+1208,snw_rds_refrz,Ice sheet,TSKIN_iav_Ice sheet,4,TSKIN,iav
+1209,rho_max,Ice sheet,TSKIN_iav_Ice sheet,5,TSKIN,iav
+1210,kmax,Tropical rain forest,TSKIN_mean_Tropical rain forest,1,TSKIN,mean
+1211,maximum_leaf_wetted_fraction,Tropical rain forest,TSKIN_mean_Tropical rain forest,2,TSKIN,mean
+1212,liq_canopy_storage_scalar,Tropical rain forest,TSKIN_mean_Tropical rain forest,3,TSKIN,mean
+1213,leaf_long,Tropical rain forest,TSKIN_mean_Tropical rain forest,4,TSKIN,mean
+1214,psi50,Tropical rain forest,TSKIN_mean_Tropical rain forest,5,TSKIN,mean
+1215,maximum_leaf_wetted_fraction,Tropical rain forest,TSKIN_iav_Tropical rain forest,1,TSKIN,iav
+1216,fff,Tropical rain forest,TSKIN_iav_Tropical rain forest,2,TSKIN,iav
+1217,kmax,Tropical rain forest,TSKIN_iav_Tropical rain forest,3,TSKIN,iav
+1218,cv,Tropical rain forest,TSKIN_iav_Tropical rain forest,4,TSKIN,iav
+1219,medlynslope,Tropical rain forest,TSKIN_iav_Tropical rain forest,5,TSKIN,iav
+1220,fff,Tropical seasonal forest/savanna,TSKIN_mean_Tropical seasonal forest/savanna,1,TSKIN,mean
+1221,kmax,Tropical seasonal forest/savanna,TSKIN_mean_Tropical seasonal forest/savanna,2,TSKIN,mean
+1222,frac_sat_soil_dsl_init,Tropical seasonal forest/savanna,TSKIN_mean_Tropical seasonal forest/savanna,3,TSKIN,mean
+1223,krmax,Tropical seasonal forest/savanna,TSKIN_mean_Tropical seasonal forest/savanna,4,TSKIN,mean
+1224,leaf_long,Tropical seasonal forest/savanna,TSKIN_mean_Tropical seasonal forest/savanna,5,TSKIN,mean
+1225,frac_sat_soil_dsl_init,Tropical seasonal forest/savanna,TSKIN_iav_Tropical seasonal forest/savanna,1,TSKIN,iav
+1226,sand_pf,Tropical seasonal forest/savanna,TSKIN_iav_Tropical seasonal forest/savanna,2,TSKIN,iav
+1227,krmax,Tropical seasonal forest/savanna,TSKIN_iav_Tropical seasonal forest/savanna,3,TSKIN,iav
+1228,clay_pf,Tropical seasonal forest/savanna,TSKIN_iav_Tropical seasonal forest/savanna,4,TSKIN,iav
+1229,liq_canopy_storage_scalar,Tropical seasonal forest/savanna,TSKIN_iav_Tropical seasonal forest/savanna,5,TSKIN,iav
+1230,zlnd,Subtropical desert,TSKIN_mean_Subtropical desert,1,TSKIN,mean
+1231,clay_pf,Subtropical desert,TSKIN_mean_Subtropical desert,2,TSKIN,mean
+1232,sand_pf,Subtropical desert,TSKIN_mean_Subtropical desert,3,TSKIN,mean
+1233,fff,Subtropical desert,TSKIN_mean_Subtropical desert,4,TSKIN,mean
+1234,jmaxb0,Subtropical desert,TSKIN_mean_Subtropical desert,5,TSKIN,mean
+1235,kcha,Subtropical desert,TSKIN_iav_Subtropical desert,1,TSKIN,iav
+1236,wc2wjb0,Subtropical desert,TSKIN_iav_Subtropical desert,2,TSKIN,iav
+1237,medlynslope,Subtropical desert,TSKIN_iav_Subtropical desert,3,TSKIN,iav
+1238,medlynintercept,Subtropical desert,TSKIN_iav_Subtropical desert,4,TSKIN,iav
+1239,lmrha,Subtropical desert,TSKIN_iav_Subtropical desert,5,TSKIN,iav
+1240,tpu25ratio,Temperate rain forest,TSKIN_mean_Temperate rain forest,1,TSKIN,mean
+1241,jmaxb1,Temperate rain forest,TSKIN_mean_Temperate rain forest,2,TSKIN,mean
+1242,maximum_leaf_wetted_fraction,Temperate rain forest,TSKIN_mean_Temperate rain forest,3,TSKIN,mean
+1243,tpuha,Temperate rain forest,TSKIN_mean_Temperate rain forest,4,TSKIN,mean
+1244,jmaxb0,Temperate rain forest,TSKIN_mean_Temperate rain forest,5,TSKIN,mean
+1245,zetamaxstable,Temperate rain forest,TSKIN_iav_Temperate rain forest,1,TSKIN,iav
+1246,zsno,Temperate rain forest,TSKIN_iav_Temperate rain forest,2,TSKIN,iav
+1247,medlynintercept,Temperate rain forest,TSKIN_iav_Temperate rain forest,3,TSKIN,iav
+1248,lmrhd,Temperate rain forest,TSKIN_iav_Temperate rain forest,4,TSKIN,iav
+1249,vcmaxha,Temperate rain forest,TSKIN_iav_Temperate rain forest,5,TSKIN,iav
+1250,jmaxb1,Temperate seasonal forest,TSKIN_mean_Temperate seasonal forest,1,TSKIN,mean
+1251,kmax,Temperate seasonal forest,TSKIN_mean_Temperate seasonal forest,2,TSKIN,mean
+1252,jmaxb0,Temperate seasonal forest,TSKIN_mean_Temperate seasonal forest,3,TSKIN,mean
+1253,tpu25ratio,Temperate seasonal forest,TSKIN_mean_Temperate seasonal forest,4,TSKIN,mean
+1254,leafcn,Temperate seasonal forest,TSKIN_mean_Temperate seasonal forest,5,TSKIN,mean
+1255,tpu25ratio,Temperate seasonal forest,TSKIN_iav_Temperate seasonal forest,1,TSKIN,iav
+1256,clay_pf,Temperate seasonal forest,TSKIN_iav_Temperate seasonal forest,2,TSKIN,iav
+1257,medlynintercept,Temperate seasonal forest,TSKIN_iav_Temperate seasonal forest,3,TSKIN,iav
+1258,medlynslope,Temperate seasonal forest,TSKIN_iav_Temperate seasonal forest,4,TSKIN,iav
+1259,leafcn,Temperate seasonal forest,TSKIN_iav_Temperate seasonal forest,5,TSKIN,iav
+1260,fff,Woodland/shrubland,TSKIN_mean_Woodland/shrubland,1,TSKIN,mean
+1261,jmaxb1,Woodland/shrubland,TSKIN_mean_Woodland/shrubland,2,TSKIN,mean
+1262,FUN_fracfixers,Woodland/shrubland,TSKIN_mean_Woodland/shrubland,3,TSKIN,mean
+1263,tpu25ratio,Woodland/shrubland,TSKIN_mean_Woodland/shrubland,4,TSKIN,mean
+1264,lmrha,Woodland/shrubland,TSKIN_mean_Woodland/shrubland,5,TSKIN,mean
+1265,jmaxb1,Woodland/shrubland,TSKIN_iav_Woodland/shrubland,1,TSKIN,iav
+1266,frootcn,Woodland/shrubland,TSKIN_iav_Woodland/shrubland,2,TSKIN,iav
+1267,zlnd,Woodland/shrubland,TSKIN_iav_Woodland/shrubland,3,TSKIN,iav
+1268,krmax,Woodland/shrubland,TSKIN_iav_Woodland/shrubland,4,TSKIN,iav
+1269,kmax,Woodland/shrubland,TSKIN_iav_Woodland/shrubland,5,TSKIN,iav
+1270,zsno,Temperate grassland/desert,TSKIN_mean_Temperate grassland/desert,1,TSKIN,mean
+1271,sand_pf,Temperate grassland/desert,TSKIN_mean_Temperate grassland/desert,2,TSKIN,mean
+1272,clay_pf,Temperate grassland/desert,TSKIN_mean_Temperate grassland/desert,3,TSKIN,mean
+1273,zetamaxstable,Temperate grassland/desert,TSKIN_mean_Temperate grassland/desert,4,TSKIN,mean
+1274,d_max,Temperate grassland/desert,TSKIN_mean_Temperate grassland/desert,5,TSKIN,mean
+1275,FUN_fracfixers,Temperate grassland/desert,TSKIN_iav_Temperate grassland/desert,1,TSKIN,iav
+1276,lmr_intercept_atkin,Temperate grassland/desert,TSKIN_iav_Temperate grassland/desert,2,TSKIN,iav
+1277,denitrif_nitrateconc_coefficient,Temperate grassland/desert,TSKIN_iav_Temperate grassland/desert,3,TSKIN,iav
+1278,liq_canopy_storage_scalar,Temperate grassland/desert,TSKIN_iav_Temperate grassland/desert,4,TSKIN,iav
+1279,tau_l2_l3,Temperate grassland/desert,TSKIN_iav_Temperate grassland/desert,5,TSKIN,iav
+1280,zetamaxstable,Boreal forest,TSKIN_mean_Boreal forest,1,TSKIN,mean
+1281,jmaxb1,Boreal forest,TSKIN_mean_Boreal forest,2,TSKIN,mean
+1282,jmaxb0,Boreal forest,TSKIN_mean_Boreal forest,3,TSKIN,mean
+1283,tpu25ratio,Boreal forest,TSKIN_mean_Boreal forest,4,TSKIN,mean
+1284,kmax,Boreal forest,TSKIN_mean_Boreal forest,5,TSKIN,mean
+1285,upplim_destruct_metamorph,Boreal forest,TSKIN_iav_Boreal forest,1,TSKIN,iav
+1286,frac_sat_soil_dsl_init,Boreal forest,TSKIN_iav_Boreal forest,2,TSKIN,iav
+1287,clay_pf,Boreal forest,TSKIN_iav_Boreal forest,3,TSKIN,iav
+1288,krmax,Boreal forest,TSKIN_iav_Boreal forest,4,TSKIN,iav
+1289,accum_factor,Boreal forest,TSKIN_iav_Boreal forest,5,TSKIN,iav
+1290,zetamaxstable,Tundra,TSKIN_mean_Tundra,1,TSKIN,mean
+1291,zsno,Tundra,TSKIN_mean_Tundra,2,TSKIN,mean
+1292,medlynslope,Tundra,TSKIN_mean_Tundra,3,TSKIN,mean
+1293,jmaxb0,Tundra,TSKIN_mean_Tundra,4,TSKIN,mean
+1294,medlynintercept,Tundra,TSKIN_mean_Tundra,5,TSKIN,mean
+1295,zetamaxstable,Tundra,TSKIN_iav_Tundra,1,TSKIN,iav
+1296,zsno,Tundra,TSKIN_iav_Tundra,2,TSKIN,iav
+1297,accum_factor,Tundra,TSKIN_iav_Tundra,3,TSKIN,iav
+1298,upplim_destruct_metamorph,Tundra,TSKIN_iav_Tundra,4,TSKIN,iav
+1299,wc2wjb0,Tundra,TSKIN_iav_Tundra,5,TSKIN,iav
+1300,zetamaxstable,Ice sheet,TSA_mean_Ice sheet,1,TSA,mean
+1301,zsno,Ice sheet,TSA_mean_Ice sheet,2,TSA,mean
+1302,xdrdt,Ice sheet,TSA_mean_Ice sheet,3,TSA,mean
+1303,snw_rds_refrz,Ice sheet,TSA_mean_Ice sheet,4,TSA,mean
+1304,slopebeta,Ice sheet,TSA_mean_Ice sheet,5,TSA,mean
+1305,zetamaxstable,Ice sheet,TSA_iav_Ice sheet,1,TSA,iav
+1306,zsno,Ice sheet,TSA_iav_Ice sheet,2,TSA,iav
+1307,upplim_destruct_metamorph,Ice sheet,TSA_iav_Ice sheet,3,TSA,iav
+1308,accum_factor,Ice sheet,TSA_iav_Ice sheet,4,TSA,iav
+1309,snw_rds_refrz,Ice sheet,TSA_iav_Ice sheet,5,TSA,iav
+1310,kmax,Tropical rain forest,TSA_mean_Tropical rain forest,1,TSA,mean
+1311,maximum_leaf_wetted_fraction,Tropical rain forest,TSA_mean_Tropical rain forest,2,TSA,mean
+1312,leaf_long,Tropical rain forest,TSA_mean_Tropical rain forest,3,TSA,mean
+1313,liq_canopy_storage_scalar,Tropical rain forest,TSA_mean_Tropical rain forest,4,TSA,mean
+1314,rstem,Tropical rain forest,TSA_mean_Tropical rain forest,5,TSA,mean
+1315,maximum_leaf_wetted_fraction,Tropical rain forest,TSA_iav_Tropical rain forest,1,TSA,iav
+1316,kmax,Tropical rain forest,TSA_iav_Tropical rain forest,2,TSA,iav
+1317,cv,Tropical rain forest,TSA_iav_Tropical rain forest,3,TSA,iav
+1318,dleaf,Tropical rain forest,TSA_iav_Tropical rain forest,4,TSA,iav
+1319,z0mr,Tropical rain forest,TSA_iav_Tropical rain forest,5,TSA,iav
+1320,kmax,Tropical seasonal forest/savanna,TSA_mean_Tropical seasonal forest/savanna,1,TSA,mean
+1321,leaf_long,Tropical seasonal forest/savanna,TSA_mean_Tropical seasonal forest/savanna,2,TSA,mean
+1322,maximum_leaf_wetted_fraction,Tropical seasonal forest/savanna,TSA_mean_Tropical seasonal forest/savanna,3,TSA,mean
+1323,fff,Tropical seasonal forest/savanna,TSA_mean_Tropical seasonal forest/savanna,4,TSA,mean
+1324,psi50,Tropical seasonal forest/savanna,TSA_mean_Tropical seasonal forest/savanna,5,TSA,mean
+1325,nstem,Tropical seasonal forest/savanna,TSA_iav_Tropical seasonal forest/savanna,1,TSA,iav
+1326,kmax,Tropical seasonal forest/savanna,TSA_iav_Tropical seasonal forest/savanna,2,TSA,iav
+1327,rstem,Tropical seasonal forest/savanna,TSA_iav_Tropical seasonal forest/savanna,3,TSA,iav
+1328,medlynslope,Tropical seasonal forest/savanna,TSA_iav_Tropical seasonal forest/savanna,4,TSA,iav
+1329,slatop,Tropical seasonal forest/savanna,TSA_iav_Tropical seasonal forest/savanna,5,TSA,iav
+1330,zetamaxstable,Subtropical desert,TSA_mean_Subtropical desert,1,TSA,mean
+1331,sand_pf,Subtropical desert,TSA_mean_Subtropical desert,2,TSA,mean
+1332,clay_pf,Subtropical desert,TSA_mean_Subtropical desert,3,TSA,mean
+1333,csol_sand,Subtropical desert,TSA_mean_Subtropical desert,4,TSA,mean
+1334,tkd_sand,Subtropical desert,TSA_mean_Subtropical desert,5,TSA,mean
+1335,zetamaxstable,Subtropical desert,TSA_iav_Subtropical desert,1,TSA,iav
+1336,sand_pf,Subtropical desert,TSA_iav_Subtropical desert,2,TSA,iav
+1337,frac_sat_soil_dsl_init,Subtropical desert,TSA_iav_Subtropical desert,3,TSA,iav
+1338,vcmaxhd,Subtropical desert,TSA_iav_Subtropical desert,4,TSA,iav
+1339,q10_mr,Subtropical desert,TSA_iav_Subtropical desert,5,TSA,iav
+1340,maximum_leaf_wetted_fraction,Temperate rain forest,TSA_mean_Temperate rain forest,1,TSA,mean
+1341,jmaxb1,Temperate rain forest,TSA_mean_Temperate rain forest,2,TSA,mean
+1342,jmaxb0,Temperate rain forest,TSA_mean_Temperate rain forest,3,TSA,mean
+1343,rstem,Temperate rain forest,TSA_mean_Temperate rain forest,4,TSA,mean
+1344,nstem,Temperate rain forest,TSA_mean_Temperate rain forest,5,TSA,mean
+1345,zetamaxstable,Temperate rain forest,TSA_iav_Temperate rain forest,1,TSA,iav
+1346,lmrhd,Temperate rain forest,TSA_iav_Temperate rain forest,2,TSA,iav
+1347,frac_sat_soil_dsl_init,Temperate rain forest,TSA_iav_Temperate rain forest,3,TSA,iav
+1348,medlynintercept,Temperate rain forest,TSA_iav_Temperate rain forest,4,TSA,iav
+1349,vcmaxha,Temperate rain forest,TSA_iav_Temperate rain forest,5,TSA,iav
+1350,kmax,Temperate seasonal forest,TSA_mean_Temperate seasonal forest,1,TSA,mean
+1351,fbw,Temperate seasonal forest,TSA_mean_Temperate seasonal forest,2,TSA,mean
+1352,jmaxb1,Temperate seasonal forest,TSA_mean_Temperate seasonal forest,3,TSA,mean
+1353,medlynintercept,Temperate seasonal forest,TSA_mean_Temperate seasonal forest,4,TSA,mean
+1354,medlynslope,Temperate seasonal forest,TSA_mean_Temperate seasonal forest,5,TSA,mean
+1355,tpu25ratio,Temperate seasonal forest,TSA_iav_Temperate seasonal forest,1,TSA,iav
+1356,zetamaxstable,Temperate seasonal forest,TSA_iav_Temperate seasonal forest,2,TSA,iav
+1357,clay_pf,Temperate seasonal forest,TSA_iav_Temperate seasonal forest,3,TSA,iav
+1358,leafcn,Temperate seasonal forest,TSA_iav_Temperate seasonal forest,4,TSA,iav
+1359,leaf_long,Temperate seasonal forest,TSA_iav_Temperate seasonal forest,5,TSA,iav
+1360,FUN_fracfixers,Woodland/shrubland,TSA_mean_Woodland/shrubland,1,TSA,mean
+1361,jmaxb1,Woodland/shrubland,TSA_mean_Woodland/shrubland,2,TSA,mean
+1362,tpu25ratio,Woodland/shrubland,TSA_mean_Woodland/shrubland,3,TSA,mean
+1363,lmrha,Woodland/shrubland,TSA_mean_Woodland/shrubland,4,TSA,mean
+1364,fff,Woodland/shrubland,TSA_mean_Woodland/shrubland,5,TSA,mean
+1365,zetamaxstable,Woodland/shrubland,TSA_iav_Woodland/shrubland,1,TSA,iav
+1366,FUN_fracfixers,Woodland/shrubland,TSA_iav_Woodland/shrubland,2,TSA,iav
+1367,ndays_on,Woodland/shrubland,TSA_iav_Woodland/shrubland,3,TSA,iav
+1368,liq_canopy_storage_scalar,Woodland/shrubland,TSA_iav_Woodland/shrubland,4,TSA,iav
+1369,zsno,Woodland/shrubland,TSA_iav_Woodland/shrubland,5,TSA,iav
+1370,zetamaxstable,Temperate grassland/desert,TSA_mean_Temperate grassland/desert,1,TSA,mean
+1371,sand_pf,Temperate grassland/desert,TSA_mean_Temperate grassland/desert,2,TSA,mean
+1372,clay_pf,Temperate grassland/desert,TSA_mean_Temperate grassland/desert,3,TSA,mean
+1373,zsno,Temperate grassland/desert,TSA_mean_Temperate grassland/desert,4,TSA,mean
+1374,d_max,Temperate grassland/desert,TSA_mean_Temperate grassland/desert,5,TSA,mean
+1375,zetamaxstable,Temperate grassland/desert,TSA_iav_Temperate grassland/desert,1,TSA,iav
+1376,clay_pf,Temperate grassland/desert,TSA_iav_Temperate grassland/desert,2,TSA,iav
+1377,som_diffus,Temperate grassland/desert,TSA_iav_Temperate grassland/desert,3,TSA,iav
+1378,sand_pf,Temperate grassland/desert,TSA_iav_Temperate grassland/desert,4,TSA,iav
+1379,wc2wjb0,Temperate grassland/desert,TSA_iav_Temperate grassland/desert,5,TSA,iav
+1380,zetamaxstable,Boreal forest,TSA_mean_Boreal forest,1,TSA,mean
+1381,fbw,Boreal forest,TSA_mean_Boreal forest,2,TSA,mean
+1382,medlynintercept,Boreal forest,TSA_mean_Boreal forest,3,TSA,mean
+1383,upplim_destruct_metamorph,Boreal forest,TSA_mean_Boreal forest,4,TSA,mean
+1384,om_frac_sf,Boreal forest,TSA_mean_Boreal forest,5,TSA,mean
+1385,upplim_destruct_metamorph,Boreal forest,TSA_iav_Boreal forest,1,TSA,iav
+1386,zetamaxstable,Boreal forest,TSA_iav_Boreal forest,2,TSA,iav
+1387,accum_factor,Boreal forest,TSA_iav_Boreal forest,3,TSA,iav
+1388,medlynslope,Boreal forest,TSA_iav_Boreal forest,4,TSA,iav
+1389,zsno,Boreal forest,TSA_iav_Boreal forest,5,TSA,iav
+1390,zetamaxstable,Tundra,TSA_mean_Tundra,1,TSA,mean
+1391,zsno,Tundra,TSA_mean_Tundra,2,TSA,mean
+1392,medlynslope,Tundra,TSA_mean_Tundra,3,TSA,mean
+1393,upplim_destruct_metamorph,Tundra,TSA_mean_Tundra,4,TSA,mean
+1394,medlynintercept,Tundra,TSA_mean_Tundra,5,TSA,mean
+1395,zetamaxstable,Tundra,TSA_iav_Tundra,1,TSA,iav
+1396,accum_factor,Tundra,TSA_iav_Tundra,2,TSA,iav
+1397,zsno,Tundra,TSA_iav_Tundra,3,TSA,iav
+1398,upplim_destruct_metamorph,Tundra,TSA_iav_Tundra,4,TSA,iav
+1399,medlynslope,Tundra,TSA_iav_Tundra,5,TSA,iav
+1400,zetamaxstable,Ice sheet,Q2M_mean_Ice sheet,1,Q2M,mean
+1401,zsno,Ice sheet,Q2M_mean_Ice sheet,2,Q2M,mean
+1402,snw_rds_refrz,Ice sheet,Q2M_mean_Ice sheet,3,Q2M,mean
+1403,upplim_destruct_metamorph,Ice sheet,Q2M_mean_Ice sheet,4,Q2M,mean
+1404,xdrdt,Ice sheet,Q2M_mean_Ice sheet,5,Q2M,mean
+1405,zetamaxstable,Ice sheet,Q2M_iav_Ice sheet,1,Q2M,iav
+1406,zsno,Ice sheet,Q2M_iav_Ice sheet,2,Q2M,iav
+1407,snw_rds_refrz,Ice sheet,Q2M_iav_Ice sheet,3,Q2M,iav
+1408,upplim_destruct_metamorph,Ice sheet,Q2M_iav_Ice sheet,4,Q2M,iav
+1409,accum_factor,Ice sheet,Q2M_iav_Ice sheet,5,Q2M,iav
+1410,maximum_leaf_wetted_fraction,Tropical rain forest,Q2M_mean_Tropical rain forest,1,Q2M,mean
+1411,nstem,Tropical rain forest,Q2M_mean_Tropical rain forest,2,Q2M,mean
+1412,cv,Tropical rain forest,Q2M_mean_Tropical rain forest,3,Q2M,mean
+1413,liq_canopy_storage_scalar,Tropical rain forest,Q2M_mean_Tropical rain forest,4,Q2M,mean
+1414,medlynintercept,Tropical rain forest,Q2M_mean_Tropical rain forest,5,Q2M,mean
+1415,maximum_leaf_wetted_fraction,Tropical rain forest,Q2M_iav_Tropical rain forest,1,Q2M,iav
+1416,cv,Tropical rain forest,Q2M_iav_Tropical rain forest,2,Q2M,iav
+1417,dleaf,Tropical rain forest,Q2M_iav_Tropical rain forest,3,Q2M,iav
+1418,nstem,Tropical rain forest,Q2M_iav_Tropical rain forest,4,Q2M,iav
+1419,fff,Tropical rain forest,Q2M_iav_Tropical rain forest,5,Q2M,iav
+1420,medlynintercept,Tropical seasonal forest/savanna,Q2M_mean_Tropical seasonal forest/savanna,1,Q2M,mean
+1421,fff,Tropical seasonal forest/savanna,Q2M_mean_Tropical seasonal forest/savanna,2,Q2M,mean
+1422,maximum_leaf_wetted_fraction,Tropical seasonal forest/savanna,Q2M_mean_Tropical seasonal forest/savanna,3,Q2M,mean
+1423,sand_pf,Tropical seasonal forest/savanna,Q2M_mean_Tropical seasonal forest/savanna,4,Q2M,mean
+1424,frac_sat_soil_dsl_init,Tropical seasonal forest/savanna,Q2M_mean_Tropical seasonal forest/savanna,5,Q2M,mean
+1425,frac_sat_soil_dsl_init,Tropical seasonal forest/savanna,Q2M_iav_Tropical seasonal forest/savanna,1,Q2M,iav
+1426,maximum_leaf_wetted_fraction,Tropical seasonal forest/savanna,Q2M_iav_Tropical seasonal forest/savanna,2,Q2M,iav
+1427,krmax,Tropical seasonal forest/savanna,Q2M_iav_Tropical seasonal forest/savanna,3,Q2M,iav
+1428,medlynintercept,Tropical seasonal forest/savanna,Q2M_iav_Tropical seasonal forest/savanna,4,Q2M,iav
+1429,d_max,Tropical seasonal forest/savanna,Q2M_iav_Tropical seasonal forest/savanna,5,Q2M,iav
+1430,d_max,Subtropical desert,Q2M_mean_Subtropical desert,1,Q2M,mean
+1431,zlnd,Subtropical desert,Q2M_mean_Subtropical desert,2,Q2M,mean
+1432,fff,Subtropical desert,Q2M_mean_Subtropical desert,3,Q2M,mean
+1433,zetamaxstable,Subtropical desert,Q2M_mean_Subtropical desert,4,Q2M,mean
+1434,frac_sat_soil_dsl_init,Subtropical desert,Q2M_mean_Subtropical desert,5,Q2M,mean
+1435,d_max,Subtropical desert,Q2M_iav_Subtropical desert,1,Q2M,iav
+1436,clay_pf,Subtropical desert,Q2M_iav_Subtropical desert,2,Q2M,iav
+1437,sand_pf,Subtropical desert,Q2M_iav_Subtropical desert,3,Q2M,iav
+1438,frac_sat_soil_dsl_init,Subtropical desert,Q2M_iav_Subtropical desert,4,Q2M,iav
+1439,medlynslope,Subtropical desert,Q2M_iav_Subtropical desert,5,Q2M,iav
+1440,nstem,Temperate rain forest,Q2M_mean_Temperate rain forest,1,Q2M,mean
+1441,rstem,Temperate rain forest,Q2M_mean_Temperate rain forest,2,Q2M,mean
+1442,maximum_leaf_wetted_fraction,Temperate rain forest,Q2M_mean_Temperate rain forest,3,Q2M,mean
+1443,cv,Temperate rain forest,Q2M_mean_Temperate rain forest,4,Q2M,mean
+1444,csoilc,Temperate rain forest,Q2M_mean_Temperate rain forest,5,Q2M,mean
+1445,nstem,Temperate rain forest,Q2M_iav_Temperate rain forest,1,Q2M,iav
+1446,kmax,Temperate rain forest,Q2M_iav_Temperate rain forest,2,Q2M,iav
+1447,jmaxb1,Temperate rain forest,Q2M_iav_Temperate rain forest,3,Q2M,iav
+1448,tpu25ratio,Temperate rain forest,Q2M_iav_Temperate rain forest,4,Q2M,iav
+1449,rstem,Temperate rain forest,Q2M_iav_Temperate rain forest,5,Q2M,iav
+1450,medlynintercept,Temperate seasonal forest,Q2M_mean_Temperate seasonal forest,1,Q2M,mean
+1451,medlynslope,Temperate seasonal forest,Q2M_mean_Temperate seasonal forest,2,Q2M,mean
+1452,liq_canopy_storage_scalar,Temperate seasonal forest,Q2M_mean_Temperate seasonal forest,3,Q2M,mean
+1453,maximum_leaf_wetted_fraction,Temperate seasonal forest,Q2M_mean_Temperate seasonal forest,4,Q2M,mean
+1454,cv,Temperate seasonal forest,Q2M_mean_Temperate seasonal forest,5,Q2M,mean
+1455,kmax,Temperate seasonal forest,Q2M_iav_Temperate seasonal forest,1,Q2M,iav
+1456,liq_canopy_storage_scalar,Temperate seasonal forest,Q2M_iav_Temperate seasonal forest,2,Q2M,iav
+1457,fff,Temperate seasonal forest,Q2M_iav_Temperate seasonal forest,3,Q2M,iav
+1458,theta_cj,Temperate seasonal forest,Q2M_iav_Temperate seasonal forest,4,Q2M,iav
+1459,medlynslope,Temperate seasonal forest,Q2M_iav_Temperate seasonal forest,5,Q2M,iav
+1460,fff,Woodland/shrubland,Q2M_mean_Woodland/shrubland,1,Q2M,mean
+1461,dleaf,Woodland/shrubland,Q2M_mean_Woodland/shrubland,2,Q2M,mean
+1462,medlynintercept,Woodland/shrubland,Q2M_mean_Woodland/shrubland,3,Q2M,mean
+1463,sand_pf,Woodland/shrubland,Q2M_mean_Woodland/shrubland,4,Q2M,mean
+1464,frac_sat_soil_dsl_init,Woodland/shrubland,Q2M_mean_Woodland/shrubland,5,Q2M,mean
+1465,jmaxb0,Woodland/shrubland,Q2M_iav_Woodland/shrubland,1,Q2M,iav
+1466,frac_sat_soil_dsl_init,Woodland/shrubland,Q2M_iav_Woodland/shrubland,2,Q2M,iav
+1467,wc2wjb0,Woodland/shrubland,Q2M_iav_Woodland/shrubland,3,Q2M,iav
+1468,fff,Woodland/shrubland,Q2M_iav_Woodland/shrubland,4,Q2M,iav
+1469,jmaxb1,Woodland/shrubland,Q2M_iav_Woodland/shrubland,5,Q2M,iav
+1470,d_max,Temperate grassland/desert,Q2M_mean_Temperate grassland/desert,1,Q2M,mean
+1471,zsno,Temperate grassland/desert,Q2M_mean_Temperate grassland/desert,2,Q2M,mean
+1472,sand_pf,Temperate grassland/desert,Q2M_mean_Temperate grassland/desert,3,Q2M,mean
+1473,fff,Temperate grassland/desert,Q2M_mean_Temperate grassland/desert,4,Q2M,mean
+1474,clay_pf,Temperate grassland/desert,Q2M_mean_Temperate grassland/desert,5,Q2M,mean
+1475,d_max,Temperate grassland/desert,Q2M_iav_Temperate grassland/desert,1,Q2M,iav
+1476,zsno,Temperate grassland/desert,Q2M_iav_Temperate grassland/desert,2,Q2M,iav
+1477,sand_pf,Temperate grassland/desert,Q2M_iav_Temperate grassland/desert,3,Q2M,iav
+1478,medlynintercept,Temperate grassland/desert,Q2M_iav_Temperate grassland/desert,4,Q2M,iav
+1479,zlnd,Temperate grassland/desert,Q2M_iav_Temperate grassland/desert,5,Q2M,iav
+1480,medlynintercept,Boreal forest,Q2M_mean_Boreal forest,1,Q2M,mean
+1481,medlynslope,Boreal forest,Q2M_mean_Boreal forest,2,Q2M,mean
+1482,fff,Boreal forest,Q2M_mean_Boreal forest,3,Q2M,mean
+1483,liq_canopy_storage_scalar,Boreal forest,Q2M_mean_Boreal forest,4,Q2M,mean
+1484,maximum_leaf_wetted_fraction,Boreal forest,Q2M_mean_Boreal forest,5,Q2M,mean
+1485,fff,Boreal forest,Q2M_iav_Boreal forest,1,Q2M,iav
+1486,sand_pf,Boreal forest,Q2M_iav_Boreal forest,2,Q2M,iav
+1487,krmax,Boreal forest,Q2M_iav_Boreal forest,3,Q2M,iav
+1488,clay_pf,Boreal forest,Q2M_iav_Boreal forest,4,Q2M,iav
+1489,frac_sat_soil_dsl_init,Boreal forest,Q2M_iav_Boreal forest,5,Q2M,iav
+1490,fff,Tundra,Q2M_mean_Tundra,1,Q2M,mean
+1491,zetamaxstable,Tundra,Q2M_mean_Tundra,2,Q2M,mean
+1492,om_frac_sf,Tundra,Q2M_mean_Tundra,3,Q2M,mean
+1493,slopebeta,Tundra,Q2M_mean_Tundra,4,Q2M,mean
+1494,slopemax,Tundra,Q2M_mean_Tundra,5,Q2M,mean
+1495,zetamaxstable,Tundra,Q2M_iav_Tundra,1,Q2M,iav
+1496,slopebeta,Tundra,Q2M_iav_Tundra,2,Q2M,iav
+1497,fff,Tundra,Q2M_iav_Tundra,3,Q2M,iav
+1498,slopemax,Tundra,Q2M_iav_Tundra,4,Q2M,iav
+1499,medlynintercept,Tundra,Q2M_iav_Tundra,5,Q2M,iav
+1500,zsno,Ice sheet,U10_mean_Ice sheet,1,U10,mean
+1501,zetamaxstable,Ice sheet,U10_mean_Ice sheet,2,U10,mean
+1502,wind_min,Ice sheet,U10_mean_Ice sheet,3,U10,mean
+1503,xdrdt,Ice sheet,U10_mean_Ice sheet,4,U10,mean
+1504,snw_rds_refrz,Ice sheet,U10_mean_Ice sheet,5,U10,mean
+1505,zetamaxstable,Ice sheet,U10_iav_Ice sheet,1,U10,iav
+1506,zsno,Ice sheet,U10_iav_Ice sheet,2,U10,iav
+1507,xdrdt,Ice sheet,U10_iav_Ice sheet,3,U10,iav
+1508,wind_min,Ice sheet,U10_iav_Ice sheet,4,U10,iav
+1509,rho_max,Ice sheet,U10_iav_Ice sheet,5,U10,iav
+1510,z0mr,Tropical rain forest,U10_mean_Tropical rain forest,1,U10,mean
+1511,rstem,Tropical rain forest,U10_mean_Tropical rain forest,2,U10,mean
+1512,fbw,Tropical rain forest,U10_mean_Tropical rain forest,3,U10,mean
+1513,maximum_leaf_wetted_fraction,Tropical rain forest,U10_mean_Tropical rain forest,4,U10,mean
+1514,cv,Tropical rain forest,U10_mean_Tropical rain forest,5,U10,mean
+1515,z0mr,Tropical rain forest,U10_iav_Tropical rain forest,1,U10,iav
+1516,nstem,Tropical rain forest,U10_iav_Tropical rain forest,2,U10,iav
+1517,wind_min,Tropical rain forest,U10_iav_Tropical rain forest,3,U10,iav
+1518,rstem,Tropical rain forest,U10_iav_Tropical rain forest,4,U10,iav
+1519,fbw,Tropical rain forest,U10_iav_Tropical rain forest,5,U10,iav
+1520,z0mr,Tropical seasonal forest/savanna,U10_mean_Tropical seasonal forest/savanna,1,U10,mean
+1521,wind_min,Tropical seasonal forest/savanna,U10_mean_Tropical seasonal forest/savanna,2,U10,mean
+1522,nstem,Tropical seasonal forest/savanna,U10_mean_Tropical seasonal forest/savanna,3,U10,mean
+1523,fff,Tropical seasonal forest/savanna,U10_mean_Tropical seasonal forest/savanna,4,U10,mean
+1524,rstem,Tropical seasonal forest/savanna,U10_mean_Tropical seasonal forest/savanna,5,U10,mean
+1525,wind_min,Tropical seasonal forest/savanna,U10_iav_Tropical seasonal forest/savanna,1,U10,iav
+1526,fff,Tropical seasonal forest/savanna,U10_iav_Tropical seasonal forest/savanna,2,U10,iav
+1527,theta_cj,Tropical seasonal forest/savanna,U10_iav_Tropical seasonal forest/savanna,3,U10,iav
+1528,frac_sat_soil_dsl_init,Tropical seasonal forest/savanna,U10_iav_Tropical seasonal forest/savanna,4,U10,iav
+1529,leafcn,Tropical seasonal forest/savanna,U10_iav_Tropical seasonal forest/savanna,5,U10,iav
+1530,zetamaxstable,Subtropical desert,U10_mean_Subtropical desert,1,U10,mean
+1531,zlnd,Subtropical desert,U10_mean_Subtropical desert,2,U10,mean
+1532,d_max,Subtropical desert,U10_mean_Subtropical desert,3,U10,mean
+1533,clay_pf,Subtropical desert,U10_mean_Subtropical desert,4,U10,mean
+1534,sand_pf,Subtropical desert,U10_mean_Subtropical desert,5,U10,mean
+1535,vcmaxhd,Subtropical desert,U10_iav_Subtropical desert,1,U10,iav
+1536,leafcn,Subtropical desert,U10_iav_Subtropical desert,2,U10,iav
+1537,jmaxb0,Subtropical desert,U10_iav_Subtropical desert,3,U10,iav
+1538,FUN_fracfixers,Subtropical desert,U10_iav_Subtropical desert,4,U10,iav
+1539,kcha,Subtropical desert,U10_iav_Subtropical desert,5,U10,iav
+1540,tpu25ratio,Temperate rain forest,U10_mean_Temperate rain forest,1,U10,mean
+1541,tpuha,Temperate rain forest,U10_mean_Temperate rain forest,2,U10,mean
+1542,jmaxb1,Temperate rain forest,U10_mean_Temperate rain forest,3,U10,mean
+1543,z0mr,Temperate rain forest,U10_mean_Temperate rain forest,4,U10,mean
+1544,jmaxha,Temperate rain forest,U10_mean_Temperate rain forest,5,U10,mean
+1545,tpu25ratio,Temperate rain forest,U10_iav_Temperate rain forest,1,U10,iav
+1546,tpuha,Temperate rain forest,U10_iav_Temperate rain forest,2,U10,iav
+1547,jmaxb1,Temperate rain forest,U10_iav_Temperate rain forest,3,U10,iav
+1548,lmrha,Temperate rain forest,U10_iav_Temperate rain forest,4,U10,iav
+1549,jmaxb0,Temperate rain forest,U10_iav_Temperate rain forest,5,U10,iav
+1550,z0mr,Temperate seasonal forest,U10_mean_Temperate seasonal forest,1,U10,mean
+1551,nstem,Temperate seasonal forest,U10_mean_Temperate seasonal forest,2,U10,mean
+1552,jmaxb1,Temperate seasonal forest,U10_mean_Temperate seasonal forest,3,U10,mean
+1553,jmaxb0,Temperate seasonal forest,U10_mean_Temperate seasonal forest,4,U10,mean
+1554,tpu25ratio,Temperate seasonal forest,U10_mean_Temperate seasonal forest,5,U10,mean
+1555,liq_canopy_storage_scalar,Temperate seasonal forest,U10_iav_Temperate seasonal forest,1,U10,iav
+1556,medlynintercept,Temperate seasonal forest,U10_iav_Temperate seasonal forest,2,U10,iav
+1557,q10_mr,Temperate seasonal forest,U10_iav_Temperate seasonal forest,3,U10,iav
+1558,medlynslope,Temperate seasonal forest,U10_iav_Temperate seasonal forest,4,U10,iav
+1559,lmrha,Temperate seasonal forest,U10_iav_Temperate seasonal forest,5,U10,iav
+1560,z0mr,Woodland/shrubland,U10_mean_Woodland/shrubland,1,U10,mean
+1561,zsno,Woodland/shrubland,U10_mean_Woodland/shrubland,2,U10,mean
+1562,fff,Woodland/shrubland,U10_mean_Woodland/shrubland,3,U10,mean
+1563,jmaxb1,Woodland/shrubland,U10_mean_Woodland/shrubland,4,U10,mean
+1564,tpu25ratio,Woodland/shrubland,U10_mean_Woodland/shrubland,5,U10,mean
+1565,zsno,Woodland/shrubland,U10_iav_Woodland/shrubland,1,U10,iav
+1566,FUN_fracfixers,Woodland/shrubland,U10_iav_Woodland/shrubland,2,U10,iav
+1567,fff,Woodland/shrubland,U10_iav_Woodland/shrubland,3,U10,iav
+1568,frac_sat_soil_dsl_init,Woodland/shrubland,U10_iav_Woodland/shrubland,4,U10,iav
+1569,kmax,Woodland/shrubland,U10_iav_Woodland/shrubland,5,U10,iav
+1570,zsno,Temperate grassland/desert,U10_mean_Temperate grassland/desert,1,U10,mean
+1571,zetamaxstable,Temperate grassland/desert,U10_mean_Temperate grassland/desert,2,U10,mean
+1572,zlnd,Temperate grassland/desert,U10_mean_Temperate grassland/desert,3,U10,mean
+1573,wind_min,Temperate grassland/desert,U10_mean_Temperate grassland/desert,4,U10,mean
+1574,z0mr,Temperate grassland/desert,U10_mean_Temperate grassland/desert,5,U10,mean
+1575,zsno,Temperate grassland/desert,U10_iav_Temperate grassland/desert,1,U10,iav
+1576,wind_min,Temperate grassland/desert,U10_iav_Temperate grassland/desert,2,U10,iav
+1577,zlnd,Temperate grassland/desert,U10_iav_Temperate grassland/desert,3,U10,iav
+1578,FUN_fracfixers,Temperate grassland/desert,U10_iav_Temperate grassland/desert,4,U10,iav
+1579,leafcn,Temperate grassland/desert,U10_iav_Temperate grassland/desert,5,U10,iav
+1580,zsno,Boreal forest,U10_mean_Boreal forest,1,U10,mean
+1581,z0mr,Boreal forest,U10_mean_Boreal forest,2,U10,mean
+1582,nstem,Boreal forest,U10_mean_Boreal forest,3,U10,mean
+1583,fbw,Boreal forest,U10_mean_Boreal forest,4,U10,mean
+1584,tpu25ratio,Boreal forest,U10_mean_Boreal forest,5,U10,mean
+1585,e_ice,Boreal forest,U10_iav_Boreal forest,1,U10,iav
+1586,nstem,Boreal forest,U10_iav_Boreal forest,2,U10,iav
+1587,zsno,Boreal forest,U10_iav_Boreal forest,3,U10,iav
+1588,accum_factor,Boreal forest,U10_iav_Boreal forest,4,U10,iav
+1589,zetamaxstable,Boreal forest,U10_iav_Boreal forest,5,U10,iav
+1590,zsno,Tundra,U10_mean_Tundra,1,U10,mean
+1591,zetamaxstable,Tundra,U10_mean_Tundra,2,U10,mean
+1592,nstem,Tundra,U10_mean_Tundra,3,U10,mean
+1593,z0mr,Tundra,U10_mean_Tundra,4,U10,mean
+1594,wind_min,Tundra,U10_mean_Tundra,5,U10,mean
+1595,zsno,Tundra,U10_iav_Tundra,1,U10,iav
+1596,zetamaxstable,Tundra,U10_iav_Tundra,2,U10,iav
+1597,nstem,Tundra,U10_iav_Tundra,3,U10,iav
+1598,tpu25ratio,Tundra,U10_iav_Tundra,4,U10,iav
+1599,froot_leaf,Tundra,U10_iav_Tundra,5,U10,iav
+1600,kmax,global,EFLX_LH_TOT_MEAN_global,1,EFLX_LH_TOT,mean
+1601,fff,global,EFLX_LH_TOT_MEAN_global,2,EFLX_LH_TOT,mean
+1602,medlynslope,global,EFLX_LH_TOT_MEAN_global,3,EFLX_LH_TOT,mean
+1603,liq_canopy_storage_scalar,global,EFLX_LH_TOT_MEAN_global,4,EFLX_LH_TOT,mean
+1604,medlynintercept,global,EFLX_LH_TOT_MEAN_global,5,EFLX_LH_TOT,mean
+1605,frac_sat_soil_dsl_init,global,EFLX_LH_TOT_IAV_global,1,EFLX_LH_TOT,iav
+1606,fff,global,EFLX_LH_TOT_IAV_global,2,EFLX_LH_TOT,iav
+1607,d_max,global,EFLX_LH_TOT_IAV_global,3,EFLX_LH_TOT,iav
+1608,sand_pf,global,EFLX_LH_TOT_IAV_global,4,EFLX_LH_TOT,iav
+1609,vcmaxhd,global,EFLX_LH_TOT_IAV_global,5,EFLX_LH_TOT,iav
+1610,kmax,global,FSH_MEAN_global,1,FSH,mean
+1611,medlynslope,global,FSH_MEAN_global,2,FSH,mean
+1612,liq_canopy_storage_scalar,global,FSH_MEAN_global,3,FSH,mean
+1613,medlynintercept,global,FSH_MEAN_global,4,FSH,mean
+1614,fff,global,FSH_MEAN_global,5,FSH,mean
+1615,frac_sat_soil_dsl_init,global,FSH_IAV_global,1,FSH,iav
+1616,FUN_fracfixers,global,FSH_IAV_global,2,FSH,iav
+1617,maximum_leaf_wetted_fraction,global,FSH_IAV_global,3,FSH,iav
+1618,dleaf,global,FSH_IAV_global,4,FSH,iav
+1619,jmaxb0,global,FSH_IAV_global,5,FSH,iav
+1620,kmax,global,ET_MEAN_global,1,ET,mean
+1621,fff,global,ET_MEAN_global,2,ET,mean
+1622,medlynslope,global,ET_MEAN_global,3,ET,mean
+1623,liq_canopy_storage_scalar,global,ET_MEAN_global,4,ET,mean
+1624,medlynintercept,global,ET_MEAN_global,5,ET,mean
+1625,frac_sat_soil_dsl_init,global,ET_IAV_global,1,ET,iav
+1626,fff,global,ET_IAV_global,2,ET,iav
+1627,d_max,global,ET_IAV_global,3,ET,iav
+1628,sand_pf,global,ET_IAV_global,4,ET,iav
+1629,vcmaxhd,global,ET_IAV_global,5,ET,iav
+1630,z0mr,global,TAUX_MEAN_global,1,TAUX,mean
+1631,nstem,global,TAUX_MEAN_global,2,TAUX,mean
+1632,zsno,global,TAUX_MEAN_global,3,TAUX,mean
+1633,medlynintercept,global,TAUX_MEAN_global,4,TAUX,mean
+1634,tpu25ratio,global,TAUX_MEAN_global,5,TAUX,mean
+1635,z0mr,global,TAUX_IAV_global,1,TAUX,iav
+1636,nstem,global,TAUX_IAV_global,2,TAUX,iav
+1637,zlnd,global,TAUX_IAV_global,3,TAUX,iav
+1638,FUN_fracfixers,global,TAUX_IAV_global,4,TAUX,iav
+1639,zsno,global,TAUX_IAV_global,5,TAUX,iav
+1640,z0mr,global,TAUY_MEAN_global,1,TAUY,mean
+1641,nstem,global,TAUY_MEAN_global,2,TAUY,mean
+1642,zsno,global,TAUY_MEAN_global,3,TAUY,mean
+1643,medlynintercept,global,TAUY_MEAN_global,4,TAUY,mean
+1644,tpu25ratio,global,TAUY_MEAN_global,5,TAUY,mean
+1645,z0mr,global,TAUY_IAV_global,1,TAUY,iav
+1646,nstem,global,TAUY_IAV_global,2,TAUY,iav
+1647,zlnd,global,TAUY_IAV_global,3,TAUY,iav
+1648,FUN_fracfixers,global,TAUY_IAV_global,4,TAUY,iav
+1649,zsno,global,TAUY_IAV_global,5,TAUY,iav
+1650,fff,global,FIRE_MEAN_global,1,FIRE,mean
+1651,kmax,global,FIRE_MEAN_global,2,FIRE,mean
+1652,zetamaxstable,global,FIRE_MEAN_global,3,FIRE,mean
+1653,zlnd,global,FIRE_MEAN_global,4,FIRE,mean
+1654,frac_sat_soil_dsl_init,global,FIRE_MEAN_global,5,FIRE,mean
+1655,sand_pf,global,FIRE_IAV_global,1,FIRE,iav
+1656,frac_sat_soil_dsl_init,global,FIRE_IAV_global,2,FIRE,iav
+1657,d_max,global,FIRE_IAV_global,3,FIRE,iav
+1658,fff,global,FIRE_IAV_global,4,FIRE,iav
+1659,zetamaxstable,global,FIRE_IAV_global,5,FIRE,iav
+1660,taulnir,global,albedo_allSW_MEAN_global,1,albedo_allSW,mean
+1661,rholnir,global,albedo_allSW_MEAN_global,2,albedo_allSW,mean
+1662,rhosnir,global,albedo_allSW_MEAN_global,3,albedo_allSW,mean
+1663,rholvis,global,albedo_allSW_MEAN_global,4,albedo_allSW,mean
+1664,sand_pf,global,albedo_allSW_MEAN_global,5,albedo_allSW,mean
+1665,d_max,global,albedo_allSW_IAV_global,1,albedo_allSW,iav
+1666,maximum_leaf_wetted_fraction,global,albedo_allSW_IAV_global,2,albedo_allSW,iav
+1667,cv,global,albedo_allSW_IAV_global,3,albedo_allSW,iav
+1668,fff,global,albedo_allSW_IAV_global,4,albedo_allSW,iav
+1669,rhosnir,global,albedo_allSW_IAV_global,5,albedo_allSW,iav
+1670,rholvis,global,alb_DirVis_MEAN_global,1,alb_DirVis,mean
+1671,rhosvis,global,alb_DirVis_MEAN_global,2,alb_DirVis,mean
+1672,d_max,global,alb_DirVis_MEAN_global,3,alb_DirVis,mean
+1673,snow_canopy_storage_scalar,global,alb_DirVis_MEAN_global,4,alb_DirVis,mean
+1674,sand_pf,global,alb_DirVis_MEAN_global,5,alb_DirVis,mean
+1675,d_max,global,alb_DirVis_IAV_global,1,alb_DirVis,iav
+1676,maximum_leaf_wetted_fraction,global,alb_DirVis_IAV_global,2,alb_DirVis,iav
+1677,jmaxb0,global,alb_DirVis_IAV_global,3,alb_DirVis,iav
+1678,krmax,global,alb_DirVis_IAV_global,4,alb_DirVis,iav
+1679,kmax,global,alb_DirVis_IAV_global,5,alb_DirVis,iav
+1680,rholvis,global,alb_DifVis_MEAN_global,1,alb_DifVis,mean
+1681,rhosvis,global,alb_DifVis_MEAN_global,2,alb_DifVis,mean
+1682,d_max,global,alb_DifVis_MEAN_global,3,alb_DifVis,mean
+1683,snow_canopy_storage_scalar,global,alb_DifVis_MEAN_global,4,alb_DifVis,mean
+1684,medlynintercept,global,alb_DifVis_MEAN_global,5,alb_DifVis,mean
+1685,d_max,global,alb_DifVis_IAV_global,1,alb_DifVis,iav
+1686,jmaxb0,global,alb_DifVis_IAV_global,2,alb_DifVis,iav
+1687,maximum_leaf_wetted_fraction,global,alb_DifVis_IAV_global,3,alb_DifVis,iav
+1688,leafcn,global,alb_DifVis_IAV_global,4,alb_DifVis,iav
+1689,q10_mr,global,alb_DifVis_IAV_global,5,alb_DifVis,iav
+1690,taulnir,global,alb_DirNIR_MEAN_global,1,alb_DirNIR,mean
+1691,rholnir,global,alb_DirNIR_MEAN_global,2,alb_DirNIR,mean
+1692,rhosnir,global,alb_DirNIR_MEAN_global,3,alb_DirNIR,mean
+1693,xl,global,alb_DirNIR_MEAN_global,4,alb_DirNIR,mean
+1694,sand_pf,global,alb_DirNIR_MEAN_global,5,alb_DirNIR,mean
+1695,rholnir,global,alb_DirNIR_IAV_global,1,alb_DirNIR,iav
+1696,fff,global,alb_DirNIR_IAV_global,2,alb_DirNIR,iav
+1697,d_max,global,alb_DirNIR_IAV_global,3,alb_DirNIR,iav
+1698,taulnir,global,alb_DirNIR_IAV_global,4,alb_DirNIR,iav
+1699,jmaxb0,global,alb_DirNIR_IAV_global,5,alb_DirNIR,iav
+1700,taulnir,global,alb_DifNIR_MEAN_global,1,alb_DifNIR,mean
+1701,rholnir,global,alb_DifNIR_MEAN_global,2,alb_DifNIR,mean
+1702,rhosnir,global,alb_DifNIR_MEAN_global,3,alb_DifNIR,mean
+1703,tausnir,global,alb_DifNIR_MEAN_global,4,alb_DifNIR,mean
+1704,sand_pf,global,alb_DifNIR_MEAN_global,5,alb_DifNIR,mean
+1705,rholnir,global,alb_DifNIR_IAV_global,1,alb_DifNIR,iav
+1706,fff,global,alb_DifNIR_IAV_global,2,alb_DifNIR,iav
+1707,taulnir,global,alb_DifNIR_IAV_global,3,alb_DifNIR,iav
+1708,lmrhd,global,alb_DifNIR_IAV_global,4,alb_DifNIR,iav
+1709,nstem,global,alb_DifNIR_IAV_global,5,alb_DifNIR,iav
+1710,taulnir,global,FSA_MEAN_global,1,FSA,mean
+1711,rholnir,global,FSA_MEAN_global,2,FSA,mean
+1712,rhosnir,global,FSA_MEAN_global,3,FSA,mean
+1713,sand_pf,global,FSA_MEAN_global,4,FSA,mean
+1714,rholvis,global,FSA_MEAN_global,5,FSA,mean
+1715,d_max,global,FSA_IAV_global,1,FSA,iav
+1716,jmaxb0,global,FSA_IAV_global,2,FSA,iav
+1717,medlynslope,global,FSA_IAV_global,3,FSA,iav
+1718,krmax,global,FSA_IAV_global,4,FSA,iav
+1719,kmax,global,FSA_IAV_global,5,FSA,iav
+1720,fff,global,TSKIN_MEAN_global,1,TSKIN,mean
+1721,zetamaxstable,global,TSKIN_MEAN_global,2,TSKIN,mean
+1722,jmaxb0,global,TSKIN_MEAN_global,3,TSKIN,mean
+1723,kmax,global,TSKIN_MEAN_global,4,TSKIN,mean
+1724,leafcn,global,TSKIN_MEAN_global,5,TSKIN,mean
+1725,stem_leaf,global,TSKIN_IAV_global,1,TSKIN,iav
+1726,nstem,global,TSKIN_IAV_global,2,TSKIN,iav
+1727,kmax,global,TSKIN_IAV_global,3,TSKIN,iav
+1728,medlynintercept,global,TSKIN_IAV_global,4,TSKIN,iav
+1729,rholvis,global,TSKIN_IAV_global,5,TSKIN,iav
+1730,zetamaxstable,global,TSA_MEAN_global,1,TSA,mean
+1731,kmax,global,TSA_MEAN_global,2,TSA,mean
+1732,clay_pf,global,TSA_MEAN_global,3,TSA,mean
+1733,leaf_long,global,TSA_MEAN_global,4,TSA,mean
+1734,jmaxb0,global,TSA_MEAN_global,5,TSA,mean
+1735,zetamaxstable,global,TSA_IAV_global,1,TSA,iav
+1736,kmax,global,TSA_IAV_global,2,TSA,iav
+1737,zsno,global,TSA_IAV_global,3,TSA,iav
+1738,sand_pf,global,TSA_IAV_global,4,TSA,iav
+1739,medlynintercept,global,TSA_IAV_global,5,TSA,iav
+1740,d_max,global,Q2M_MEAN_global,1,Q2M,mean
+1741,fff,global,Q2M_MEAN_global,2,Q2M,mean
+1742,medlynintercept,global,Q2M_MEAN_global,3,Q2M,mean
+1743,sand_pf,global,Q2M_MEAN_global,4,Q2M,mean
+1744,dleaf,global,Q2M_MEAN_global,5,Q2M,mean
+1745,d_max,global,Q2M_IAV_global,1,Q2M,iav
+1746,maximum_leaf_wetted_fraction,global,Q2M_IAV_global,2,Q2M,iav
+1747,frac_sat_soil_dsl_init,global,Q2M_IAV_global,3,Q2M,iav
+1748,clay_pf,global,Q2M_IAV_global,4,Q2M,iav
+1749,medlynslope,global,Q2M_IAV_global,5,Q2M,iav
+1750,zsno,global,U10_MEAN_global,1,U10,mean
+1751,z0mr,global,U10_MEAN_global,2,U10,mean
+1752,zetamaxstable,global,U10_MEAN_global,3,U10,mean
+1753,wind_min,global,U10_MEAN_global,4,U10,mean
+1754,nstem,global,U10_MEAN_global,5,U10,mean
+1755,FUN_fracfixers,global,U10_IAV_global,1,U10,iav
+1756,fff,global,U10_IAV_global,2,U10,iav
+1757,sand_pf,global,U10_IAV_global,3,U10,iav
+1758,froot_leaf,global,U10_IAV_global,4,U10,iav
+1759,medlynintercept,global,U10_IAV_global,5,U10,iav
+1760,frac_sat_soil_dsl_init,global,LAC_DJF,1,LAC,mean
+1761,d_max,global,LAC_DJF,2,LAC,mean
+1762,maximum_leaf_wetted_fraction,global,LAC_DJF,3,LAC,mean
+1763,liq_canopy_storage_scalar,global,LAC_DJF,4,LAC,mean
+1764,dleaf,global,LAC_DJF,5,LAC,mean
+1765,frac_sat_soil_dsl_init,global,LAC_JJA,1,LAC,mean
+1766,maximum_leaf_wetted_fraction,global,LAC_JJA,2,LAC,mean
+1767,medlynslope,global,LAC_JJA,3,LAC,mean
+1768,cv,global,LAC_JJA,4,LAC,mean
+1769,liq_canopy_storage_scalar,global,LAC_JJA,5,LAC,mean
+1770,frac_sat_soil_dsl_init,global,LAC_MAM,1,LAC,mean
+1771,krmax,global,LAC_MAM,2,LAC,mean
+1772,maximum_leaf_wetted_fraction,global,LAC_MAM,3,LAC,mean
+1773,medlynintercept,global,LAC_MAM,4,LAC,mean
+1774,kmax,global,LAC_MAM,5,LAC,mean
+1775,frac_sat_soil_dsl_init,global,LAC_SON,1,LAC,mean
+1776,maximum_leaf_wetted_fraction,global,LAC_SON,2,LAC,mean
+1777,krmax,global,LAC_SON,3,LAC,mean
+1778,dleaf,global,LAC_SON,4,LAC,mean
+1779,d_max,global,LAC_SON,5,LAC,mean

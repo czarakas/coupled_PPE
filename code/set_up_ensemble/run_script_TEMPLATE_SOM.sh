@@ -9,14 +9,14 @@ export CESM_CASE_NAME=TEMPLATE_CASENAME
 export CESM_CASE_RES=f19_g17
 export CESM_COMPSET=1850_CAM60_CLM50%BGC_CICE_DOCN%SOM_SROF_CISM2%NOEVOLVE_SWAV
 export PROJECT_NUM=UWAS0044
-export BASECASE_NAME=COUP0000_1850_SOM
+export BASECASE_NAME=COUP0000_PI_SOM
 
 export CESM_SRC_DIR=TEMPLATE_SOURCECODE   #codebase to use to run CESM
 export CESM_CASE_DIR=TEMPLATE_CASEDIR     #where to save case
 export ARCHIVE_DIR=TEMPLATE_ARCHDIR       #where to save output
 export RUN_DIR=TEMPLATE_RUNDIR
 export FILENAME=TEMPLATE_FILENAME
-export RESTART_DIR=/glade/scratch/czarakas/archive/COUP0000_1850spinup_SOM_v02/rest/0041-01-01-00000 #where the restart files to use are
+export RESTART_DIR=/glade/scratch/czarakas/archive/COUP0000_1850spinup_SOM_v02/rest/0049-01-01-00000 #where the restart files to use are
 
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -29,8 +29,8 @@ export RESTART_DIR=/glade/scratch/czarakas/archive/COUP0000_1850spinup_SOM_v02/r
 cd ${CESM_SRC_DIR}/cime/scripts
 
 # Create new case
-./create_clone --case ${CESM_CASE_DIR}/${CESM_CASE_NAME} --clone ${CESM_CASE_DIR}/${BASECASE_NAME}
-#./create_newcase --case ${CESM_CASE_DIR}/${CESM_CASE_NAME} --res ${CESM_CASE_RES} --compset ${CESM_COMPSET} --project ${PROJECT_NUM} --run-unsupported
+#./create_clone --case ${CESM_CASE_DIR}/${CESM_CASE_NAME} --clone ${CESM_CASE_DIR}/${BASECASE_NAME}
+./create_newcase --case ${CESM_CASE_DIR}/${CESM_CASE_NAME} --res ${CESM_CASE_RES} --compset ${CESM_COMPSET} --project ${PROJECT_NUM} --run-unsupported
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Configure case
@@ -40,7 +40,7 @@ cd ${CESM_CASE_DIR}/${CESM_CASE_NAME}
 # Identify simulation to branch from
 ./xmlchange RUN_TYPE=branch
 ./xmlchange RUN_REFCASE=COUP0000_1850spinup_SOM_v02
-./xmlchange RUN_REFDATE=0041-01-01
+./xmlchange RUN_REFDATE=0049-01-01
 
 #+++ Modify xml files related to run time
 #do these settings if this is a test run
@@ -53,7 +53,7 @@ cd ${CESM_CASE_DIR}/${CESM_CASE_NAME}
 ./xmlchange STOP_OPTION="nyears"
 ./xmlchange STOP_N=1
 ./xmlchange RESUBMIT=0
-./xmlchange JOB_WALLCLOCK_TIME=10:30:00 --subgroup case.run
+./xmlchange JOB_WALLCLOCK_TIME=11:30:00 --subgroup case.run
 
 ./xmlchange DOCN_SOM_FILENAME="pop_frc.b.e21.BW1850.f09_g17.CMIP6-piControl.001.190514.nc"
 
@@ -145,7 +145,7 @@ nhtfrq(2)=0   !use this for actual spin up
 mfilt(2)=120
 
 !----History files (h2): daily output
-fincl3 = 'TSMN','TSMX','PRECT'
+fincl3 = 'TSMN','TSMX','TS','TREFHT','PRECT'
 nhtfrq(3)=-24
 mfilt(3)=365
 
@@ -172,8 +172,8 @@ cd ${RUN_DIR}/${CESM_CASE_NAME}/run
 cp $RESTART_DIR/* .
 
 # Build the case
-cd ${CESM_CASE_DIR}/${CESM_CASE_NAME}
-qcmd -A ${PROJECT_NUM} -- ./case.build
+#cd ${CESM_CASE_DIR}/${CESM_CASE_NAME}
+#qcmd -A ${PROJECT_NUM} -- ./case.build
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Submit case
