@@ -5,11 +5,11 @@
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Define directories and user settings
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-export CESM_CASE_NAME=OFFL0000_PI_CPLhist
+export CESM_CASE_NAME=OFFL0000_PI_v02
 export CESM_CASE_RES=f19_g17
 export CESM_COMPSET=1850_DATM%CPLHIST_CLM50%BGC_SICE_SOCN_MOSART_CISM2%NOEVOLVE_SWAV
 export PROJECT_NUM=UWAS0044
-export BASECASE_NAME=COUP0000_PI_SOM
+export BASECASE_NAME=OFFL0000_PI_CPLhist
 
 export CESM_SRC_DIR=/glade/u/home/czarakas/cesm_source/cesm_coupled_PPEn11   #codebase to use to run CESM
 export CESM_CASE_DIR=/glade/u/home/czarakas/cesm_cases/coupled_PPE     #where to save case
@@ -29,8 +29,8 @@ export RESTART_DIR=/glade/scratch/czarakas/archive/COUP0000_1850spinup_SOM_v02/r
 cd ${CESM_SRC_DIR}/cime/scripts
 
 # Create new case
-#./create_clone --case ${CESM_CASE_DIR}/${CESM_CASE_NAME} --clone ${CESM_CASE_DIR}/${BASECASE_NAME}
-./create_newcase --case ${CESM_CASE_DIR}/${CESM_CASE_NAME} --res ${CESM_CASE_RES} --compset ${CESM_COMPSET} --project ${PROJECT_NUM} --run-unsupported
+./create_clone --case ${CESM_CASE_DIR}/${CESM_CASE_NAME} --clone ${CESM_CASE_DIR}/${BASECASE_NAME} --project ${PROJECT_NUM}
+#./create_newcase --case ${CESM_CASE_DIR}/${CESM_CASE_NAME} --res ${CESM_CASE_RES} --compset ${CESM_COMPSET} --project ${PROJECT_NUM} --run-unsupported
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Configure case
@@ -142,8 +142,11 @@ EOF
 cp $FILENAME .
 
 # Build the case
-cd ${CESM_CASE_DIR}/${CESM_CASE_NAME}
-qcmd -A ${PROJECT_NUM} -- ./case.build
+./xmlchange BUILD_COMPLETE=TRUE
+./xmlchange EXEROOT=$RUN_DIR/$BASECASE_NAME"/bld"
+
+#cd ${CESM_CASE_DIR}/${CESM_CASE_NAME}
+#qcmd -A ${PROJECT_NUM} -- ./case.build
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Submit case

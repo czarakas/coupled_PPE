@@ -5,17 +5,17 @@
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Define directories and user settings
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-export CESM_CASE_NAME=TEMPLATE_CASENAME
+export CESM_CASE_NAME=OFFL0027_PI_v02
 export CESM_CASE_RES=f19_g17
 export CESM_COMPSET=1850_DATM%CPLHIST_CLM50%BGC_SICE_SOCN_MOSART_CISM2%NOEVOLVE_SWAV
 export PROJECT_NUM=UWAS0044
 export BASECASE_NAME=OFFL0000_PI_CPLhist
 
-export CESM_SRC_DIR=TEMPLATE_SOURCECODE   #codebase to use to run CESM
-export CESM_CASE_DIR=TEMPLATE_CASEDIR     #where to save case
-export ARCHIVE_DIR=TEMPLATE_ARCHDIR       #where to save output
-export RUN_DIR=TEMPLATE_RUNDIR
-export FILENAME=TEMPLATE_FILENAME
+export CESM_SRC_DIR=/glade/u/home/czarakas/cesm_source/cesm_coupled_PPEn11   #codebase to use to run CESM
+export CESM_CASE_DIR=/glade/u/home/czarakas/cesm_cases/coupled_PPE     #where to save case
+export ARCHIVE_DIR=/glade/scratch/czarakas/archive/       #where to save output
+export RUN_DIR=/glade/scratch/czarakas
+export FILENAME=/glade/u/home/czarakas/coupled_PPE/code/run_scripts/run_script_OFFL0027_PI_30Mar2022.sh
 export RESTART_DIR=/glade/scratch/czarakas/archive/COUP0000_1850spinup_SOM_v02/rest/0049-01-01-00000 #where the restart files to use are
 
 
@@ -71,7 +71,7 @@ cd ${CESM_CASE_DIR}/${CESM_CASE_NAME}
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Modify namelists
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-cp TEMPLATE_NAMELIST user_nl_clm
+cp "/glade/scratch/djk2120/PPEn11/namelist_mods/OAAT0160.txt" user_nl_clm
 
 # Modify land namelist
 cat >> user_nl_clm << EOF
@@ -81,7 +81,7 @@ use_init_interp = .true.
 
 !----------------------------------------------------------------------------------
 ! ---------------------------------PARAMETER FILE----------------------------------
-paramfile = TEMPLATE_PARAMFILE
+paramfile = "/glade/scratch/djk2120/PPEn11/paramfiles/OAAT0160.nc"
 
 !----------------------------------------------------------------------------------
 !------------------------------HISTORY FILES--------------------------------------

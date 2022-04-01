@@ -5,17 +5,17 @@
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Define directories and user settings
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-export CESM_CASE_NAME=TEMPLATE_CASENAME
+export CESM_CASE_NAME=OFFL0000_PI_CPLhist
 export CESM_CASE_RES=f19_g17
 export CESM_COMPSET=1850_DATM%CPLHIST_CLM50%BGC_SICE_SOCN_MOSART_CISM2%NOEVOLVE_SWAV
 export PROJECT_NUM=UWAS0044
-export BASECASE_NAME=OFFL0000_PI_CPLhist
+export BASECASE_NAME=COUP0000_PI_SOM
 
-export CESM_SRC_DIR=TEMPLATE_SOURCECODE   #codebase to use to run CESM
-export CESM_CASE_DIR=TEMPLATE_CASEDIR     #where to save case
-export ARCHIVE_DIR=TEMPLATE_ARCHDIR       #where to save output
-export RUN_DIR=TEMPLATE_RUNDIR
-export FILENAME=TEMPLATE_FILENAME
+export CESM_SRC_DIR=/glade/u/home/czarakas/cesm_source/cesm_coupled_PPEn11   #codebase to use to run CESM
+export CESM_CASE_DIR=/glade/u/home/czarakas/cesm_cases/coupled_PPE     #where to save case
+export ARCHIVE_DIR=/glade/scratch/czarakas/archive/       #where to save output
+export RUN_DIR=/glade/scratch/czarakas
+export FILENAME=/glade/u/home/czarakas/coupled_PPE/code/run_scripts/run_script_OFFL0000_PI_30Mar2022.sh
 export RESTART_DIR=/glade/scratch/czarakas/archive/COUP0000_1850spinup_SOM_v02/rest/0049-01-01-00000 #where the restart files to use are
 
 
@@ -29,8 +29,8 @@ export RESTART_DIR=/glade/scratch/czarakas/archive/COUP0000_1850spinup_SOM_v02/r
 cd ${CESM_SRC_DIR}/cime/scripts
 
 # Create new case
-./create_clone --case ${CESM_CASE_DIR}/${CESM_CASE_NAME} --clone ${CESM_CASE_DIR}/${BASECASE_NAME} --project ${PROJECT_NUM}
-#./create_newcase --case ${CESM_CASE_DIR}/${CESM_CASE_NAME} --res ${CESM_CASE_RES} --compset ${CESM_COMPSET} --project ${PROJECT_NUM} --run-unsupported
+#./create_clone --case ${CESM_CASE_DIR}/${CESM_CASE_NAME} --clone ${CESM_CASE_DIR}/${BASECASE_NAME}
+./create_newcase --case ${CESM_CASE_DIR}/${CESM_CASE_NAME} --res ${CESM_CASE_RES} --compset ${CESM_COMPSET} --project ${PROJECT_NUM} --run-unsupported
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Configure case
@@ -71,7 +71,7 @@ cd ${CESM_CASE_DIR}/${CESM_CASE_NAME}
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Modify namelists
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-cp TEMPLATE_NAMELIST user_nl_clm
+cp "/glade/scratch/djk2120/PPEn11/namelist_mods/OAAT0000.txt" user_nl_clm
 
 # Modify land namelist
 cat >> user_nl_clm << EOF
@@ -81,7 +81,7 @@ use_init_interp = .true.
 
 !----------------------------------------------------------------------------------
 ! ---------------------------------PARAMETER FILE----------------------------------
-paramfile = TEMPLATE_PARAMFILE
+paramfile = "/glade/scratch/djk2120/PPEn11/paramfiles/OAAT0000.nc"
 
 !----------------------------------------------------------------------------------
 !------------------------------HISTORY FILES--------------------------------------
@@ -142,11 +142,8 @@ EOF
 cp $FILENAME .
 
 # Build the case
-./xmlchange BUILD_COMPLETE=TRUE
-./xmlchange EXEROOT=$RUN_DIR/$BASECASE_NAME"/bld"
-
-#cd ${CESM_CASE_DIR}/${CESM_CASE_NAME}
-#qcmd -A ${PROJECT_NUM} -- ./case.build
+cd ${CESM_CASE_DIR}/${CESM_CASE_NAME}
+qcmd -A ${PROJECT_NUM} -- ./case.build
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Submit case
