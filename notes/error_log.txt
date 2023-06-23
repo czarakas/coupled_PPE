@@ -1,0 +1,3 @@
+- COUP0012_PI_SOM_v02 is three years longer than all the other simulations (143 years instead of 142 years)
+- COUP0037_PI_SOM_v04 is missing atmospheric output data for years 154-188
+- had to rerun some years due to missing land model output - these are the _v03 and _v04 simulations. The output is merged with the _v02 directories, so should not pose a problem. But that is why the _v03 and _v04 directories exist.
