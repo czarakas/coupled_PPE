@@ -1,5 +1,6 @@
 #!/bin/sh
 #############################################################################################################################
+# This script takes the raw coupler output and formats it so that the coupler output can be used to force an offline land-only simulation
 
 module load nco
 
