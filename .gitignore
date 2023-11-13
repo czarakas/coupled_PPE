@@ -131,6 +131,7 @@ dmypy.json
 .pyre/
 
 #Images
-.png
+*.eps
+*.png
 #Data files
 .nc

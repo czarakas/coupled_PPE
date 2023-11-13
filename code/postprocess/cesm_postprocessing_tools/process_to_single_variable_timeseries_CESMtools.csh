@@ -1,8 +1,7 @@
 #! /bin/tcsh
 
-
-set casename = COUP0000_PI_SOM #OFFL0000_PI_v02 OFFL0001_PI_v02 )
-set ensemble_type = coupled_simulations #offline_simulations
+set casename = OFFL0036_PI_v02 #COUP0036_PI_SOM_v02
+set ensemble_type = offline_simulations #coupled_simulations
 
 # Paths to relevant directories and files
 set dir_modeloutput = /glade/campaign/cgd/tss/people/czarakas/CoupledPPE/$ensemble_type
