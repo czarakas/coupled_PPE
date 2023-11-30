@@ -1,7 +1,7 @@
 #! /bin/tcsh
 
-set casename = OFFL0036_PI_v02 #COUP0036_PI_SOM_v02
-set ensemble_type = offline_simulations #coupled_simulations
+set casename = OFFL0000_PI_v02 #COUP0037_PI_SOM_v02
+set ensemble_type = coupled_simulations #offline_simulations #coupled_simulations
 
 # Paths to relevant directories and files
 set dir_modeloutput = /glade/campaign/cgd/tss/people/czarakas/CoupledPPE/$ensemble_type
@@ -47,4 +47,4 @@ cp $timeseries_xml .
 sed -i -e 's/select=16:ncpus=9:mpiprocs=9/select=1:ncpus=36:mpiprocs=36/g' timeseries
 
 # Submit the timeseries script
-qsub timeseries
+#qsub timeseries
