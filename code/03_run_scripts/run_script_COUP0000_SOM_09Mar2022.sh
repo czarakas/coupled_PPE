@@ -5,17 +5,19 @@
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Define directories and user settings
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-export CESM_CASE_NAME=COUP0000_1850spinup
+export CESM_CASE_NAME=COUP0000_1850_SOM
 export CESM_CASE_RES=f19_g17
-export CESM_COMPSET=1850_CAM60_CLM50%BGC_CICE_POP2%ECO%ABIO-DIC_MOSART_CISM2%NOEVOLVE_WW3_BGC%BDRD
+export CESM_COMPSET=1850_CAM60_CLM50%BGC_CICE_DOCN%SOM_SROF_CISM2%NOEVOLVE_SWAV
 export PROJECT_NUM=UWAS0044
+export BASECASE_NAME=COUP0000_1850_SOM
 
-export CESM_SRC_DIR=/glade/u/home/czarakas/cesm_source/cesm_coupled_PPE   #codebase to use to run CESM
+export CESM_SRC_DIR=/glade/u/home/czarakas/cesm_source/cesm_coupled_PPEn11   #codebase to use to run CESM
 export CESM_CASE_DIR=/glade/u/home/czarakas/cesm_cases/coupled_PPE     #where to save case
 export ARCHIVE_DIR=/glade/scratch/czarakas/archive/       #where to save output
-export RUN_DIR=/glade/scratch/czarakas  
-export RESTART_DIR=/glade/scratch/czarakas/coupled_PPE/CMIP6_restarts/0401-01-01-00000 #where the restart files to use are
-export FILENAME=/glade/u/home/czarakas/coupled_PPE/code/run_scripts/run_script_COUP0000_25Feb2022.sh
+export RUN_DIR=/glade/scratch/czarakas
+export FILENAME=/glade/u/home/czarakas/coupled_PPE/code/run_scripts/run_script_COUP0000_SOM_09Mar2022.sh
+export RESTART_DIR=/glade/scratch/czarakas/archive/COUP0000_1850spinup_SOM_v02/rest/0041-01-01-00000 #where the restart files to use are
+
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Make case
@@ -27,35 +29,41 @@ export FILENAME=/glade/u/home/czarakas/coupled_PPE/code/run_scripts/run_script_C
 cd ${CESM_SRC_DIR}/cime/scripts
 
 # Create new case
-./create_newcase --case ${CESM_CASE_DIR}/${CESM_CASE_NAME} --res ${CESM_CASE_RES} --compset ${CESM_COMPSET} --project ${PROJECT_NUM} --run-unsupported
+./create_clone --case ${CESM_CASE_DIR}/${CESM_CASE_NAME} --clone ${CESM_CASE_DIR}/${BASECASE_NAME}
+#./create_newcase --case ${CESM_CASE_DIR}/${CESM_CASE_NAME} --res ${CESM_CASE_RES} --compset ${CESM_COMPSET} --project ${PROJECT_NUM} --run-unsupported
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Configure case
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 cd ${CESM_CASE_DIR}/${CESM_CASE_NAME}
 
-#+++ Set run to branch from spin up with default parameters
-./xmlchange RUN_TYPE=hybrid
-./xmlchange RUN_REFCASE=b.e21.B1850.f19_g17.CMIP6-piControl-2deg.001
-./xmlchange RUN_REFDATE=0401-01-01
+# Identify simulation to branch from
+./xmlchange RUN_TYPE=branch
+./xmlchange RUN_REFCASE=COUP0000_1850spinup_SOM_v02
+./xmlchange RUN_REFDATE=0041-01-01
 
 #+++ Modify xml files related to run time
 #do these settings if this is a test run
-./xmlchange STOP_OPTION="ndays"
-./xmlchange STOP_N=4
-./xmlchange RESUBMIT=0
-./xmlchange JOB_WALLCLOCK_TIME=01:00:00 --subgroup case.run
+#./xmlchange STOP_OPTION="ndays"
+#./xmlchange STOP_N=4
+#./xmlchange RESUBMIT=0
+#./xmlchange JOB_WALLCLOCK_TIME=00:30:00 --subgroup case.run
 
 # do these settings if running the whole thing
-#./xmlchange STOP_OPTION="nyears"
-#./xmlchange STOP_N=7
-#./xmlchange RESUBMIT=3
-#./xmlchange JOB_WALLCLOCK_TIME=11:00:00 --subgroup case.run
+./xmlchange STOP_OPTION="nyears"
+./xmlchange STOP_N=1
+./xmlchange RESUBMIT=0
+./xmlchange JOB_WALLCLOCK_TIME=10:30:00 --subgroup case.run
+
+./xmlchange DOCN_SOM_FILENAME="pop_frc.b.e21.BW1850.f09_g17.CMIP6-piControl.001.190514.nc"
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Set up case
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ./case.setup
+./xmlchange BUILD_COMPLETE=TRUE
+./xmlchange EXEROOT=$RUN_DIR/$BASECASE_NAME"/bld"
+#./xmlchange DOUT_S=FALSE
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Modify namelists
@@ -64,11 +72,8 @@ cp "/glade/scratch/djk2120/PPEn11/namelist_mods/OAAT0000.txt" user_nl_clm
 
 # Modify land namelist
 cat >> user_nl_clm << EOF
-!----------------------------------------------------------------------------------
 ! ---------------------------------INITIAL CONDITIONS------------------------------
-! note that this means that our initial conditions will be from the CLM offline 1850 spin up for the PPE codebase. They will NOT be the land conditions from the fully coupled run which we are branching from
-
-finidat='/glade/p/cgd/tss/people/oleson/CLM5_restarts/clm51_PPEn02ctsm51d021_2deg_GSWP3V1_leafbiomassesai_PPE3_1850pAD.clm2.r.2041-01-01-00000.nc'
+! no finidat because branching from spin up (will use those initial conditions)
 use_init_interp = .true.
 
 !----------------------------------------------------------------------------------
@@ -79,7 +84,7 @@ paramfile = "/glade/scratch/djk2120/PPEn11/paramfiles/OAAT0000.nc"
 !------------------------------HISTORY FILES--------------------------------------
 !----History files (h0): monthly output at grid level
 ! (all the default output variables, except for the soil variables with vertically resolved soil levels)
-! Variables we DON'T need to save 'CWDC_vr', 'CWDN_vr', 'LITR1C_vr', 'LITR1N_vr', 'LITR2C_vr', 'LITR2N_vr', 'LITR3C_vr', 'LITR3N_vr', 'SMIN_NH4_vr', 'SMIN_NO3_vr', 'SMINN_vr', 'SOIL1C_vr', 'SOIL1N_vr', 'SOIL2C_vr', 'SOIL2N_vr', 'SOIL3C_vr', 'SOIL3N_vr', 'SOILC_vr', 'SOILN_vr'
+hist_fexcl1 = 'CWDC_vr', 'CWDN_vr', 'LITR1C_vr', 'LITR1N_vr', 'LITR2C_vr', 'LITR2N_vr', 'LITR3C_vr', 'LITR3N_vr', 'SMIN_NH4_vr', 'SMIN_NO3_vr', 'SMINN_vr', 'SOIL1C_vr', 'SOIL1N_vr', 'SOIL2C_vr', 'SOIL2N_vr', 'SOIL3C_vr', 'SOIL3N_vr', 'SOILC_vr', 'SOILN_vr'
 hist_nhtfrq(1)=0
 hist_mfilt(1)=120
 
@@ -147,7 +152,7 @@ mfilt(3)=365
 EOF
 
 # Modify coupler namelist -- only uncomment this for DEFAULT simulations
-# cat >> user_nl_cpl << EOF
+#cat >> user_nl_cpl << EOF
 #histaux_a2x3hr = .true.
 #histaux_a2x3hrp = .true.
 #histaux_a2x1hri = .true.
@@ -157,20 +162,14 @@ EOF
 #EOF
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# Copy in restart files and build case
+# Build case and copy in resubmit files
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Copy this run script into the run directory
-cd ${CESM_CASE_DIR}/${CESM_CASE_NAME}
 cp $FILENAME .
 
 # Copy resubmit files (from case we're branching from) into this case's run folder on glade
 cd ${RUN_DIR}/${CESM_CASE_NAME}/run
 cp $RESTART_DIR/* .
-
-# Remove the clm restart because we want to use different initial conditions for land
-# (based on finidat)
-rm *.clm2.r.*
-cp /glade/p/cgd/tss/people/oleson/CLM5_restarts/clm51_PPEn02ctsm51d021_2deg_GSWP3V1_leafbiomassesai_PPE3_1850pAD.clm2.r.2041-01-01-00000.nc b.e21.B1850.f19_g17.CMIP6-piControl-2deg.001.clm2.r.0401-01-01-00000.nc
 
 # Build the case
 cd ${CESM_CASE_DIR}/${CESM_CASE_NAME}
