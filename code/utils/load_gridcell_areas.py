@@ -20,7 +20,7 @@ landarea=(ds_temp2.area*1e6*ds_temp2.landfrac)
 landweights=landarea/landarea.mean(dim=['lat','lon'])
 
 # define fraction of gridcell which is glacier (e.g. Antarctica and Greenland)
-glc_frac=ds_temp2.PCT_LANDUNIT[0,3,:,:]/100
+glc_frac=ds_temp2.PCT_LANDUNIT.max(dim='time')[3,:,:]/100
 
 # define nonglaciated landarea
 landarea_nonglac=landarea*(1-glc_frac)

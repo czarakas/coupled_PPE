@@ -17,7 +17,7 @@ ds_lnd=xr.open_dataset('/glade/campaign/cgd/tss/czarakas/CoupledPPE/coupled_simu
                            '/lnd/hist/'+
                            'COUP0000_PI_SOM.clm2.h0.0049-02-01-00000.nc')
 
-crosswalk = pd.read_csv('/glade/u/home/czarakas/coupled_PPE/code/set_up_ensemble/CLM5PPE_coupledPPE_crosswalk.csv')
+crosswalk = pd.read_csv('/glade/u/home/czarakas/coupled_PPE/code/02_set_up_ensemble/CLM5PPE_coupledPPE_crosswalk.csv')
 keys_short=crosswalk.key_coupledPPE.str.split('COUP', expand=True)[1]
 crosswalk['Key_short']=keys_short
 crosswalk['description']=crosswalk['param']+', '+crosswalk['minmax']
@@ -27,18 +27,18 @@ keys=crosswalk['Key_short'].values
 keys_coupledPPE = crosswalk['key_coupledPPE'].values
 keys_landonlyPPE = crosswalk['key_landonlyPPE'].values
 
-def load_coupled_ensemble(var, domain='atm', keys=keys_coupledPPE, printon=False):
+def load_coupled_ensemble(var, domain='atm', keys=keys_coupledPPE, printon=False, subdir=''):
     ensemble_coupled = []
     for key in keys:
         if printon: print(key)
         if domain=='atm':
             fpath=('/glade/campaign/cgd/tss/czarakas/CoupledPPE/coupled_simulations/'+
-                               key+'_PI_SOM_v02/atm/proc/tseries/'+
-                               key+'_PI_SOM_v02.cam.h0.timeseries.'+var+'.nc')
+                               key+'_PI_SOM_v02/atm/proc/tseries/'+subdir+
+                               key+'_PI_SOM_v02.cam.h0.'+var+'.nc')
         elif domain=='lnd':
             fpath=('/glade/campaign/cgd/tss/czarakas/CoupledPPE/coupled_simulations/'+
-                               key+'_PI_SOM_v02/lnd/proc/tseries/'+
-                               key+'_PI_SOM_v02.clm2.h0.timeseries.'+var+'.nc')
+                               key+'_PI_SOM_v02/lnd/proc/tseries/'+subdir+
+                               key+'_PI_SOM_v02.clm2.h0.'+var+'.nc')
         else:
             print('unrecognized domain')
             
@@ -52,14 +52,14 @@ def load_coupled_ensemble(var, domain='atm', keys=keys_coupledPPE, printon=False
     
     return ensemble_coupled
 
-def load_offline_ensemble(var, domain='lnd', keys=keys_coupledPPE, printon=False):
+def load_offline_ensemble(var, domain='lnd', keys=keys_coupledPPE, printon=False, subdir=''):
     ensemble_offline = []
     for key in keys_landonlyPPE:
         if printon: print(key)
         if domain=='lnd':
             fpath=('/glade/campaign/cgd/tss/czarakas/CoupledPPE/offline_simulations/'+
-                               key+'_PI_v02/lnd/proc/tseries/'+
-                               key+'_PI_v02.clm2.h0.timeseries.'+var+'.nc')
+                               key+'_PI_v02/lnd/proc/tseries/'+subdir+
+                               key+'_PI_v02.clm2.h0.'+var+'.nc')
         else:
             print('unrecognized domain')
             
