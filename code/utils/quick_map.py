@@ -3,13 +3,12 @@ from cartopy.util import add_cyclic_point
 import cartopy.crs as ccrs
 from scipy.stats import ttest_ind
 import numpy as np
+import cartopy
 
-def quick_map(mapdata, title=None, outpath=None, colorlabel=None, cmap=plt.cm.get_cmap("magma", 10), clims=None):
+def quick_map(mapdata, title=None, outpath=None, colorlabel=None, cmap=plt.cm.get_cmap("magma", 10), clims=None,maskocean=True):
     fig = plt.figure(figsize=(10,7))
     ax = plt.axes(projection=ccrs.Robinson())
-    ax.coastlines()
-    ax.set_global()
-
+    
     cyclic_data, cyclic_lons = add_cyclic_point(mapdata, coord=mapdata.lon)
 
     plt.pcolormesh(cyclic_lons, mapdata.lat, #contourf
@@ -37,6 +36,12 @@ def quick_map(mapdata, title=None, outpath=None, colorlabel=None, cmap=plt.cm.ge
 
     if outpath is not None:
         plt.savefig(outpath)
+        
+    if maskocean:
+        ax.add_feature(cartopy.feature.OCEAN, facecolor='white', zorder=1)
+    ax.coastlines()
+    ax.set_global()
+
 
     plt.tight_layout()
     

@@ -17,7 +17,7 @@ ds_lnd=xr.open_dataset('/glade/campaign/cgd/tss/people/czarakas/CoupledPPE/coupl
                            '/lnd/hist/'+
                            'COUP0000_PI_SOM.clm2.h0.0049-02-01-00000.nc')
 
-crosswalk = pd.read_csv('/glade/u/home/czarakas/coupled_PPE/code/set_up_ensemble/CLM5PPE_coupledPPE_crosswalk.csv')
+crosswalk = pd.read_csv('/glade/u/home/czarakas/coupled_PPE/code/02_set_up_ensemble/CLM5PPE_coupledPPE_crosswalk.csv')
 keys_short=crosswalk.key_coupledPPE.str.split('COUP', expand=True)[1]
 crosswalk['Key_short']=keys_short
 crosswalk['description']=crosswalk['param']+', '+crosswalk['minmax']

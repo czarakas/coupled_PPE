@@ -18,6 +18,7 @@ landarea=(ds_temp2.area*1e6*ds_temp2.landfrac)
 
 # calculate land weights to account for differences in grid sizes across latitudes
 landweights=landarea/landarea.mean(dim=['lat','lon'])
+landweights2=landarea/landarea.sum(dim=['lat','lon'])
 
 # define fraction of gridcell which is glacier (e.g. Antarctica and Greenland)
 glc_frac=ds_temp2.PCT_LANDUNIT.max(dim='time')[3,:,:]/100
@@ -27,6 +28,9 @@ landarea_nonglac=landarea*(1-glc_frac)
 
 # define nonglaciated landweight
 landweights_nonglac=landarea_nonglac/landarea_nonglac.mean(dim=['lat','lon'])
+landweights_nonglac2=landarea_nonglac/landarea_nonglac.sum(dim=['lat','lon'])
+
+weight_factor_atm = ds_h0.gw / ds_h0.gw.mean(dim='lat')
 
 def subset_landarea(latmax=100, latmin=-100, lonmax=1000, lonmin=-1000):
     landarea_subset=landarea.where((landarea.lat<latmax)&
@@ -41,6 +45,11 @@ def subset_landweights(latmax=100, latmin=-100, lonmax=1000, lonmin=-1000):
     return landweights_subset
 
 def calculate_mean(ds, landweights=landweights):#landweights_nonglac):
+    ds_annual=ds[12*60:,:,:].groupby('time.year').mean(dim='time')
+    ds_annual_global=(ds_annual*landweights).mean(dim=['lat','lon'])
+    return ds_annual_global
+
+def calculate_mean2(ds, landweights=landweights2):#landweights_nonglac):
     ds_annual=ds[12*60:,:,:].groupby('time.year').mean(dim='time')
     ds_annual_global=(ds_annual*landweights).mean(dim=['lat','lon'])
     return ds_annual_global

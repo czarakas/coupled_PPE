@@ -1,13 +1,13 @@
 #! /bin/tcsh
 
-set casename = OFFL0000_PI_v02 #COUP0037_PI_SOM_v02
-set ensemble_type = coupled_simulations #offline_simulations #coupled_simulations
+set casename = OFFL0000_PI_increasePrecip_03# OFFL0000_PI_increaseTbot_02 #OFFL0000_PI_v02 #COUP0037_PI_SOM_v02
+set ensemble_type = offline_sensitivity_tests #offline_simulations #coupled_simulations
 
 # Paths to relevant directories and files
 set dir_modeloutput = /glade/campaign/cgd/tss/people/czarakas/CoupledPPE/$ensemble_type
 set dir_postprocess = /glade/scratch/czarakas/cesm-postprocess
 
-set timeseries_xml = /glade/u/home/czarakas/coupled_PPE/code/postprocess/cesm_postprocessing_tools/env_timeseries.xml
+set timeseries_xml = /glade/u/home/czarakas/coupled_PPE/code/05_postprocess/cesm_postprocessing_tools/env_timeseries.xml
 
 #--------------------------------------------------------------------------------
 # Activate environment for running the postprocessing scripts
@@ -47,4 +47,4 @@ cp $timeseries_xml .
 sed -i -e 's/select=16:ncpus=9:mpiprocs=9/select=1:ncpus=36:mpiprocs=36/g' timeseries
 
 # Submit the timeseries script
-#qsub timeseries
+qsub timeseries

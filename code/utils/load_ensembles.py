@@ -7,12 +7,12 @@ from scipy.stats import ttest_ind
 from cartopy.util import add_cyclic_point
 import cartopy.crs as ccrs
 
-dir_example='/glade/campaign/cgd/tss/czarakas/CoupledPPE/coupled_simulations/COUP0015_PI_SOM_v02/atm/hist'
+dir_example='/glade/campaign/cgd/tss/people/czarakas/CoupledPPE/coupled_simulations/COUP0015_PI_SOM_v02/atm/hist'
 ds_h0=xr.open_dataset(dir_example+'/COUP0015_PI_SOM_v02.cam.h0.0108-09.nc')
 ds_h1=xr.open_dataset(dir_example+'/COUP0015_PI_SOM_v02.cam.h1.0063-02.nc')
 ds_h2=xr.open_dataset(dir_example+'/COUP0015_PI_SOM_v02.cam.h2.0087-01-02-00000.nc')
 
-ds_lnd=xr.open_dataset('/glade/campaign/cgd/tss/czarakas/CoupledPPE/coupled_simulations/'+
+ds_lnd=xr.open_dataset('/glade/campaign/cgd/tss/people/czarakas/CoupledPPE/coupled_simulations/'+
                            'COUP0000_PI_SOM'+
                            '/lnd/hist/'+
                            'COUP0000_PI_SOM.clm2.h0.0049-02-01-00000.nc')
@@ -32,13 +32,13 @@ def load_coupled_ensemble(var, domain='atm', keys=keys_coupledPPE, printon=False
     for key in keys:
         if printon: print(key)
         if domain=='atm':
-            fpath=('/glade/campaign/cgd/tss/czarakas/CoupledPPE/coupled_simulations/'+
+            fpath=('/glade/campaign/cgd/tss/people/czarakas/CoupledPPE/coupled_simulations/'+
                                key+'_PI_SOM_v02/atm/proc/tseries/'+subdir+
-                               key+'_PI_SOM_v02.cam.h0.'+var+'.nc')
+                               key+'_PI_SOM_v02.cam.h0.'+var+'*nc')
         elif domain=='lnd':
-            fpath=('/glade/campaign/cgd/tss/czarakas/CoupledPPE/coupled_simulations/'+
+            fpath=('/glade/campaign/cgd/tss/people/czarakas/CoupledPPE/coupled_simulations/'+
                                key+'_PI_SOM_v02/lnd/proc/tseries/'+subdir+
-                               key+'_PI_SOM_v02.clm2.h0.'+var+'.nc')
+                               key+'_PI_SOM_v02.clm2.h0.'+var+'*nc')
         else:
             print('unrecognized domain')
             
@@ -57,9 +57,9 @@ def load_offline_ensemble(var, domain='lnd', keys=keys_coupledPPE, printon=False
     for key in keys_landonlyPPE:
         if printon: print(key)
         if domain=='lnd':
-            fpath=('/glade/campaign/cgd/tss/czarakas/CoupledPPE/offline_simulations/'+
+            fpath=('/glade/campaign/cgd/tss/people/czarakas/CoupledPPE/offline_simulations/'+
                                key+'_PI_v02/lnd/proc/tseries/'+subdir+
-                               key+'_PI_v02.clm2.h0.'+var+'.nc')
+                               key+'_PI_v02.clm2.h0.'+var+'*nc')
         else:
             print('unrecognized domain')
             
